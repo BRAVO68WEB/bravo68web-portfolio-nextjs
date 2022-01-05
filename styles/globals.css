@@ -1,11 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+  --color1:#11052C;
+  --color2:#3D087B;
+  --color3:#F43B86;
+  --color4:#FFE459;
+  --font:'Source Code Pro', monospace;
+}
+*{
+  margin:0;
+  padding:0;  
+}
 html,
 body {
+  background: var(--color2);
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: var(--font), -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  height:100vh;
+  width:100vw;
+  /* color:var(--color3)   */
+  color:#fff;
 }
-
 a {
   color: inherit;
   text-decoration: none;
