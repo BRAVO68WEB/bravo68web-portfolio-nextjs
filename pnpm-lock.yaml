@@ -3,9 +3,9 @@ lockfileVersion: 5.3
 specifiers:
   '@emotion/react': ^11.7.1
   '@emotion/styled': ^11.6.0
-  '@mui/icons-material': ^5.2.5
-  '@mui/material': ^5.2.6
-  eslint: '7'
+  '@mui/icons-material': ^5.3.0
+  '@mui/material': ^5.3.0
+  eslint: ^7.32.0
   eslint-config-next: 12.0.4
   next: 12.0.4
   react: 17.0.2
@@ -153,7 +153,7 @@ packages:
     resolution: {integrity: sha512-99catp6bHCaxr4sJ/DbTGgHS4+Rs2RVd2g7iOap6SLGPDknRK9ztKNsE/Fg6QhSeh1FGE5f6gHGQmvvn3I3xhw==}
     engines: {node: '>=6.9.0'}
     dependencies:
-      regenerator-runtime: 0.13.9
+      regenerator-runtime: 0.13.4
     dev: false
 
   /@babel/runtime/7.16.7:
