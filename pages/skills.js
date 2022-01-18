@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Nav from "components/nav";
-import Main from "components/main";
+import Skills from "components/skills";
 import Footer from "components/footer";
 
 export default function Home() {
@@ -28,7 +28,7 @@ export default function Home() {
 				/>
 			</Head>
 			<Nav />
-			<Main />
+			<Skills />
 			<Footer />
 		</div>
 	);
