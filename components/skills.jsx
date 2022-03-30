@@ -6,12 +6,9 @@ import axios from "axios";
 function Skills() {
   const [skills, setSkills] = useState({});
   useEffect(() => {
-    axios.get("https://api.github.com/users/bravo68web").then((res) => {
-      console.log(res.data);
+    axios.get("").then((res) => {
       setSkills(res.data);
     });
-    // setSkills([{}]);
-    //api fetch here
   }, []);
   return (
     <SkillsStyle>

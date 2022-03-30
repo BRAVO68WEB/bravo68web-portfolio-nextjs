@@ -8,6 +8,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import { name } from "config";
+import DiscordActivity from "./discord-activity";
 
 function Main() {
   return (
@@ -17,6 +18,9 @@ function Main() {
           <img src="/images/profile.png" alt="" />
         </div>
         <div className="name">{name}</div>
+        <div>
+          <DiscordActivity />
+        </div>
         <div className="social-buttons">
           <IconButton>
             <GitHubIcon fontSize="large" />
