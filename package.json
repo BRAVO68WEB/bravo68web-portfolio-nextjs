@@ -1,6 +1,18 @@
 {
   "name": "bravo68web-portfolio",
   "private": true,
+  "description": "My NextJS Portfolio",
+  "version": "1.0.0",
+  "license": "CC-BY-ND-4.0",
+  "author": {
+    "name": "Bravo68Web",
+    "email": "me@bravo68web.me",
+    "website": "https://bravo68web.me"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BRAVO68WEB/bravo68web-portfolio-nextjs/"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",

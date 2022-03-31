@@ -1,34 +1,59 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">Welcome to my portfolio 👋</h1>
 
-## Getting Started
+<a href="LICENSE" target="_blank">
+  <img alt="License: CC-BY-ND-4.0" src="https://forthebadge.com/images/badges/cc-by-nd.svg" />
+</a>
+<!-- [![License: CC BY-ND 4.0](https://img.shields.io/badge/License-CC%20BY--ND%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nd/4.0/) -->
+<a href="https://twitter.com/BRAVO68WEB" target="_blank">
+  <img alt="Twitter: BRAVO68WEB" src="https://img.shields.io/twitter/follow/BRAVO68WEB.svg?style=social" />
+</a>
+<img src="https://forthebadge.com/images/badges/built-with-love.svg" />
+<img src="https://forthebadge.com/images/badges/made-with-javascript.svg" />
 
-First, run the development server:
+<br><br>
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+<img src="./screenshots/1.png" />
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<br>
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## 📜 Overview
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+#### ➡️ Link: https://itsmebravo.dev
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+#### About this Repo :-
 
-## Learn More
+This Repo cotains source code for my developer portfolio at https://bravo68web.me. I reworked my existed portfolio to nextjs for make it faster and integrate my existing API at https://api.bravo68web.me
 
-To learn more about Next.js, take a look at the following resources:
+#### Features :-
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Discord Integration
+- Online Status Checker
+- Resume Embed
+- more coming soon ...
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+#### Technologies Used:-
 
-## Deploy on Vercel
+<img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white&color=green"> <img src="https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white&color=grey">
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<br>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 😊 Author
+
+**BRAVO68WEB**
+
+- Website: https://bravo68web.me
+- Twitter: [@BRAVO68WEB](https://twitter.com/BRAVO68WEB)
+- GitHub: [@BRAVO68WEB](https://github.com/BRAVO68WEB)
+- LinkedIn: [@BRAVO68WEB](https://linkedin.com/in/BRAVO68WEB)
+
+<br>
+
+### 😽 Show your support
+
+Star the repository if this project helped you! ⭐️
+
+### 📝 License
+
+Copyright © 2022 [BRAVO68WEB](https://github.com/BRAVO68WEB).
+
+This project is [CC-BY-ND-4.0](LICENSE) licensed.
