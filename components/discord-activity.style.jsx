@@ -7,9 +7,15 @@ export const DicordActivityStyle = styled.div`
   justify-content: start;
   width: 400px;
   min-height: 75px;
-  background-color: #7289da;
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
   border-radius: 6px;
-  padding: 1em 0.8em;
+  padding: 0.3em 0.8em;
 
   .discord-icons {
     display: flex;
@@ -51,5 +57,11 @@ export const DicordActivityStyle = styled.div`
     flex-direction: column;
     margin-left: 1em;
     font-size: 0.9em;
+  }
+  .discord-message-application {
+    font-size: 1.3em;
+  }
+  .discord-message-activity {
+    font-size: 1.1em;
   }
 `;

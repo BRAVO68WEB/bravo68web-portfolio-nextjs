@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Nav from "components/nav";
+import { useEffect, useRef } from "react";
 import Resume from "components/resume";
 import Footer from "components/footer";
 

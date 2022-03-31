@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Nav from "components/nav";
-import Main from "components/main";
+import { useEffect, useRef } from "react";
+import Resume from "components/Art";
 import Footer from "components/footer";
 
 export default function Home() {
@@ -33,9 +34,8 @@ export default function Home() {
         />
       </Head>
       <Nav />
-      <Main />
-
-      {/* <Footer /> */}
+      <Art />
+      <Footer />
     </div>
   );
 }

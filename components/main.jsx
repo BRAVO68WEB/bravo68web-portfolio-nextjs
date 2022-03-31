@@ -31,6 +31,7 @@ function Main() {
         <div>
           <DiscordActivity />
         </div>
+        <br />
         <div className="social-buttons">
           <a href={github_url}>
             <IconButton>
@@ -58,7 +59,7 @@ function Main() {
             </IconButton>
           </a>
         </div>
-        <div className="buttons">
+        {/* <div className="buttons">
           <a href={resume_url}>
             <Button variant="contained " size="large">
               Resume
@@ -69,7 +70,7 @@ function Main() {
               Email Me
             </Button>
           </a>
-        </div>
+        </div> */}
       </div>
     </MainStyle>
   );

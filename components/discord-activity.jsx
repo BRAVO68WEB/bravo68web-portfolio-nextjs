@@ -105,59 +105,102 @@ export default function DiscordActivity() {
         </DicordActivityStyle>
       );
     } else {
-      return (
-        <DicordActivityStyle>
-          {!loading && (
-            <>
-              <div className="discord-icons">
-                <div className="discord-large-icon">
-                  {status.activities[1] && (
-                    <img
-                      src={
-                        baseURL +
-                        status.activities[1].application_id +
-                        "/" +
-                        status.activities[1].assets.large_image +
-                        ".png"
-                      }
-                    />
-                  )}
+      console.log("Hmmm Recv");
+      if (status.activities[1].name === "Spotify") {
+        return (
+          <DicordActivityStyle>
+            {!loading && (
+              <>
+                <div className="discord-icons">
+                  <div className="discord-large-icon">
+                    {<img src={status.spotify.album_art_url} />}
+                  </div>
+                  <div className="discord-small-icon">
+                    {
+                      <img
+                        src={
+                          "https://www.freepnglogos.com/uploads/spotify-logo-png/spotify-icon-marilyn-scott-0.png"
+                        }
+                      />
+                    }
+                  </div>
                 </div>
-                <div className="discord-small-icon">
-                  {status.activities[1] && (
-                    <img
-                      src={
-                        baseURL +
-                        status.activities[1].application_id +
-                        "/" +
-                        status.activities[1].assets.small_image +
-                        ".png"
-                      }
-                    />
-                  )}
+                <div className="discord-messageBox">
+                  <div className="discord-message-application">
+                    <b>{status.activities[1] && status.activities[1].name}</b>
+                  </div>
+                  <div className="discord-message-activity">
+                    {status.activities[1] && status.activities[1].details}
+                  </div>
+                  <div className="discord-message-files">
+                    {status.activities[1] && status.activities[1].state
+                      ? status.activities[1].state
+                      : null}
+                  </div>
+                  <br />
+                  <div className="time-elapsed">
+                    {status?.activities[1]?.timestamps?.start && time}
+                  </div>
                 </div>
-              </div>
-              <div className="discord-messageBox">
-                <div className="discord-message-application">
-                  <b>{status.activities[1] && status.activities[1].name}</b>
+              </>
+            )}
+          </DicordActivityStyle>
+        );
+      } else {
+        return (
+          <DicordActivityStyle>
+            {!loading && (
+              <>
+                <div className="discord-icons">
+                  <div className="discord-large-icon">
+                    {status.activities[1] && (
+                      <img
+                        src={
+                          baseURL +
+                          status.activities[1].application_id +
+                          "/" +
+                          status.activities[1].assets.large_image +
+                          ".png"
+                        }
+                      />
+                    )}
+                  </div>
+                  <div className="discord-small-icon">
+                    {status.activities[1] && (
+                      <img
+                        src={
+                          baseURL +
+                          status.activities[1].application_id +
+                          "/" +
+                          status.activities[1].assets.small_image +
+                          ".png"
+                        }
+                      />
+                    )}
+                  </div>
                 </div>
-                <div className="discord-message-activity">
-                  {status.activities[1] && status.activities[1].details}
+                <div className="discord-messageBox">
+                  <div className="discord-message-application">
+                    <b>{status.activities[1] && status.activities[1].name}</b>
+                  </div>
+                  <div className="discord-message-activity">
+                    {status.activities[1] && status.activities[1].details}
+                  </div>
+                  <div className="discord-message-files">
+                    {status.activities[1] && status.activities[1].state
+                      ? status.activities[1].state
+                      : null}
+                  </div>
+                  <br />
+                  <div className="time-elapsed">
+                    {status?.activities[1]?.timestamps?.start && time}
+                  </div>
                 </div>
-                <div className="discord-message-files">
-                  {status.activities[1] && status.activities[1].state
-                    ? status.activities[1].state
-                    : null}
-                </div>
-                <br />
-                <div className="time-elapsed">
-                  {status?.activities[1]?.timestamps?.start && time}
-                </div>
-              </div>
-            </>
-          )}
-        </DicordActivityStyle>
-      );
+              </>
+            )}
+          </DicordActivityStyle>
+        );
+      }
     }
   } else if (
     !loading &&
