@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Nav from "components/nav";
 import { useEffect, useRef } from "react";
-import Resume from "components/Art";
+import Art from "components/Art";
 import Footer from "components/footer";
 
 export default function Home() {
