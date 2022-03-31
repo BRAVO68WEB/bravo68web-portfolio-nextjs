@@ -1,9 +1,9 @@
 import React from "react";
 import { name } from "config";
-import { ContactStyle } from "./art.style";
+import { ContactStyle } from "./contact.style";
 
 function Contact() {
-  return <ContactStyle></ContactStyle>;
+  return <ContactStyle>Contact will be here</ContactStyle>;
 }
 
 export default Contact;
