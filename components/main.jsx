@@ -7,7 +7,16 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
-import { name } from "config";
+import {
+  name,
+  github_url,
+  linkedin_url,
+  facebook_url,
+  twitter_url,
+  email,
+  resume_url,
+  instagram_url,
+} from "config";
 import DiscordActivity from "./discord-activity";
 
 function Main() {
@@ -18,33 +27,48 @@ function Main() {
           <img src="/images/profile.png" alt="" />
         </div>
         <div className="name">{name}</div>
+        <br />
         <div>
           <DiscordActivity />
         </div>
         <div className="social-buttons">
-          <IconButton>
-            <GitHubIcon fontSize="large" />
-          </IconButton>
-          <IconButton>
-            <TwitterIcon fontSize="large" />
-          </IconButton>
-          <IconButton>
-            <LinkedInIcon fontSize="large" />
-          </IconButton>
-          <IconButton>
-            <InstagramIcon fontSize="large" />
-          </IconButton>
-          <IconButton>
-            <FacebookIcon fontSize="large" />
-          </IconButton>
+          <a href={github_url}>
+            <IconButton>
+              <GitHubIcon fontSize="large" />
+            </IconButton>
+          </a>
+          <a href={twitter_url}>
+            <IconButton>
+              <TwitterIcon fontSize="large" />
+            </IconButton>
+          </a>
+          <a href={linkedin_url}>
+            <IconButton>
+              <LinkedInIcon fontSize="large" />
+            </IconButton>
+          </a>
+          <a href={instagram_url}>
+            <IconButton>
+              <InstagramIcon fontSize="large" />
+            </IconButton>
+          </a>
+          <a href={facebook_url}>
+            <IconButton>
+              <FacebookIcon fontSize="large" />
+            </IconButton>
+          </a>
         </div>
         <div className="buttons">
-          <Button variant="contained " size="large">
-            Resume
-          </Button>
-          <Button variant="contained " size="large">
-            Email Me
-          </Button>
+          <a href={resume_url}>
+            <Button variant="contained " size="large">
+              Resume
+            </Button>
+          </a>
+          <a href={email}>
+            <Button variant="contained " size="large">
+              Email Me
+            </Button>
+          </a>
         </div>
       </div>
     </MainStyle>
