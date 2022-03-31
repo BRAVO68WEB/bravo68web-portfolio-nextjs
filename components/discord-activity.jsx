@@ -105,7 +105,7 @@ export default function DiscordActivity() {
         </DicordActivityStyle>
       );
     } else {
-      console.log("Hmmm Recv");
+      // console.log("Hmmm Recv");
       if (status.activities[1].name === "Spotify") {
         return (
           <DicordActivityStyle>
