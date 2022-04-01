@@ -25,6 +25,17 @@ export default styled.nav`
       /* padding: 20px; */
       margin-left: 10px;
     }
+    @media (max-width: 900px) {
+      display: none;
+    }
+  }
+  .menu {
+    button {
+      color: white !important;
+    }
+    @media (min-width: 901px) {
+      display: none;
+    }
   }
   .indicator {
     .circle {

@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import NavStyle from "./nav.style";
 import Link from "next/link";
 import { useLanyard } from "react-use-lanyard";
+import IconButton from "@mui/material/IconButton";
+import Menu from "@mui/material/Menu";
+import MenuItem from "@mui/material/MenuItem";
+import MenuIcon from "@mui/icons-material/Menu";
 
 const LINKS = [
   {
@@ -23,6 +27,16 @@ function Nav() {
     userId: "457039372009865226",
     socket: true,
   });
+
+  const [anchorEl, setAnchorEl] = useState(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
   return (
     <NavStyle>
       <Link href="/">
@@ -49,6 +63,33 @@ function Nav() {
             <Link href={href}>{title}</Link> |
           </div>
         ))}
+      </div>
+      {/* Mobile Menu */}
+      <div className={"menu"}>
+        <IconButton
+          id="nav-menu-button"
+          aria-controls={open ? "nav-menu" : undefined}
+          aria-haspopup="true"
+          aria-expanded={open ? "true" : undefined}
+          onClick={handleClick}
+        >
+          <MenuIcon />
+        </IconButton>
+        <Menu
+          id="nav-menu"
+          anchorEl={anchorEl}
+          open={open}
+          onClose={handleClose}
+          MenuListProps={{
+            "aria-labelledby": "nav-menu-button",
+          }}
+        >
+          {LINKS.map(({ title, href }, index) => (
+            <MenuItem onClick={handleClose}>
+              <Link href={href}>{title}</Link>
+            </MenuItem>
+          ))}
+        </Menu>
       </div>
     </NavStyle>
   );
