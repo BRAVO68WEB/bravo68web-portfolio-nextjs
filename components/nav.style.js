@@ -1,7 +1,12 @@
 import styled from "styled-components";
 
 export default styled.nav`
-  background-color: var(--color1);
+  background: rgb(52, 47, 50);
+  background: linear-gradient(
+    90deg,
+    rgba(52, 47, 50, 1) 0%,
+    rgba(96, 97, 103, 1) 60%
+  );
   padding: 20px;
   position: fixed;
   top: 0;

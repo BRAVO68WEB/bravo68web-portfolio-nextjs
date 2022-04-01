@@ -2,6 +2,7 @@ import React from "react";
 import NavStyle from "./nav.style";
 import Link from "next/link";
 import { useLanyard } from "react-use-lanyard";
+
 const LINKS = [
   {
     title: "Skills",
