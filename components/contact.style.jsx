@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import SendIcon from "@mui/icons-material/Send";
 
 export const ContactStyle = styled.div`
   padding: 10%;
@@ -108,7 +109,7 @@ export const ContactStyle = styled.div`
     display: block;
     font-family: "Source Sans Pro", sans-serif;
     font-size: 18px;
-    color: #fff;
+    color: #030303;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 12px;
@@ -140,7 +141,8 @@ export const ContactStyle = styled.div`
   }
 
   input[type="submit"] {
-    cursor: pointer;
+    cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/heart.svg),
+      auto;
   }
 
   input.name {
@@ -184,6 +186,8 @@ export const ContactStyle = styled.div`
   }
 
   .btn {
+    cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/heart.svg),
+      auto;
     width: 138px;
     height: 44px;
     -moz-border-radius: 4px;
@@ -216,6 +220,7 @@ export const ContactStyle = styled.div`
 
   .btn:hover {
     border: 1px solid #253737;
+
     text-shadow: #333333 0 1px 0;
     background: rgb(131, 58, 180);
     background: linear-gradient(

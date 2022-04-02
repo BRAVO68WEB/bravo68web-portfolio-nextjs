@@ -27,7 +27,7 @@ function Main() {
           <img
             src="/images/profile-new-transp.png"
             alt=""
-            class="profile-img"
+            className="profile-img"
           />
         </div>
         <div className="name">{name}</div>
