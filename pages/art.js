@@ -1,8 +1,6 @@
 import Head from "next/head";
 import Nav from "components/nav";
-import { useEffect, useRef } from "react";
 import Art from "components/art";
-import Footer from "components/footer";
 
 export default function Home() {
   return (

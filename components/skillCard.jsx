@@ -1,7 +1,8 @@
 import React from "react";
 import SkillCardStyle from "./skillCard.styled";
 
-function SkillCard({ title, description, image }) {
+function SkillCard({ title, children, image }) {
+  console.log(image);
   return (
     <SkillCardStyle>
       <div className="card">
@@ -11,8 +12,7 @@ function SkillCard({ title, description, image }) {
           </div>
         )}
         <div className="date">{title}</div>
-        <div className="content">{description}</div>
-        <footer className="footer"></footer>
+        {children}
       </div>
     </SkillCardStyle>
   );

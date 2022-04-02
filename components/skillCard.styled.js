@@ -16,5 +16,9 @@ export default styled.div`
   }
   .card-logo {
     float: right;
+    background-color: #fff;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
   }
 `;

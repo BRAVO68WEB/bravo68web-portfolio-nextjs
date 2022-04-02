@@ -35,7 +35,7 @@ export default function Home() {
       </Head>
       <Nav />
       <Resume />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
