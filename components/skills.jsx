@@ -20,8 +20,10 @@ function Skills() {
     //     console.log(err);
     //   });
 
-    const interval = setInterval(() => {
-      let [valid, skill] = APISDK.req();
+    const interval = setTimeout(async () => {
+      console.log("requesting");
+      console.log(await APISDK.req());
+      console.log(APISDK.data);
       if (valid) {
         setSkills(skill);
         setLoading(false);

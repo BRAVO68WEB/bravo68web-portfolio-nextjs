@@ -1,7 +1,7 @@
 import React from "react";
 import MainStyle from "./main.style";
 import IconButton from "@mui/material/IconButton";
-import Button from "@mui/material/Button";
+// import Button from "@mui/material/Button";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -13,8 +13,8 @@ import {
   linkedin_url,
   facebook_url,
   twitter_url,
-  email,
-  resume_url,
+  // email,
+  // resume_url,
   instagram_url,
 } from "config";
 import DiscordActivity from "./discord-activity";
@@ -24,7 +24,11 @@ function Main() {
     <MainStyle>
       <div className="content">
         <div className="profile">
-          <img src="/images/profile.png" alt="" />
+          <img
+            src="/images/profile-new-transp.png"
+            alt=""
+            class="profile-img"
+          />
         </div>
         <div className="name">{name}</div>
         <br />

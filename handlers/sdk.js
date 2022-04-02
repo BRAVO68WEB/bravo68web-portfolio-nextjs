@@ -12,7 +12,8 @@ import { tempEndpoint } from "./requester";
 // twitter_tweets,
 
 export const APISDK = {
+  data: {},
   req() {
-    return tempEndpoint("/me/github/userdata");
+    return tempEndpoint("https://api.github.com/users/bravo68web", this.data);
   },
 };

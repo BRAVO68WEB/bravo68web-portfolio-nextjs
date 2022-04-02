@@ -10,6 +10,26 @@ export default styled.main`
   background-image: url("/images/background.jpg");
   background-size: cover;
   background-position: center;
+  .profile-img {
+    border-radius: 50%;
+    background: rgb(251, 167, 63);
+    background: -moz-radial-gradient(
+      circle,
+      rgba(251, 167, 63, 1) 0%,
+      rgba(252, 70, 107, 1) 100%
+    );
+    background: -webkit-radial-gradient(
+      circle,
+      rgba(251, 167, 63, 1) 0%,
+      rgba(252, 70, 107, 1) 100%
+    );
+    background: radial-gradient(
+      circle,
+      rgba(251, 167, 63, 1) 0%,
+      rgba(252, 70, 107, 1) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fba73f",endColorstr="#fc466b",GradientType=1);
+  }
 
   .backimage {
     filter: blur(8px);

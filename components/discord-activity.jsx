@@ -1,31 +1,30 @@
 import React, { useEffect, useState } from "react";
 import { DicordActivityStyle } from "./discord-activity.style";
 import { useLanyard } from "react-use-lanyard";
+import { discord_id } from "config";
 
 /* <pre>{!loading && JSON.stringify(status, null, 4)}</pre>; */
-var pickedStatus = "";
 
+const customStatus = [
+  "Searching for Cat Girls",
+  "Watching Anime",
+  "Sleeping",
+  "Studying",
+];
+const statusPicker = () => {
+  return customStatus[Math.floor(Math.random() * customStatus.length)];
+};
 export default function DiscordActivity() {
-  const { loading, status /*, websocket */ } = useLanyard({
-    userId: "457039372009865226",
+  const { loading, status } = useLanyard({
+    userId: discord_id,
     socket: true,
   });
   const [time, setTime] = useState("00:00:00 elapsed");
+  const [pickedStatus] = useState(statusPicker());
   const padTo2Digits = (num) => {
     return num.toString().padStart(2, "0");
   };
-  const customStatus = [
-    "Searching for Cat Girls",
-    "Watching Anime",
-    "Sleeping",
-    "Studying",
-  ];
-  const statusPicker = () => {
-    if (pickedStatus === "")
-      pickedStatus =
-        customStatus[Math.floor(Math.random() * customStatus.length)];
-    return pickedStatus;
-  };
+
   const convertMsToHM = (milliseconds) => {
     let seconds = Math.floor(milliseconds / 1000);
     let minutes = Math.floor(seconds / 60);
@@ -57,8 +56,6 @@ export default function DiscordActivity() {
       clearInterval(interval);
     };
   }, [currentTs, loading]);
-  // console.log(status?.discord_status);
-  // console.log(status?.activities.length);
   if (
     !loading &&
     (status.discord_status === "online" ||
@@ -106,7 +103,7 @@ export default function DiscordActivity() {
       );
     } else {
       // console.log("Hmmm Recv");
-      if (status.activities[1].name === "Spotify") {
+      if (status.activities[1]?.name === "Spotify") {
         return (
           <DicordActivityStyle>
             {!loading && (
@@ -283,7 +280,7 @@ export default function DiscordActivity() {
           </div>
           <br />
           <div className="discord-message-files">
-            <b>{statusPicker()}</b>
+            <b>{pickedStatus}</b>
           </div>
           {/* <div className="time-elapsed">00:00:00 elapsed</div> */}
         </div>

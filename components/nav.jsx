@@ -6,6 +6,7 @@ import IconButton from "@mui/material/IconButton";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import MenuIcon from "@mui/icons-material/Menu";
+import { discord_id } from "config";
 
 const LINKS = [
   {
@@ -17,14 +18,26 @@ const LINKS = [
     href: "/resume",
   },
   {
-    title: "Mail Me",
-    href: "mailto:me@bravo68web.me",
+    title: "Contact",
+    href: "/contact",
   },
+  {
+    title: "Art",
+    href: "/art",
+  },
+  {
+    title: "Blog",
+    href: "https://blog.bravo68web.me",
+  },
+  // {
+  //   title: "Mail Me",
+  //   href: "mailto:me@bravo68web.me",
+  // },
 ];
 
 function Nav() {
   const { loading, status /*, websocket */ } = useLanyard({
-    userId: "457039372009865226",
+    userId: discord_id,
     socket: true,
   });
 
@@ -39,7 +52,7 @@ function Nav() {
 
   return (
     <NavStyle>
-      <Link href="/">
+      <Link href="/" passHref>
         <div className="title">
           <h1>echo &quot;Bravo&quot;</h1>
           <div className="indicator">
@@ -85,7 +98,7 @@ function Nav() {
           }}
         >
           {LINKS.map(({ title, href }, index) => (
-            <MenuItem onClick={handleClose}>
+            <MenuItem key={index} onClick={handleClose}>
               <Link href={href}>{title}</Link>
             </MenuItem>
           ))}
