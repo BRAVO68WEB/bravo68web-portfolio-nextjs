@@ -1,20 +1,15 @@
 import styled from "styled-components";
 
 export default styled.div`
-  width: 33.33%;
-  padding: 10px;
-  .card {
-    background-color: var(--color1);
-    padding: 15px;
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    transition: 0.1s;
-    :hover {
-      transform: scale(1.1);
-    }
-  }
-  .card-logo {
-    float: right;
-  }
+  /* width: 30%; */
+  padding: 2%;
+  /* flex: 1 0 21%; */
+  /* margin: 5px;*/
+  /* height: 100px; */
+  width: 230px;
+  height: 320px;
+  box-sizing: border-box;
+  background-color: #8609d4;
+  border-radius: 5px;
+  margin: 5px;
 `;

@@ -7,32 +7,16 @@ import { APISDK } from "handlers/sdk";
 function Skills() {
   const [skills, setSkills] = useState({});
   const [loading, setLoading] = useState(true);
+  console.log(skills);
+
+  async function requestAPIS() {
+    await APISDK.req();
+    setSkills(APISDK.data);
+    setLoading(false);
+  }
 
   useEffect(() => {
-    // axios
-    //   .get("/portfolio/api")
-    //   .then((res) => {
-    //     setSkills(res.data);
-    //     console.log(res.data);
-    //     setLoading(false);
-    //   })
-    //   .catch((err) => {
-    //     console.log(err);
-    //   });
-
-    const interval = setTimeout(async () => {
-      console.log("requesting");
-      console.log(await APISDK.req());
-      console.log(APISDK.data);
-      if (valid) {
-        setSkills(skill);
-        setLoading(false);
-        console.log(skill);
-      } else {
-        console.error(skill);
-        setLoading(true);
-      }
-    }, 5000);
+    requestAPIS();
   }, [loading, APISDK]);
   return (
     <>
@@ -40,9 +24,9 @@ function Skills() {
         <SkillsStyle>
           <div className="skills">
             <Skill
-              title={skills.login}
-              description={skills.bio}
-              image={skills.avatar_url}
+              title={skills?.gh_user?.data?.login}
+              description={skills?.gh_user?.data?.bio}
+              image={skills?.gh_user?.data?.avatar_url}
             />
             <Skill />
             <Skill />

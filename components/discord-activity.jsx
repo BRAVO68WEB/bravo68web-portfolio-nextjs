@@ -236,7 +236,7 @@ export default function DiscordActivity() {
             <b>is Online</b>
           </div>
           <div className="discord-message-files">
-            <b>{status?.activities[0].state}</b>
+            <b>{status?.activities[0]?.state}</b>
           </div>
           <br />
           <div className="time-elapsed">{}</div>

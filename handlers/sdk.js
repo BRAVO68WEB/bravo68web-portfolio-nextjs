@@ -1,4 +1,4 @@
-import { tempEndpoint } from "./requester";
+import { tempEndpoint, requester } from "./requester";
 // gh_user,
 // discord_activity,
 // osu_recent,
@@ -13,7 +13,16 @@ import { tempEndpoint } from "./requester";
 
 export const APISDK = {
   data: {},
-  req() {
-    return tempEndpoint("https://api.github.com/users/bravo68web", this.data);
+  async req() {
+    await requester(
+      [
+        {
+          endpoint: "https://api.github.com/users/bravo68web",
+          name: "gh_user",
+        },
+      ],
+      this.data
+    );
+    // return tempEndpoint("https://api.github.com/users/bravo68web", this.data);
   },
 };

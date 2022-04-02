@@ -1,42 +1,17 @@
 import styled from "styled-components";
-import SendIcon from "@mui/icons-material/Send";
+// import SendIcon from "@mui/icons-material/Send";
 
 export const ContactStyle = styled.div`
   padding: 10%;
   align-items: center;
   display: flex;
-  height: 100vh;
-  flex-direction: column;
   justify-content: center;
   background-image: url("images/background2.jpg");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   background-repeat: no-repeat;
-  .row {
-    display: flex;
-  }
 
-  .column {
-    flex: 50%;
-  }
-
-  /* .form-group-main {
-    background: rgb(2, 0, 28);
-    border-radius: 10px;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background: linear-gradient(
-      142deg,
-      rgba(2, 0, 28, 1) 0%,
-      rgba(9, 9, 121, 1) 35%,
-      rgba(0, 212, 255, 1) 100%
-    );
-    height: 40vh;
-    width: 75%;
-  } */
-  @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
   body {
     background: #2d3b36 url(http://www.luismruiz.com/img/blured.jpg) no-repeat
       center center fixed;
@@ -45,51 +20,6 @@ export const ContactStyle = styled.div`
     -o-background-size: cover;
     background-size: cover;
     padding-top: 100px;
-  }
-
-  form {
-    margin-left: auto;
-    margin-right: auto;
-    width: 343px;
-    height: 510px;
-    padding: 30px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
-    background: rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 0 0 13px 3px rgba(0, 0, 0, 0.5);
-    -webkit-box-shadow: 0 0 13px 3px rgba(0, 0, 0, 0.5);
-    box-shadow: 0 0 13px 3px rgba(0, 0, 0, 0.5);
-    overflow: hidden;
-  }
-
-  .prewritten-info {
-    margin-left: auto;
-    margin-right: auto;
-    width: 343px;
-    height: 510px;
-    padding: 30px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
-    background: rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 0 0 13px 3px rgba(0, 0, 0, 0.5);
-    -webkit-box-shadow: 0 0 13px 3px rgba(0, 0, 0, 0.5);
-    box-shadow: 0 0 13px 3px rgba(0, 0, 0, 0.5);
-    overflow: hidden;
-  }
-
-  .prewritten-info-content {
-    margin-left: auto;
-    margin-right: auto;
   }
 
   textarea {
@@ -244,5 +174,92 @@ export const ContactStyle = styled.div`
       rgba(253, 29, 29, 1) 50%,
       rgba(252, 176, 69, 1) 100%
     );
+  }
+  form {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    width: 343px;
+    height: 510px;
+    padding: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    background: rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 0 13px 3px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 13px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 13px 3px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+  }
+
+  .prewritten-info {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    width: 343px;
+    height: 510px;
+    padding: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    background: rgba(255, 143, 15, 0.61);
+    -moz-box-shadow: 0 0 13px 3px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 13px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 13px 3px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+  }
+
+  .prewritten-info-content {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media (min-width: 800px) {
+    /* overflow-y: scroll !important; */
+
+    .row {
+      display: flex;
+      /* flex-grow: true; */
+      flex-direction: row;
+    }
+    .column {
+      /* flex: 50%; */
+    }
+    .prewritten-info {
+      margin-top: 140%;
+    }
+    form {
+      margin-bottom: 17%;
+    }
+  }
+
+  @media (min-width: 1000px) {
+    overflow-y: hidden !important;
+
+    .prewritten-info {
+      margin-top: auto !important;
+    }
+    form {
+      margin-bottom: auto !important;
+    }
+    .row {
+      display: flex;
+      /* flex-grow: true; */
+    }
+    .column {
+      /* flex: 50%; */
+      flex-direction: column;
+    }
+  }
+  @media (max-width: 768px) {
+    padding-top: 25%;
+    padding-bottom: 20%;
   }
 `;

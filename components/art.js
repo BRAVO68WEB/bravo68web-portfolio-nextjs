@@ -1,9 +1,15 @@
 import React from "react";
-import { name } from "config";
 import { ArtStyle } from "./art.style";
-
+import { projects } from "config";
+import SkillCard from "./artCard";
 function Art() {
-  return <ArtStyle>Art will be here</ArtStyle>;
+  return (
+    <ArtStyle>
+      {projects.map((project, index) => {
+        return <SkillCard key={index} {...project} />;
+      })}
+    </ArtStyle>
+  );
 }
 
 export default Art;

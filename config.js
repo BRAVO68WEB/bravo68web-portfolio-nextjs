@@ -11,3 +11,35 @@ export const resume_url = "";
 export const facebook_url = "https://www.facebook.com/Bravo68Web/";
 export const discord_id = "457039372009865226";
 export const discord_profile = "";
+export const projects = [
+  {
+    name: "Bravo68Web",
+    description: "A Student, Full Stack and DevOps Platform Developer",
+    image: "https://api.b68dev.xyz/logo",
+  },
+  {
+    name: "Bravo68Web",
+    description: "A Student, Full Stack and DevOps Platform Developer",
+    image: "https://api.b68dev.xyz/logo",
+  },
+  {
+    name: "Bravo68Web",
+    description: "A Student, Full Stack and DevOps Platform Developer",
+    image: "https://api.b68dev.xyz/logo",
+  },
+  {
+    name: "Bravo68Web",
+    description: "A Student, Full Stack and DevOps Platform Developer",
+    image: "https://api.b68dev.xyz/logo",
+  },
+  {
+    name: "Bravo68Web",
+    description: "A Student, Full Stack and DevOps Platform Developer",
+    image: "https://api.b68dev.xyz/logo",
+  },
+  {
+    name: "Bravo68Web",
+    description: "A Student, Full Stack and DevOps Platform Developer",
+    image: "https://api.b68dev.xyz/logo",
+  },
+];

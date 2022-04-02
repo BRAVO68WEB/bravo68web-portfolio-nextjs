@@ -49,10 +49,10 @@ export default styled.nav`
       flex: start; */
     }
     .green {
-      background-color: green;
+      background-color: #6ffc03;
     }
     .red {
-      background-color: red;
+      background-color: #fc0703;
     }
   }
 `;
