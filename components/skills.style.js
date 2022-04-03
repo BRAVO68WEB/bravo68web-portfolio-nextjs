@@ -8,6 +8,11 @@ export default styled.div`
   margin-top: 15px;
   justify-content: center;
   overflow-y: auto !important;
+  background-image: url("/images/background5.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 
   .mainboard__container {
     width: 100%;

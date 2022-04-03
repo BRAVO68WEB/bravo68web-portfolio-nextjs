@@ -25,9 +25,6 @@ function OsuUserSkillCard({
       <div className="description">
         Joined on : {format(join_date, "DD MMM YYYY")}
       </div>
-      <div className="description">
-        Joined on : {format(join_date, "DD MMM YYYY")}
-      </div>
     </SkillCard>
   );
 }
