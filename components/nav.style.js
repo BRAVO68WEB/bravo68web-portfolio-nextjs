@@ -11,6 +11,7 @@ export default styled.nav`
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 10;
   width: 100vw;
   display: flex;
   font-size: 1.5em;

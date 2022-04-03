@@ -1,21 +1,37 @@
 import React from "react";
 import ArtCardStyle from "./artCard.style";
+import ArtModel from "./artModal";
 
-function SkillCard({ name, description, image }) {
+function SkillCard({ name, description, image, onClick }) {
+  const [open, setOpen] = React.useState(false);
+  const handleClose = () => {
+    setOpen(false);
+  };
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
   return (
-    <ArtCardStyle>
-      <div className="card">
-        {image && (
-          <div className="card-logo">
-            <img src={image} height="140px" />
-          </div>
-        )}
-        <div className="date">
-          <b>{name}</b>
+    <div>
+      {image && (
+        <div>
+          <ArtCardStyle>
+            <div className="card" onClick={handleClickOpen}>
+              <div className="card-logo">
+                <img src={image} height="140px" />
+              </div>
+
+              <div className="date">
+                <b>{name}</b>
+              </div>
+              <div className="content">{description}</div>
+            </div>
+          </ArtCardStyle>
+          <ArtModel open={open} onClose={handleClose}>
+            <img src={image} alt="preview" />
+          </ArtModel>
         </div>
-        <div className="content">{description}</div>
-      </div>
-    </ArtCardStyle>
+      )}
+    </div>
   );
 }
 

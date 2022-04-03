@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ArtStyle = styled.div`
-  padding: 10% 5%;
+  padding: 100px 20px;
   height: 100vh;
   display: flex;
   align-items: center;

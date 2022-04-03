@@ -13,33 +13,34 @@ export const discord_id = "457039372009865226";
 export const discord_profile = "";
 export const projects = [
   {
-    name: "Bravo68Web",
+    name: "URL Minify",
+    description: "A Student, Full Stack and DevOps Platform Developer",
+    image:
+      "https://user-images.githubusercontent.com/41448663/153746139-237f8e4d-be25-4f04-91ec-2bb3ff6f0e34.png",
+  },
+  {
+    name: "API",
     description: "A Student, Full Stack and DevOps Platform Developer",
     image: "https://api.b68dev.xyz/logo",
   },
   {
-    name: "Bravo68Web",
+    name: "Karyl #1",
     description: "A Student, Full Stack and DevOps Platform Developer",
-    image: "https://api.b68dev.xyz/logo",
+    image: "/images/art/karyl-2-final-3b.png",
+  },
+  {
+    name: "Karyl #2",
+    description: "A Student, Full Stack and DevOps Platform Developer",
+    image: "/images/art/karyl-2-final.png",
+  },
+  {
+    name: "Ayaka",
+    description: "A Student, Full Stack and DevOps Platform Developer",
+    image: "/images/art/H12M27S20.smoothed_careful.png",
   },
   {
     name: "Bravo68Web",
     description: "A Student, Full Stack and DevOps Platform Developer",
-    image: "https://api.b68dev.xyz/logo",
-  },
-  {
-    name: "Bravo68Web",
-    description: "A Student, Full Stack and DevOps Platform Developer",
-    image: "https://api.b68dev.xyz/logo",
-  },
-  {
-    name: "Bravo68Web",
-    description: "A Student, Full Stack and DevOps Platform Developer",
-    image: "https://api.b68dev.xyz/logo",
-  },
-  {
-    name: "Bravo68Web",
-    description: "A Student, Full Stack and DevOps Platform Developer",
-    image: "https://api.b68dev.xyz/logo",
+    image: "/images/art/Final_best.png",
   },
 ];

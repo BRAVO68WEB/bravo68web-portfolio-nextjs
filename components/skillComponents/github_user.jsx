@@ -1,11 +1,26 @@
 import React from "react";
 import SkillCard from "../skillCard";
 import SkillCardStyle from "../skillCard.styled";
+import { format } from "date-format-parse";
 
-function GitHubSkillCard({ description, title, image }) {
+function GitHubSkillCard({
+  title,
+  image,
+  public_gists,
+  followers,
+  following,
+  public_repos,
+  created_at,
+}) {
   return (
     <SkillCard title={title} image={image}>
-      <div className="description">{description}</div>
+      <div className="description">Repos :- {public_repos}</div>
+      <div className="description">Followers :- {followers}</div>
+      <div className="description">Following :- {following}</div>
+      <div className="description">Gists :- {public_gists}</div>
+      <div className="description">
+        Joined On :- {format(created_at, "DD MMM YYYY")}
+      </div>
     </SkillCard>
   );
 }

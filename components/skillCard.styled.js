@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export default styled.div`
-  width: 33.33%;
-  padding: 10px;
+  padding: 8px;
+  display: inline-flex;
   .card {
     background-color: var(--color1);
     padding: 15px;
@@ -13,6 +13,7 @@ export default styled.div`
     :hover {
       transform: scale(1.1);
     }
+    box-shadow: 46px 35px 22px -2px rgba(0, 0, 0, 0.1);
   }
   .card-logo {
     float: right;
@@ -20,5 +21,14 @@ export default styled.div`
     border-radius: 100px;
     display: flex;
     align-items: center;
+  }
+  .title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--color3);
+  }
+  .description {
+    font-size: 1rem;
+    color: var(--color4);
   }
 `;
