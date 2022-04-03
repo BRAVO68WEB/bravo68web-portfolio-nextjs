@@ -12,6 +12,7 @@ import GitHubSkillCard from "./skillComponents/github_user";
 import OsuUserSkillCard from "./skillComponents/osu_user";
 import TwitterUserSkillCard from "./skillComponents/twitter_user";
 import GitHubThySkillCard from "./skillComponents/github_trophy";
+import SpotifyTopSkillCard from "./skillComponents/spotify_top_songs";
 
 function Skills() {
   const [skills, setSkills] = useState({});
@@ -81,49 +82,20 @@ function Skills() {
                 favourites_count={skills?.twitter_user?.data?.favourites_count}
                 created_at={skills?.twitter_user?.data?.created_at}
               />
-              <GitHubSkillCard
-                title={"GitHub Stats"}
-                image={skills?.logo?.github}
-                public_repos={skills?.gh_user?.data?.public_repos}
-                followers={skills?.gh_user?.data?.followers}
-                following={skills?.gh_user?.data?.following}
-                public_gists={skills?.gh_user?.data?.public_gists}
-                created_at={skills?.gh_user?.data?.created_at}
-              />
-              <OsuUserSkillCard
-                title={"Osu! Player Stats"}
-                image={skills?.logo?.osu}
-                accuracy={skills?.osu_user?.data[0]?.accuracy}
-                level={skills?.osu_user?.data[0]?.level}
-                pp_raw={skills?.osu_user?.data[0]?.pp_raw}
-                country={skills?.osu_user?.data[0]?.country}
-                pp_rank={skills?.osu_user?.data[0]?.pp_rank}
-                countryRank={skills?.osu_user?.data[0]?.pp_country_rank}
-                join_date={skills?.osu_user?.data[0]?.join_date}
-              />
 
-              <GitHubSkillCard
-                title={"GitHub Stats"}
-                image={skills?.logo?.github}
-                public_repos={skills?.gh_user?.data?.public_repos}
-                followers={skills?.gh_user?.data?.followers}
-                following={skills?.gh_user?.data?.following}
-                public_gists={skills?.gh_user?.data?.public_gists}
-                created_at={skills?.gh_user?.data?.created_at}
-              />
-              <GitHubThySkillCard
+              {/* <GitHubThySkillCard
                 title={"GitHub Thropies"}
                 image={skills?.logo?.github}
                 bannerImage="https://github-profile-trophy.vercel.app/?username=bravo68web&theme=discord&column=3&row=2"
-              />
-              <TwitterUserSkillCard
-                title={"Twitter Stats"}
-                image={skills?.logo?.twitter}
-                followers_count={skills?.twitter_user?.data?.followers_count}
-                friends_count={skills?.twitter_user?.data?.friends_count}
-                statuses_count={skills?.twitter_user?.data?.statuses_count}
-                favourites_count={skills?.twitter_user?.data?.favourites_count}
-                created_at={skills?.twitter_user?.data?.created_at}
+              /> */}
+              <SpotifyTopSkillCard
+                title={"Spotify Top Songs"}
+                image={skills?.logo?.spotify}
+                topSongs1={skills?.spotify_top_songs?.data?.items[0]}
+                topSongs2={skills?.spotify_top_songs?.data?.items[1]}
+                topSongs3={skills?.spotify_top_songs?.data?.items[2]}
+                topSongs4={skills?.spotify_top_songs?.data?.items[3]}
+                topSongs5={skills?.spotify_top_songs?.data?.items[4]}
               />
             </div>
           </SkillsStyle>

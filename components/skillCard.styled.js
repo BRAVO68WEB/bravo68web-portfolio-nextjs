@@ -31,4 +31,34 @@ export default styled.div`
     font-size: 1rem;
     color: var(--color4);
   }
+  .topSongs {
+    display: flex;
+    flex-direction: column;
+  }
+  .topSongs__song {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    /* padding-right: 5px; */
+    flex-direction: row;
+    /* margin-bottom: 10px; */
+  }
+  .topSongs__song__info {
+    display: flex;
+    margin-left: 10px;
+    /* align-items: center; */
+    flex-direction: column;
+    .topSongs__song__info__name {
+      font-size: 1rem;
+
+      font-weight: bold;
+      color: var(--color4);
+    }
+    .topSongs__song__info__artist {
+      font-size: 0.9rem;
+
+      color: var(--color3);
+    }
+  }
 `;
