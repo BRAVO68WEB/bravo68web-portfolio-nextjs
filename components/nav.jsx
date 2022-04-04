@@ -22,7 +22,7 @@ const LINKS = [
     href: "/contact",
   },
   {
-    title: "Art",
+    title: "Art / Projects",
     href: "/art",
   },
   {
