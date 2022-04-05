@@ -40,14 +40,14 @@ export const APISDK = {
           endpoint: "/me/spotify/myTopSongs",
           name: "spotify_top_songs",
         },
-        {
-          endpoint: "/me/wakatime/me",
-          name: "wakatime_user",
-        },
-        {
-          endpoint: "/me/wakatime/stats",
-          name: "wakatime_stats",
-        },
+        // {
+        //   endpoint: "/me/wakatime/me",
+        //   name: "wakatime_user",
+        // },
+        // {
+        //   endpoint: "/me/wakatime/stats",
+        //   name: "wakatime_stats",
+        // },
         // {
         //   endpoint: "/me/hashnode/me",
         //   name: "hn_user",
