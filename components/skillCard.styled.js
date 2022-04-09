@@ -7,6 +7,9 @@ export default styled.div`
     background-color: var(--color1);
     padding: 15px;
     width: 100%;
+    /* min-width: 225px; */
+    max-width: 225px;
+    /* max-width: 10.7em; */
     height: auto;
     border-radius: 5px;
     transition: 0.1s;
@@ -14,6 +17,9 @@ export default styled.div`
       transform: scale(1.1);
     }
     box-shadow: 46px 35px 22px -2px rgba(0, 0, 0, 0.1);
+    @media (max-width: 901px) {
+      max-width: 175px;
+    }
   }
   .card-logo {
     float: right;
@@ -30,6 +36,7 @@ export default styled.div`
   .description {
     font-size: 1rem;
     color: var(--color4);
+    /* width: 225px; */
   }
   .topSongs {
     display: flex;
@@ -78,5 +85,10 @@ export default styled.div`
   }
   .skill-card-content-inner {
     color: var(--color4);
+  }
+  .gh-act-icons {
+    img {
+      background-color: var(--color7);
+    }
   }
 `;

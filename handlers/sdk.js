@@ -25,10 +25,6 @@ export const APISDK = {
           name: "discord_activity",
         },
         {
-          endpoint: "/me/osu/v1/recent",
-          name: "osu_recent",
-        },
-        {
           endpoint: "/me/osu/v2/user",
           name: "osu_user",
         },
@@ -67,6 +63,10 @@ export const APISDK = {
         {
           endpoint: "/me/lastfm/current",
           name: "lastfm_current",
+        },
+        {
+          endpoint: "/me/github/userevent",
+          name: "gh_events",
         },
       ],
       this.data

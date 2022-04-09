@@ -14,14 +14,16 @@ function TwitterTweetsSkillCard({
   return (
     <SkillCard title={title} image={image} url={url}>
       <div className="skill-card-content">
+        Latest Tweet
         <div className="skill-card-content-inner">
           <a href={"https://twitter.com/Bravo68web/status/" + tweets1.id}>
-            {tweets1.text}
+            <div>{tweets1.text}</div>
           </a>
         </div>
       </div>
       <br />
       <div className="skill-card-content">
+        Previous Tweets
         <div className="skill-card-content-inner">
           <a href={"https://twitter.com/Bravo68web/status/" + tweets2.id}>
             {tweets2.text}

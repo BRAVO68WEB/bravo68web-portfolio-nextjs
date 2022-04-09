@@ -19,6 +19,7 @@ import OsuBestScoresSkillCard from "./skillComponents/osu_bestScores";
 import TwitterTweetsSkillCard from "./skillComponents/twitter_tweets";
 import WakatimeTopLangSkillCard from "./skillComponents/wakatime_lang";
 import LastFMCurrentSkillCard from "./skillComponents/lastfm_current";
+import GitHubUserEvtSkillCard from "./skillComponents/github_events";
 
 function Skills() {
   const [skills, setSkills] = useState({});
@@ -51,7 +52,9 @@ function Skills() {
       <SkillsStyle>
         <Box sx={{ width: "60%" }}>
           <LinearProgress />
+          Requesting Live API data...
         </Box>
+        <br />
       </SkillsStyle>
     );
   } else {
@@ -195,8 +198,16 @@ function Skills() {
                     "#text"
                   ]
                 }
-
-                // currentTrack1={skills?.lastfm_current
+              />
+              <GitHubUserEvtSkillCard
+                title={"GitHub User Events"}
+                url={"https://github.com/bravo68web"}
+                image={skills?.logo?.github}
+                evt1={skills?.gh_events?.data[0]}
+                evt2={skills?.gh_events?.data[1]}
+                evt3={skills?.gh_events?.data[2]}
+                evt4={skills?.gh_events?.data[3]}
+                evt5={skills?.gh_events?.data[4]}
               />
             </div>
           </SkillsStyle>
