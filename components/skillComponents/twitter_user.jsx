@@ -11,9 +11,10 @@ function TwitterUserSkillCard({
   statuses_count,
   favourites_count,
   created_at,
+  url,
 }) {
   return (
-    <SkillCard title={title} image={image}>
+    <SkillCard title={title} image={image} url={url}>
       <div className="description">Followers :- {followers_count}</div>
       <div className="description">Following :- {friends_count}</div>
       <div className="description">

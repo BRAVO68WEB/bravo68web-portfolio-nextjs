@@ -61,4 +61,22 @@ export default styled.div`
       color: var(--color3);
     }
   }
+  .bestScores__score__info__score__value {
+    display: flex;
+    flex-grow: 1;
+  }
+  .bestScores__score__info__name__artist {
+    font-size: 1rem;
+    color: var(--color4);
+  }
+  .bestScores__score__info__name__title {
+    font-size: 0.9rem;
+    color: var(--color3);
+  }
+  .skill-card-content {
+    /* background-color: var(--color7); */
+  }
+  .skill-card-content-inner {
+    color: var(--color4);
+  }
 `;

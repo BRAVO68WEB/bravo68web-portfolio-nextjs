@@ -11,9 +11,10 @@ function GitHubSkillCard({
   following,
   public_repos,
   created_at,
+  url,
 }) {
   return (
-    <SkillCard title={title} image={image}>
+    <SkillCard title={title} image={image} url={url}>
       <div className="description">Repos :- {public_repos}</div>
       <div className="description">Followers :- {followers}</div>
       <div className="description">Following :- {following}</div>

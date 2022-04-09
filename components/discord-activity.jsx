@@ -64,7 +64,7 @@ export default function DiscordActivity() {
     status.activities.length
   ) {
     if (status.activities[0].id === "custom" && status.activities.length == 1) {
-      console.log(status.activities.length);
+      console.log("Hmmm Recv 1");
       return (
         <DicordActivityStyle>
           <div className="discord-icons">
@@ -102,8 +102,9 @@ export default function DiscordActivity() {
         </DicordActivityStyle>
       );
     } else {
-      // console.log("Hmmm Recv");
+      console.log("Hmmm Recv 2");
       if (status.activities[1]?.name === "Spotify") {
+        console.log("Hmmm Recv 3");
         return (
           <DicordActivityStyle>
             {!loading && (
@@ -143,7 +144,64 @@ export default function DiscordActivity() {
             )}
           </DicordActivityStyle>
         );
-      } else {
+      }
+      // else if (status.activities[0]) {
+      //   return (
+      //     <DicordActivityStyle>
+      //       {!loading && (
+      //         <>
+      //           <div className="discord-icons">
+      //             <div className="discord-large-icon">
+      //               {status.activities[0] && (
+      //                 <img
+      //                   src={
+      //                     baseURL +
+      //                     status.activities[0].application_id +
+      //                     "/" +
+      //                     status.activities[0].assets.large_image +
+      //                     ".png"
+      //                   }
+      //                 />
+      //               )}
+      //             </div>
+      //             <div className="discord-small-icon">
+      //               {status.activities[0] && (
+      //                 <img
+      //                   src={
+      //                     baseURL +
+      //                     status.activities[0].application_id +
+      //                     "/" +
+      //                     status.activities[0].assets.small_image +
+      //                     ".png"
+      //                   }
+      //                 />
+      //               )}
+      //             </div>
+      //           </div>
+      //           <div className="discord-messageBox">
+      //             <div className="discord-message-application">
+      //               <b>{status.activities[0].name}</b>
+      //             </div>
+      //             <div className="discord-message-activity">
+      //               {status.activities[0].details}
+      //             </div>
+      //             <div className="discord-message-files">
+      //               {status.activities[0].state
+      //                 ? status.activities[0].state
+      //                 : null}
+      //             </div>
+      //             <br />
+      //             <div className="time-elapsed">
+      //               {status?.activities[0]?.timestamps?.start && time}
+      //             </div>
+      //           </div>
+      //         </>
+      //       )}
+      //     </DicordActivityStyle>
+      //   );
+      // }
+      else {
+        console.log("Hmmm Recv 4");
         return (
           <DicordActivityStyle>
             {!loading && (
@@ -206,6 +264,7 @@ export default function DiscordActivity() {
       status.discord_status === "idle" ||
       status.discord_status === "dnd")
   ) {
+    console.log("Hmmm Recv 5");
     return (
       <DicordActivityStyle>
         <div className="discord-icons">
@@ -244,7 +303,8 @@ export default function DiscordActivity() {
       </DicordActivityStyle>
     );
   } else {
-    // console.log(restData);
+    console.log("Hmmm Recv 6");
+    // console.log(status);
     var restData = {
       username: "Bravo68-DF_Techs",
       public_flags: 64,

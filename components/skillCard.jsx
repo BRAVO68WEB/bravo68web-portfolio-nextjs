@@ -1,15 +1,17 @@
 import React from "react";
 import SkillCardStyle from "./skillCard.styled";
 
-function SkillCard({ title, children, image, bannerImage }) {
-  console.log(image);
+function SkillCard({ title, children, image, bannerImage, url }) {
+  // console.log(image);
   return (
     <SkillCardStyle>
       <div className="card">
         {image && (
-          <div className="card-logo">
-            <img src={image} height="30" />
-          </div>
+          <a href={url}>
+            <div className="card-logo">
+              <img src={image} height="30" />
+            </div>
+          </a>
         )}
 
         <div className="title">{title}</div>

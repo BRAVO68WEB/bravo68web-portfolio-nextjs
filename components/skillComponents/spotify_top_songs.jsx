@@ -11,9 +11,10 @@ function SpotifyTopSkillCard({
   topSongs3,
   topSongs4,
   topSongs5,
+  url,
 }) {
   return (
-    <SkillCard title={title} image={image}>
+    <SkillCard title={title} image={image} url={url}>
       <div className="topSongs">
         <div className="topSongs__song">
           <div className="topSongs__song__image">

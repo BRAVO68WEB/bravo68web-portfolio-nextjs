@@ -10,8 +10,8 @@ import { discord_id } from "config";
 
 const LINKS = [
   {
-    title: "Skills",
-    href: "/skills",
+    title: "Stats",
+    href: "/stats",
   },
   {
     title: "Resume",

@@ -6,6 +6,12 @@
   --color2: #3d087b;
   --color3: #f43b86;
   --color4: #ffe459;
+  --color5: #16b2fa;
+  --color6: #0ff558;
+  --color7: #f4f4f4;
+  --color8: #f58a0f;
+  --color9: #f5a80f;
+  --color10: #0ffaac;
   --font: "Source Code Pro", monospace;
 }
 * {
@@ -23,7 +29,7 @@ body {
   height: 100vh;
   width: 100vw;
   /* color:var(--color3)   */
-  color: #fff;
+  color: var(--color7);
 }
 a {
   color: inherit;

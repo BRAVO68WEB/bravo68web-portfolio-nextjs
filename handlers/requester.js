@@ -21,7 +21,7 @@ export const requester = async (configs, data) => {
   let requests = [];
   for (let i = 0; i < configs.length; i++) {
     const { endpoint, name } = configs[i];
-    console.log(endpoint, name);
+    // console.log(endpoint, name);
     data[name] = {};
     let request = axios
       .get(endpoint)

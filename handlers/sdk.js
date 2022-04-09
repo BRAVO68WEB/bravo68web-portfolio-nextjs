@@ -25,33 +25,37 @@ export const APISDK = {
           name: "discord_activity",
         },
         {
-          endpoint: "/me/osu/recent",
+          endpoint: "/me/osu/v1/recent",
           name: "osu_recent",
         },
         {
-          endpoint: "/me/osu/user",
+          endpoint: "/me/osu/v2/user",
           name: "osu_user",
         },
         {
-          endpoint: "/me/osu/bestScores",
+          endpoint: "/me/osu/v2/bestScores",
           name: "osu_bestScores",
         },
         {
           endpoint: "/me/spotify/myTopSongs",
           name: "spotify_top_songs",
         },
-        // {
-        //   endpoint: "/me/wakatime/me",
-        //   name: "wakatime_user",
-        // },
-        // {
-        //   endpoint: "/me/wakatime/stats",
-        //   name: "wakatime_stats",
-        // },
-        // {
-        //   endpoint: "/me/hashnode/me",
-        //   name: "hn_user",
-        // },
+        {
+          endpoint: "/me/wakatime/codeTimeAllTime",
+          name: "wakatime_user",
+        },
+        {
+          endpoint: "/me/wakatime/codeStatsLast7Days",
+          name: "wakatime_stats",
+        },
+        {
+          endpoint: "/me/wakatime/LanguageUsageInLast7Days",
+          name: "wakatime_lang",
+        },
+        {
+          endpoint: "/me/hashnode/me/all",
+          name: "hn_user",
+        },
         {
           endpoint: "/me/twitter/me",
           name: "twitter_user",
@@ -59,6 +63,10 @@ export const APISDK = {
         {
           endpoint: "/me/twitter/recentTweets",
           name: "twitter_tweets",
+        },
+        {
+          endpoint: "/me/lastfm/current",
+          name: "lastfm_current",
         },
       ],
       this.data
