@@ -34,8 +34,8 @@ function Skills() {
       spotify: `https://www.freepnglogos.com/uploads/spotify-logo-png/spotify-icon-marilyn-scott-0.png`,
       hashnode: `https://cdn.hashnode.com/res/hashnode/image/upload/v1611902473383/CDyAuTy75.png?auto=compress`,
       discord: `https://www.freepnglogos.com/uploads/discord-logo-png/anthrocon-twitter-quot-discord-user-wanna-21.png`,
-      wakatime: `https://brandeps.com/logo-download/W/WakaTime-logo-vector-01.svg`,
-      lastfm: "https://brandeps.com/icon-download/L/Lastfm-icon-vector-03.svg",
+      wakatime: `/images/brandlogos/WakaTime-logo-vector-01.svg`,
+      lastfm: "/images/brandlogos/Lastfm-icon-vector-03.svg",
       twitter:
         "https://www.freepnglogos.com/uploads/twitter-logo-png/twitter-logo-vector-png-clipart-1.png",
     };
