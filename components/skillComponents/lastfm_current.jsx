@@ -2,6 +2,7 @@ import React from "react";
 import SkillCard from "../skillCard";
 import SkillCardStyle from "../skillCard.styled";
 import { format, parse } from "date-format-parse";
+import { useLastFM } from "use-last-fm";
 
 function LastFMCurrentSkillCard({
   title,
@@ -12,7 +13,15 @@ function LastFMCurrentSkillCard({
   name,
   url,
 }) {
-  console.log(empty);
+  const lastFM = useLastFM(3);
+
+  if (lastFM.status !== "playing") {
+    return (
+      <SkillCard title={title} image={image} url={url}>
+        Not listening to anything
+      </SkillCard>
+    );
+  }
   return (
     <SkillCard title={title} image={image} url={url}>
       <div className="description">

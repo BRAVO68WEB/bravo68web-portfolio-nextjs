@@ -64,7 +64,6 @@ export default function DiscordActivity() {
     status.activities.length
   ) {
     if (status.activities[0].id === "custom" && status.activities.length == 1) {
-      console.log("Hmmm Recv 1");
       return (
         <DicordActivityStyle>
           <div className="discord-icons">
@@ -102,9 +101,7 @@ export default function DiscordActivity() {
         </DicordActivityStyle>
       );
     } else {
-      console.log("Hmmm Recv 2");
       if (status.activities[1]?.name === "Spotify") {
-        console.log("Hmmm Recv 3");
         return (
           <DicordActivityStyle>
             {!loading && (
@@ -201,7 +198,6 @@ export default function DiscordActivity() {
       //   );
       // }
       else {
-        console.log("Hmmm Recv 4");
         return (
           <DicordActivityStyle>
             {!loading && (
@@ -264,7 +260,6 @@ export default function DiscordActivity() {
       status.discord_status === "idle" ||
       status.discord_status === "dnd")
   ) {
-    console.log("Hmmm Recv 5");
     return (
       <DicordActivityStyle>
         <div className="discord-icons">
@@ -303,7 +298,6 @@ export default function DiscordActivity() {
       </DicordActivityStyle>
     );
   } else {
-    console.log("Hmmm Recv 6");
     // console.log(status);
     var restData = {
       username: "Bravo68-DF_Techs",

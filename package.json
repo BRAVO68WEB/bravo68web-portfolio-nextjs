@@ -33,7 +33,8 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-use-lanyard": "^0.1.1",
-    "styled-components": "^5.3.3"
+    "styled-components": "^5.3.3",
+    "use-last-fm": "https://github.com/BRAVO68WEB/use-last-fm"
   },
   "devDependencies": {
     "eslint": "^7.32.0",
