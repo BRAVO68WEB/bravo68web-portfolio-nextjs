@@ -6,6 +6,7 @@ import { APISDK } from "handlers/sdk";
 import Box from "@mui/material/Box";
 import LinearProgress from "@mui/material/LinearProgress";
 // import "mainboard.css";
+import Cursor, { mouseOverEvent, mouseOutEvent } from "./providers/cursor";
 
 // Skill Card templates
 import GitHubSkillCard from "./skillComponents/github_user";
@@ -65,6 +66,7 @@ function Skills() {
 
     return (
       <div>
+        <Cursor />
         {!loading && (
           <SkillsStyle>
             <div className="mainboard__container">
@@ -77,6 +79,8 @@ function Skills() {
                 following={skills?.gh_user?.data?.following}
                 public_gists={skills?.gh_user?.data?.public_gists}
                 created_at={skills?.gh_user?.data?.created_at}
+                mouseOverEvent={mouseOverEvent}
+                mouseOutEvent={mouseOutEvent}
               />
               <OsuUserSkillCard
                 title={"Osu! Player Stats"}

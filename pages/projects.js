@@ -1,14 +1,13 @@
 import Head from "next/head";
 import Nav from "components/nav";
-import Skills from "components/skills";
-import Footer from "components/footer";
+import Art from "components/art";
 
 export default function Home() {
   return (
     <div>
       <Head>
         <title>
-          Skills | Jyotirmoy Bandyopadhayaya | Full Stack Web Developer and
+          Projects | Jyotirmoy Bandyopadhayaya | Full Stack Web Developer and
           DevOps Engineer
         </title>
         <meta
@@ -34,7 +33,7 @@ export default function Home() {
         />
       </Head>
       <Nav />
-      <Skills />
+      <Art />
       {/* <Footer /> */}
     </div>
   );

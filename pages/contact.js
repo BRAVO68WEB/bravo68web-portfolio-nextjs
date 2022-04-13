@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Nav from "components/nav";
-import { useEffect, useRef } from "react";
 import Contact from "components/contact";
 import Footer from "components/footer";
 
@@ -9,7 +8,8 @@ export default function Home() {
     <div>
       <Head>
         <title>
-          Jyotirmoy Bandyopadhayaya | Full Stack and DevOps Platform Developer
+          Contact | Jyotirmoy Bandyopadhayaya | Full Stack Web Developer and
+          DevOps Engineer
         </title>
         <meta
           name="description"

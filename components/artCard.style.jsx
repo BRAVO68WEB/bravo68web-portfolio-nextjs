@@ -8,7 +8,9 @@ export default styled.div`
   background-color: #8609d4;
   border-radius: 5px;
   margin: 5px;
-
+  .type {
+    color: var(--color1);
+  }
   .card-logo {
     display: flex;
     /* width: 100%; */

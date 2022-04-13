@@ -1,13 +1,15 @@
 import Head from "next/head";
 import Nav from "components/nav";
-import Art from "components/art";
+import About from "components/about";
+import Footer from "components/footer";
 
 export default function Home() {
   return (
     <div>
       <Head>
         <title>
-          Jyotirmoy Bandyopadhayaya | Full Stack and DevOps Platform Developer
+          About | Jyotirmoy Bandyopadhayaya | Full Stack Web Developer and
+          DevOps Engineer
         </title>
         <meta
           name="description"
@@ -32,7 +34,8 @@ export default function Home() {
         />
       </Head>
       <Nav />
-      <Art />
+      <About />
+
       {/* <Footer /> */}
     </div>
   );

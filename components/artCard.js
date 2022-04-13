@@ -2,7 +2,7 @@ import React from "react";
 import ArtCardStyle from "./artCard.style";
 import ArtModel from "./artModal";
 
-function SkillCard({ name, description, image, onClick }) {
+function SkillCard({ name, description, image, type, onClick }) {
   const [open, setOpen] = React.useState(false);
   const handleClose = () => {
     setOpen(false);
@@ -24,6 +24,7 @@ function SkillCard({ name, description, image, onClick }) {
                 <b>{name}</b>
               </div>
               <div className="content">{description}</div>
+              <div className="type">#{type}</div>
             </div>
           </ArtCardStyle>
           <ArtModel open={open} onClose={handleClose}>

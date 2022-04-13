@@ -8,7 +8,8 @@ export default function Home() {
     <div>
       <Head>
         <title>
-          Jyotirmoy Bandyopadhayaya | Full Stack and DevOps Platform Developer
+          Jyotirmoy Bandyopadhayaya | Full Stack Web Developer and DevOps
+          Engineer
         </title>
         <meta
           name="description"
