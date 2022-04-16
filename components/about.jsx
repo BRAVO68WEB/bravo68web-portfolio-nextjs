@@ -13,13 +13,14 @@ function about() {
           {LanguagesKnown.map((lang) => {
             return (
               <div className="lang-map-element" key={lang}>
-                {lang}
+                #{lang}
               </div>
             );
           })}
         </div>
         <div className="content-2">
           <p>{description2}</p>
+          <img src="https://bravo68web.me/images/header_.png" />
         </div>
       </div>
     </AboutStyle>

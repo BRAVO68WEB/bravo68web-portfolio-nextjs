@@ -10,6 +10,10 @@ import { discord_id } from "config";
 
 const LINKS = [
   {
+    title: "About",
+    href: "/about",
+  },
+  {
     title: "Stats",
     href: "/stats",
   },
@@ -29,10 +33,10 @@ const LINKS = [
     title: "Blog",
     href: "https://blog.bravo68web.me",
   },
-  // {
-  //   title: "Mail Me",
-  //   href: "mailto:me@bravo68web.me",
-  // },
+  {
+    title: "Mail Me",
+    href: "mailto:me@bravo68web.me",
+  },
 ];
 
 function Nav() {

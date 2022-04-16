@@ -2,6 +2,19 @@ import styled from "styled-components";
 
 export const AboutStyle = styled.div`
   background-color: var(--color1);
+  overflow-y: scroll !important;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  height: 100vh;
+  padding-top: 12em;
+  /* padding-bottom: 8em; */
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  /* position: relative; */
   .default {
     align-items: center;
     display: flex;
@@ -10,6 +23,10 @@ export const AboutStyle = styled.div`
     text-align: center;
     padding-top: 8em;
     padding-bottom: 8em;
+
+    /* position: absolute; */
+    /* top: 0; */
+
     /* overflow-y: auto; */
   }
   .content {
@@ -29,6 +46,10 @@ export const AboutStyle = styled.div`
     font-weight: bold;
     font-size: 1.3em;
     color: var(--color4);
+    img {
+      width: 90%;
+      padding: 1em;
+    }
   }
   .lang-map {
     display: flex;
@@ -43,10 +64,16 @@ export const AboutStyle = styled.div`
     border-radius: 20px;
     margin: 2px;
     /* background-color: #${Math.random().toString(16).substring(2, 6)}; */
-    background-color: #eeb90ac2;
+    background: rgb(34, 193, 195);
+    background: linear-gradient(
+      0deg,
+      rgba(34, 193, 195, 1) 0%,
+      rgba(253, 187, 45, 1) 100%
+    );
     font-weight: bold;
     font-size: 1.1em;
     color: #f5f5f5;
     flex: 0 1 20%;
+    max-width: 127px;
   }
 `;
