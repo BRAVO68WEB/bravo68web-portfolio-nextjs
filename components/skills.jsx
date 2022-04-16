@@ -6,7 +6,7 @@ import { APISDK } from "handlers/sdk";
 import Box from "@mui/material/Box";
 import LinearProgress from "@mui/material/LinearProgress";
 // import "mainboard.css";
-import Cursor, { mouseOverEvent, mouseOutEvent } from "./providers/cursor";
+// import Cursor, { mouseOverEvent, mouseOutEvent } from "./providers/cursor";
 
 // Skill Card templates
 import GitHubSkillCard from "./skillComponents/github_user";
@@ -66,7 +66,7 @@ function Skills() {
 
     return (
       <div>
-        <Cursor />
+        {/* <Cursor /> */}
         {!loading && (
           <SkillsStyle>
             <div className="mainboard__container">
