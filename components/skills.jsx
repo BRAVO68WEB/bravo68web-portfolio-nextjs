@@ -79,8 +79,8 @@ function Skills() {
                 following={skills?.gh_user?.data?.following}
                 public_gists={skills?.gh_user?.data?.public_gists}
                 created_at={skills?.gh_user?.data?.created_at}
-                mouseOverEvent={mouseOverEvent}
-                mouseOutEvent={mouseOutEvent}
+                // mouseOverEvent={mouseOverEvent}
+                // mouseOutEvent={mouseOutEvent}
               />
               <OsuUserSkillCard
                 title={"Osu! Player Stats"}
