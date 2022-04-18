@@ -1,10 +1,4 @@
-import {
-  name,
-  LanguagesKnown,
-  LanguagesKnownCategory,
-  description1,
-  description2,
-} from "config";
+import { LanguagesKnownCategory, description1, description2 } from "config";
 import { AboutStyle } from "./about.style";
 
 function about() {
@@ -15,15 +9,6 @@ function about() {
         <div className="content">
           <p>{description1}</p>
         </div>
-        {/* <div className="lang-map">
-          {LanguagesKnown.map((lang) => {
-            return (
-              <div className="lang-map-element" key={lang}>
-                #{lang}
-              </div>
-            );
-          })}
-        </div> */}
         <div className="lang-map">
           {LanguagesKnownCategory.map((lang) => {
             return (

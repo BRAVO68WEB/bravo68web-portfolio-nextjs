@@ -71,6 +71,7 @@ export const AboutStyle = styled.div`
       rgba(253, 187, 45, 1) 100%
     ); */
     font-weight: bold;
+    box-shadow: 10px 9px 0px -3px #fffefe;
     font-size: 1.1em;
     color: #f5f5f5;
     flex: 0 1 20%;

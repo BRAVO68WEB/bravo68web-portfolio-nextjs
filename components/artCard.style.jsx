@@ -7,6 +7,7 @@ export default styled.div`
   box-sizing: border-box;
   background-color: #5f046b;
   border-radius: 5px;
+  box-shadow: 10px 9px 0px -3px #fffefe;
   margin: 5px;
   .type {
     color: var(--color1);

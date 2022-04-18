@@ -3,12 +3,14 @@ import styled from "styled-components";
 export default styled.div`
   padding: 8px;
   display: inline-flex;
+  /* box-shadow: 10px 9px 0px -3px #fffefe; */
   .card {
     background-color: var(--color1);
     padding: 15px;
     width: 100%;
     /* min-width: 225px; */
     max-width: 225px;
+
     /* max-width: 10.7em; */
     height: auto;
     border-radius: 5px;
