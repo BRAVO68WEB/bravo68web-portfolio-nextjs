@@ -6,15 +6,17 @@ import ArtModel from "./artModal";
 
 function Art() {
   return (
-    <ArtStyle>
-      {projects.map((project, index) => {
-        return (
-          <>
-            <SkillCard key={index} {...project} />
-          </>
-        );
-      })}
-    </ArtStyle>
+    <>
+      <ArtStyle>
+        {projects.map((project, index) => {
+          return (
+            <>
+              <SkillCard key={index} {...project} />
+            </>
+          );
+        })}
+      </ArtStyle>
+    </>
   );
 }
 

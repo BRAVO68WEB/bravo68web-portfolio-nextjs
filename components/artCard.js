@@ -2,7 +2,7 @@ import React from "react";
 import ArtCardStyle from "./artCard.style";
 import ArtModel from "./artModal";
 
-function SkillCard({ name, description, image, type, onClick }) {
+function SkillCard({ name, description, image, type, url, onClick }) {
   const [open, setOpen] = React.useState(false);
   const handleClose = () => {
     setOpen(false);
@@ -21,7 +21,9 @@ function SkillCard({ name, description, image, type, onClick }) {
               </div>
 
               <div className="date">
-                <b>{name}</b>
+                <b>
+                  <a href={url}>{name}</a>
+                </b>
               </div>
               <div className="content">{description}</div>
               <div className="type">#{type}</div>

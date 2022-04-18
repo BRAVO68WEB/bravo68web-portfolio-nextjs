@@ -64,12 +64,12 @@ export const AboutStyle = styled.div`
     border-radius: 20px;
     margin: 2px;
     /* background-color: #${Math.random().toString(16).substring(2, 6)}; */
-    background: rgb(34, 193, 195);
+    /* background: rgb(34, 193, 195);
     background: linear-gradient(
       0deg,
       rgba(34, 193, 195, 1) 0%,
       rgba(253, 187, 45, 1) 100%
-    );
+    ); */
     font-weight: bold;
     font-size: 1.1em;
     color: #f5f5f5;

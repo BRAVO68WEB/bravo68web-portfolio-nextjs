@@ -5,7 +5,7 @@ export default styled.div`
   width: 230px;
   height: 320px;
   box-sizing: border-box;
-  background-color: #8609d4;
+  background-color: #5f046b;
   border-radius: 5px;
   margin: 5px;
   .type {
