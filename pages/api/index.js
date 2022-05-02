@@ -1,12 +1,8 @@
 import axios from "axios";
+import { withSentry } from '@sentry/nextjs';
 
-export default function handler(req, res) {
-  const config = {
-    headers: {
-      "Content-Type": "application/json",
-      Accept: "application/json",
-    },
-    url: "https://api.github.com/users/joshuacarr",
-  };
+const handler = async (req, res) => {
   res.status(200).json({ name: "John Doe" });
 }
+
+export default withSentry(handler);

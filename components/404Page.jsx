@@ -1,4 +1,5 @@
 import { Page404Style } from "./404Page.style";
+import Link from 'next/link'
 
 function Page404() {
   return (
@@ -6,7 +7,7 @@ function Page404() {
       <div>
         404 !!
         <div className="backtohome">
-          <a href="/">Back to Home</a>
+          <Link href="/">Back to Home</Link>
         </div>
       </div>
     </Page404Style>
