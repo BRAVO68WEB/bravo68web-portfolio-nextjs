@@ -31,6 +31,7 @@ This Repo cotains source code for my developer portfolio at https://bravo68web.m
 - Resume Embed
 - Custom User Stats representations
 - Art and Project Showcase
+- Custom Error page (including 404 and 500 response error)
 - More to be added soon ...
 
 #### Technologies Used:-

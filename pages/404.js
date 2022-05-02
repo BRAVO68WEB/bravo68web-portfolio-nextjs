@@ -1,3 +1,11 @@
+import Page404 from "components/404Page";
+import Footer from "components/footer";
+
 export default function Custom404() {
-  return <h1>404 - Page Not Found</h1>;
+  return (
+    // <>
+    <Page404 />
+    /* <Footer /> 
+    </> */
+  );
 }

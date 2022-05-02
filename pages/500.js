@@ -1,3 +1,8 @@
+import Page500 from "components/500Page";
+import Footer from "components/footer";
+
 export default function Custom500() {
-  return <h1>500 - Server-side error occurred</h1>;
+  return (
+    <Page500/>
+  );
 }
