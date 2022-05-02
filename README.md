@@ -29,7 +29,9 @@ This Repo cotains source code for my developer portfolio at https://bravo68web.m
 - Discord Integration
 - Online Status Checker
 - Resume Embed
-- more coming soon ...
+- Custom User Stats representations
+- Art and Project Showcase
+- More to be added soon ...
 
 #### Technologies Used:-
 
