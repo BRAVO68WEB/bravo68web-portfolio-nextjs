@@ -86,6 +86,39 @@ export const arts = [
   },
 ];
 
+export const extra = [
+  {
+    name: "PraiveBin",
+    image: "/images/projects/privatebin.jpg",
+    url: "https://paste.itsmebravo.dev/",
+  },
+  {
+    name: "ImageSafe",
+    image: "https://safe.b68dev.xyz/images/logo_smol.png",
+    url: "https://safe.b68dev.xyz",
+  },
+  {
+    name: "Bravo's Git Hosting",
+    image: "https://gitea.io/images/gitea.png",
+    url: "https://git.itsmebravo.dev/",
+  },
+  {
+    name: "Bravo's Radio Player",
+    image: "/images/projects/radio-cast.png",
+    url: "https://radio.b68dev.xyz/",
+  },
+  {
+    name: "Bravo's IRC",
+    image: "/images/projects/irc.png",
+    url: "https://irc.b68dev.xyz/",
+  },
+  {
+    name: "IP Tracker",
+    image: "/images/projects/GOIPTracker.png",
+    url: "https://ip.b68dev.xyz",
+  },
+];
+
 var project = [
   {
     name: "URL Minify",

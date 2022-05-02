@@ -26,7 +26,7 @@ const LINKS = [
     href: "/contact",
   },
   {
-    title: "Art / Projects",
+    title: "Art/Projects",
     href: "/projects",
   },
   {
@@ -34,8 +34,8 @@ const LINKS = [
     href: "https://blog.bravo68web.me",
   },
   {
-    title: "Mail Me",
-    href: "mailto:me@bravo68web.me",
+    title: "Extras",
+    href: "/extras",
   },
 ];
 
@@ -77,7 +77,7 @@ function Nav() {
       <div className="links">
         {LINKS.map(({ title, href }, index) => (
           <div key={index} className="link">
-            <Link href={href}>{title}</Link> |
+            <Link href={href}>{title}</Link>
           </div>
         ))}
       </div>

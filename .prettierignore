@@ -1,0 +1,6 @@
+build
+coverage
+.vercel
+.next
+node_modules
+public/

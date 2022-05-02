@@ -25,6 +25,11 @@ export default styled.nav`
     .link {
       /* padding: 20px; */
       margin-left: 10px;
+      color: #fff;
+      &:hover {
+        color: #111111;
+        background-color: #6ffc03;
+      }
     }
     @media (max-width: 900px) {
       display: none;
