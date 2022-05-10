@@ -6,7 +6,7 @@ import SkillCard from "../skillCard";
 function GitHubUserEvtSkillCard({ title, image, evt1, evt2, evt3, url }) {
   //   console.log(evt1);
   var ghLogo =
-    "https://cdns.iconmonstr.com/wp-content/assets/preview/2012/240/iconmonstr-github-1.png";
+    "/images/github_events/GitIcon.png";
   // Evt1
   if (evt1.type === "PushEvent") {
     evt1.entTypeLogo = "/images/github_events/github_push_event_logo.png";

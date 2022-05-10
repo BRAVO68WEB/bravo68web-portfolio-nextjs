@@ -8,7 +8,7 @@ export default function Home() {
     <div>
       <Head>
         <title>
-          Skills | Jyotirmoy Bandyopadhayaya | Full Stack Web Developer and
+          Stats | Jyotirmoy Bandyopadhayaya | Full Stack Web Developer and
           DevOps Engineer
         </title>
         <meta
@@ -35,7 +35,7 @@ export default function Home() {
       </Head>
       <Nav />
       <Skills />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
