@@ -12,7 +12,6 @@ import LinearProgress from "@mui/material/LinearProgress";
 import GitHubSkillCard from "./skillComponents/github_user";
 import OsuUserSkillCard from "./skillComponents/osu_user";
 import TwitterUserSkillCard from "./skillComponents/twitter_user";
-import GitHubThySkillCard from "./skillComponents/github_trophy";
 import SpotifyTopSkillCard from "./skillComponents/spotify_top_songs";
 import WakatimeUserSkillCard from "./skillComponents/wakatime_user";
 import HashNodeSkillCard from "./skillComponents/hashnode_inst";

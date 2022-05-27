@@ -1,3 +1,4 @@
+import { qbadges } from "qbadges"
 export const name = "Jyotirmoy Bandhapadhayaya";
 export const github_url = "https://github.com/bravo68web";
 export const twitter_url = "https://twitter.com/bravo68web";
@@ -86,6 +87,18 @@ export const arts = [
   },
 ];
 
+const myqbs = async () => {
+  let qb1 =  await qbadges("293e000c-f58c-4119-b60b-e0e7a769e61f");
+  let qb2 =  await qbadges("dd51f4e2-6171-461b-888c-ce954832c72e");
+  qb1 = qb1.concat(qb2);
+  let map = new Map(Object.entries(qb1));
+  return map;
+}
+
+export let qb = myqbs().then((qbd) => {
+  return qbd;
+}).catch((err) => console.error(err));
+
 export const extra = [
   {
     name: "PraiveBin",
@@ -119,7 +132,7 @@ export const extra = [
   },
 ];
 
-var project = [
+export const projects = [
   {
     name: "URL Minify",
     type: "project",
@@ -456,5 +469,35 @@ var project = [
   },
 ];
 
-// export const projects = project.sort(() => Math.random() - 0.5);
-export const projects = project;
+export const extraPages = [
+  {
+    name: "Qwiklabs Badges",
+    type: "page",
+    image: "/images/qwikilabs-logo.png",
+    url: "/qbadges",
+  },
+  {
+    name: "Status Page",
+    type: "page",
+    image: "/images/uptime-logo.png",
+    url: "/status",
+  },
+  {
+    name: "VSCode Extentions",
+    type: "page",
+    image: "/images/vscode-ext.png",
+    url: "/vscode",
+  },
+  {
+    name: "Game Skill Stats",
+    type: "page",
+    image: "/images/default_game.jpg",
+    url: "/gameskills",
+  },
+  {
+    name: "Something Special",
+    type: "page",
+    image: "/images/special.png",
+    url: "/spl",
+  },
+];

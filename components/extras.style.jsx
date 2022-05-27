@@ -1,5 +1,4 @@
 import styled from "styled-components";
-// import SendIcon from "@mui/icons-material/Send";
 
 export const ExtraStyles = styled.div`
   display: flex;
@@ -7,20 +6,27 @@ export const ExtraStyles = styled.div`
   justify-content: center;
   align-items: center;
   padding-top: 15vh;
-  background-image: url("images/background2.jpg");
+  background-image: url("images/background6.webp");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
   overflow-y: scroll !important;
   height: 100vh;
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: var(--color4);
+    color: var(--color3);
+  }
   .default {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     /* height: 100vh; */
-    padding-bottom: 10em;
+    padding-bottom: 3em;
+    padding-top: 2em;
     .content {
       display: flex;
       flex-wrap: wrap;
@@ -54,15 +60,15 @@ export const ExtraStyles = styled.div`
         h1 {
           font-size: 1.5em;
           font-weight: bold;
-          color: #fff;
+          color: var(--color7);
           text-align: center;
           margin: 0;
           padding: 0;
           a {
-            color: #fff;
+            color: var(--color7);
             text-decoration: none;
             &:hover {
-              color: #b41ee6;
+              color: var(--color3);
             }
           }
         }

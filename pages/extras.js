@@ -36,7 +36,7 @@ export default function Home() {
       <Nav />
       <Extras />
 
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

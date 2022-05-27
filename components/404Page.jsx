@@ -1,5 +1,5 @@
 import { Page404Style } from "./404Page.style";
-import Link from 'next/link'
+import Link from "next/link";
 
 function Page404() {
   return (

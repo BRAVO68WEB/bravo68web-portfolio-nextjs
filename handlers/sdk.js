@@ -68,6 +68,10 @@ export const APISDK = {
           endpoint: "/me/github/userevent",
           name: "gh_events",
         },
+        {
+          endpoint: "/me/vscode",
+          name: "vscode",
+        },
       ],
       this.data
     );

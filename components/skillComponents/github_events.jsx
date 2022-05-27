@@ -1,12 +1,8 @@
 import React from "react";
 import SkillCard from "../skillCard";
-// import SkillCardStyle from "../skillCard.styled";
-// import { format, parse } from "date-format-parse";
 
 function GitHubUserEvtSkillCard({ title, image, evt1, evt2, evt3, url }) {
-  //   console.log(evt1);
-  var ghLogo =
-    "/images/github_events/GitIcon.png";
+  var ghLogo = "/images/github_events/GitIcon.png";
   // Evt1
   if (evt1.type === "PushEvent") {
     evt1.entTypeLogo = "/images/github_events/github_push_event_logo.png";
