@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Nav from "components/nav";
-import VSexts from "components/vsexts";
+import Extras from "components/extras";
 import Footer from "components/footer";
 
 export default function Home() {
