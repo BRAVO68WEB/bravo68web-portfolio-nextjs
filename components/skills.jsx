@@ -86,23 +86,23 @@ function Skills() {
                 url={"https://osu.ppy.sh/users/bravo68web"}
                 image={skills?.logo?.osu}
                 accuracy={
-                  skills?.osu_user?.data.statistics_rulesets.osu.hit_accuracy
+                  skills?.osu_user?.data.statistics.hit_accuracy
                 }
                 level={
-                  skills?.osu_user?.data.statistics_rulesets.osu.level.current
+                  skills?.osu_user?.data.statistics.level.current
                 }
-                pp_raw={skills?.osu_user?.data.statistics_rulesets.osu.pp}
+                pp_raw={skills?.osu_user?.data.statistics.pp}
                 country={skills?.osu_user?.data.country.code}
                 pp_rank={
-                  skills?.osu_user?.data.statistics_rulesets.osu.global_rank
+                  skills?.osu_user?.data.statistics.global_rank
                 }
-                // countryRank={skills?.osu_user?.data.statistics_rulesets.osu}
+                countryRank={skills?.osu_user?.data.statistics.country_rank}
                 maximum_combo={
-                  skills?.osu_user?.data.statistics_rulesets.osu.maximum_combo
+                  skills?.osu_user?.data.statistics.maximum_combo
                 }
                 join_date={"2019-09-21 19:33:44"}
                 total_score={
-                  skills?.osu_user?.data.statistics_rulesets.osu.total_score
+                  skills?.osu_user?.data.statistics.total_score
                 }
               />
               <TwitterUserSkillCard
