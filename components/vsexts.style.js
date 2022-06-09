@@ -6,7 +6,7 @@ export const ExtraStyles = styled.div`
   justify-content: center;
   align-items: center;
   padding-top: 15vh;
-  background-image: url("images/background6.webp");
+  background-image: url("images/background3.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -39,6 +39,9 @@ export const ExtraStyles = styled.div`
         -webkit-transform: translateX(-5px) translateY(-5px);
         transform: translateX(-5px) translateY(-5px);
         transition: 1s ease;
+        background-color: var(--color3);
+        color: var(--color7);
+        border-radius: 1em;
       }
       .content-description {
         width: 100%;
@@ -69,9 +72,25 @@ export const ExtraStyles = styled.div`
             color: var(--color7);
             text-decoration: none;
             &:hover {
-              color: var(--color3);
+              color: var(--color7);
             }
           }
+        }
+      }
+      .tags{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        color: var(--color5);
+        h2 {
+            font-size: 1em;
+            font-weight: bold;
+            text-align: center;
+            margin: 0;
+            padding: 0;
         }
       }
     }

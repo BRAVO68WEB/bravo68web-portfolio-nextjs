@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Nav from "components/nav";
-import Extras from "components/extras";
+import VSExts from "components/vsexts";
 import Footer from "components/footer";
 
 export default function Home() {
@@ -34,7 +34,7 @@ export default function Home() {
         />
       </Head>
       <Nav />
-      <Extras />
+      <VSExts />
 
       <Footer />
     </div>
