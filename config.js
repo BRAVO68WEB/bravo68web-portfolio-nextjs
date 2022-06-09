@@ -95,7 +95,7 @@ const myqbs = async () => {
   return map;
 }
 
-export let qb = myqbs().then((qbd) => {
+export let qb = myqbs().then(async (qbd) => {
   return qbd;
 }).catch((err) => console.error(err));
 
@@ -501,3 +501,33 @@ export const extraPages = [
     url: "/spl",
   },
 ];
+
+export const vsExts = [
+  {
+    name: "icyicons",
+    description: "Crystalify all your VSCode Icons.",
+    type: "icon-pack",
+    url: "https://marketplace.visualstudio.com/items?itemName=Bravo68web.icyicons",
+    image: "https://raw.githubusercontent.com/BRAVO68WEB/icyicons/master/icon.png",
+  },
+  {
+    name: "propstar",
+    description: "A multivariant VS-Code Theme build with ❤️. All theme designs and colour combinations are handpicked to suit every Programmers needs. Hope you love it.",
+    type: "theme",
+    url: "https://marketplace.visualstudio.com/items?itemName=Bravo68web.propstar",
+    image: "https://raw.githubusercontent.com/BRAVO68WEB/propstar-theme/main/assets/icon.png",
+  },
+  {
+    name: "vscode-uipack",
+    description: "VSCode UI Pack created by Bravo68web",
+    type: "extentionPack",
+    url: "https://marketplace.visualstudio.com/items?itemName=Bravo68web.vscode-uipack",
+    image: "https://raw.githubusercontent.com/BRAVO68WEB/vscode-uipack/master/icon.png",
+  },{
+    name: "vector-vscode-devpack",
+    description: "Feature Rich VSCode Extension Pack created by Bravo68web",
+    type: "extentionPack",
+    url: "https://marketplace.visualstudio.com/items?itemName=Bravo68web.vector-vscode-devpack",
+    image: "https://raw.githubusercontent.com/BRAVO68WEB/vector-vscode-devpack/master/icon.png",
+  }
+]
