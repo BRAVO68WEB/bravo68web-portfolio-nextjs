@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Skill from "./skillCard";
 import SkillsStyle from "./skills.style";
 // import axios from "handlers/axios";
 import { APISDK } from "handlers/sdk";

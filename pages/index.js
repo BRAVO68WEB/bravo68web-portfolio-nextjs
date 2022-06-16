@@ -1,8 +1,6 @@
 import Head from "next/head";
 import Nav from "components/nav";
 import Main from "components/main";
-import Script from 'next/script'
-import Footer from "components/footer";
 import BMC from "components/buymeacoffee";
 import CustomCursor from "components/providers/cursor";
 

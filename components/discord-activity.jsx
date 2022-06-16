@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { DicordActivityStyle } from "./discord-activity.style";
 import { useLanyard } from "react-use-lanyard";
-import { discord_id,avatar_id } from "config";
+import { discord_id } from "config";
 
 /* <pre>{!loading && JSON.stringify(status, null, 4)}</pre>; */
 

@@ -1,13 +1,14 @@
 import nc from "next-connect";
 const handler = nc();
+const { createWriteStream } = require("fs");
+const { SitemapStream } = require("sitemap");
+
 export default handler.get(async (req, res) => {
   // Get the all Blog posts
-
-  const { createWriteStream } = require("fs");
-  const { SitemapStream } = require("sitemap");
   const sitemap = new SitemapStream({
     hostname: "https://itsmebravo.dev",
   });
+
   const writeStream = createWriteStream("./public/sitemap.xml");
 
   sitemap.pipe(writeStream);
@@ -18,6 +19,9 @@ export default handler.get(async (req, res) => {
   sitemap.write({ url: "/stats/", changefreq: "daily", priority: 0.8 });
   sitemap.write({ url: "/contact/", changefreq: "daily", priority: 0.8 });
   sitemap.write({ url: "/resume/", changefreq: "daily", priority: 0.8 });
+  sitemap.write({ url: "/about/", changefreq: "daily", priority: 0.8 });
+  sitemap.write({ url: "/vscode/", changefreq: "daily", priority: 0.8 });
+  sitemap.write({ url: "/extras/", changefreq: "daily", priority: 0.8 });
 
   sitemap.end();
 
