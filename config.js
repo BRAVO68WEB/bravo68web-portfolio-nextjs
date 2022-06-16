@@ -11,6 +11,7 @@ export const website = "https://bravo68web.com";
 export const resume_url = "";
 export const facebook_url = "https://www.facebook.com/Bravo68Web/";
 export const discord_id = "457039372009865226";
+export const avatar_id = "08a8937664b3b165805965244d6f095f";
 export const discord_profile = "";
 export const description1 =
   "I am Jyotirmoy Bandyopadhayaya, AKA Bravo68web, 19, a student developer from India with passion in API and microservices development. I have expertice in DevOps and Full Stack development. I am a self taught developer and I am always looking for new challenges to learn and grow.";

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { DicordActivityStyle } from "./discord-activity.style";
 import { useLanyard } from "react-use-lanyard";
-import { discord_id } from "config";
+import { discord_id,avatar_id } from "config";
 
 /* <pre>{!loading && JSON.stringify(status, null, 4)}</pre>; */
 
@@ -304,7 +304,7 @@ export default function DiscordActivity() {
       public_flags: 64,
       id: "457039372009865226",
       discriminator: "6429",
-      avatar: "c1ef97afea299d1d70e903870da040f6",
+      avatar: "08a8937664b3b165805965244d6f095f",
     };
 
     return (
@@ -313,11 +313,7 @@ export default function DiscordActivity() {
           <div className="discord-large-icon">
             <img
               src={
-                "https://cdn.discordapp.com/avatars/" +
-                restData.id +
-                "/" +
-                restData.avatar +
-                ".png"
+                "/images/default_game.jpg"
               }
             />
           </div>
