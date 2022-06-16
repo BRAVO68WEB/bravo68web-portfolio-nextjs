@@ -34,6 +34,7 @@ body {
   width: 100vw;
   /* color:var(--color3)   */
   color: var(--color7);
+  cursor: none;
 }
 a {
   color: inherit;
@@ -44,14 +45,40 @@ a {
   box-sizing: border-box;
 }
 
-#cursor-dot {
-  width: var(--cursor-size);
-  height: var(--cursor-size);
-  background-color: rgba(var(--color-cursor), 1);
-}
+.cursor {
+  width: 20px;
+  height: 20px;
+  border: 1px solid white;
+  border-radius: 50%;
+  position: absolute;
+  pointer-events: none;
+  z-index: 100;
+  }
+  
+.cursor::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border: 2px solid blue;
+  border-radius: 50%;
+  opacity: .5;
+  top: -8px;
+  left: -8px;
+  }
+@keyframes cursorAnim {
+  0% {
+  transform: scale(1);
+  }
+  50% {
+  transform: scale(5);
+  }
+  100% {
+  transform: scale(1);
+  opacity: 0;
+  }
+  }
 
-#cursor-dot-outline {
-  width: var(--cursor-outline-size);
-  height: var(--cursor-outline-size);
-  background-color: rgba(var(--color-cursor), var(--cursor-outline-shade));
-}
+.expand {
+  animation: cursorAnim .5s forwards;
+ }
