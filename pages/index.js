@@ -32,6 +32,7 @@ export default function Home() {
           href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
           rel="stylesheet"
         />
+        <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="bravo68web" data-description="Support me on Buy me a coffee!" data-message="Thank you checking out my portfolio !! " data-color="#BD5FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
       </Head>
       <Nav />
       <Main />

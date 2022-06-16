@@ -69,8 +69,10 @@ export default styled.main`
   .name {
     font-size: 1.5rem;
     font-weight: 600;
+    margin-bottom: 1rem;
   }
   .social-buttons {
+    margin-top: 1rem;
     background: rgb(64, 63, 79);
     background: linear-gradient(
       90deg,
