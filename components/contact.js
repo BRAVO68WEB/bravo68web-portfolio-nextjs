@@ -1,5 +1,6 @@
 import React from "react";
 import { ContactStyle } from "./contact.style";
+import axios from "handlers/axios";
 
 function Contact() {
   const [input, setInput] = React.useState({
@@ -8,6 +9,7 @@ function Contact() {
     message: "",
     topic: "",
   });
+  const [isSubmitted, setIsSubmitted] = React.useState("Sent");
   function changeInput(evt) {
     const { name, value } = evt.target;
     setInput({
@@ -17,7 +19,8 @@ function Contact() {
   }
   function submitForm(evt) {
     evt.preventDefault();
-    console.log(input);
+    axios.post("/contactme/postQuery", input);
+    setIsSubmitted("Done");
   }
   return (
     <ContactStyle>
@@ -116,7 +119,7 @@ function Contact() {
               />
             </div>
             <button type="submit" className="btn btn-primary">
-              Submit
+              {isSubmitted}
             </button>
           </form>
         </div>

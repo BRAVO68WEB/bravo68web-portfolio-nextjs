@@ -2,7 +2,6 @@ import Head from "next/head";
 import Nav from "components/nav";
 import Main from "components/main";
 import BMC from "components/buymeacoffee";
-import CustomCursor from "components/providers/cursor";
 
 export default function Home() {
   return (
@@ -34,7 +33,6 @@ export default function Home() {
           rel="stylesheet"
         />
       </Head>
-      <CustomCursor />
       <Nav />
       <Main />
       <BMC />
