@@ -47,7 +47,6 @@ export const LanguagesKnownCategory = [
   { Go: "#BFD641" },
   { Bash: "#010100" },
   { Java: "#FFCD00" },
-  { NextJS: "#010100" },
   { Docker: "#00b7ff" },
   { AWS: "#00A591" },
   { TypeScript: "#FFCD00" },
@@ -55,6 +54,7 @@ export const LanguagesKnownCategory = [
   { "Cloud Computing": "#E00198" },
   { Git: "#DD4132" },
   { Linux: "#010100" },
+  { NextJS: "#010100" },
 ];
 
 export const arts = [
@@ -82,23 +82,23 @@ export const arts = [
   {
     name: "Kirby",
     type: "art",
-    description: "A Student, Full Stack and DevOps Platform Developer",
+    description: "Drawing of Kirby",
     image: "/images/art/Final_best.png",
     url: "/images/art/Final_best.png",
   },
 ];
 
-const myqbs = async () => {
-  let qb1 =  await qbadges("293e000c-f58c-4119-b60b-e0e7a769e61f");
-  let qb2 =  await qbadges("dd51f4e2-6171-461b-888c-ce954832c72e");
-  qb1 = qb1.concat(qb2);
-  let map = new Map(Object.entries(qb1));
-  return map;
-}
+// const myqbs = async () => {
+//   let qb1 =  await qbadges("293e000c-f58c-4119-b60b-e0e7a769e61f");
+//   let qb2 =  await qbadges("dd51f4e2-6171-461b-888c-ce954832c72e");
+//   qb1 = qb1.concat(qb2);
+//   let map = new Map(Object.entries(qb1));
+//   return map;
+// }
 
-export let qb = myqbs().then(async (qbd) => {
-  return qbd;
-}).catch((err) => console.error(err));
+// export let qb = myqbs().then(async (qbd) => {
+//   return qbd;
+// }).catch((err) => console.error(err));
 
 export const extra = [
   {
@@ -135,10 +135,82 @@ export const extra = [
 
 export const projects = [
   {
+    name: "Enterprise Workspace Images [arm64]",
+    type: "project",
+    description:
+      "Docker images [arm64] for use with Coder",
+    image: "/images/GitHub-Logo.png",
+    url: "https://github.com/BRAVO68WEB/enterprise-images",
+  },
+  { 
+    name: "Fixer Cache Builder",
+    type: "project",
+    description:
+      "A Caching service to store Fixer Exchange Rates.",
+    image: "/images/GitHub-Logo.png",
+    url: "https://github.com/BRAVO68WEB/fixer-cache-builder",
+  },
+  {
+    name: "B68-CLI",
+    type: "project",
+    description:
+      "A Command Line Application to interact with B68WEB API",
+    image: "/images/GitHub-Logo.png",
+    url: "https://github.com/BRAVO68WEB/b68-cli",
+  },
+  {
+    name: "LPU MiniProject",
+    type: "project",  
+    description:
+      "Project Made for Summer Training MiniProject made by Jyotirmoy",
+    image: "/images/GitHub-Logo.png",
+    url: "https://github.com/BRAVO68WEB/lpu-summer-training-miniproject",
+  },
+  {
+    name: "Another Quote Webapp",
+    type: "project",
+    description:
+      "A web app that allows users to view and share quotes.",
+    image: "/images/GitHub-Logo.png",
+    url: "https://github.com/BRAVO68WEB/another-quote-webapp",
+  },
+  {
+    name: "Hello Tauri App",
+    type: "project",  
+    description:
+      "An basic hello tauri app",
+    image: "/images/GitHub-Logo.png",
+    url: "https://github.com/BRAVO68WEB/hello-tauri-app",
+  },  
+  {
+    name: "Osu! Score Embed",
+    type: "project",
+    description:
+      "Embed osu! stats in Github Readme Profile",
+    image: "/images/GitHub-Logo.png",
+    url: "https://github.com/BRAVO68WEB/osu-score-embed",
+  },
+  {
+    name: "WorkerBin (cf-challenge)",
+    type: "project",
+    description:
+      "A Pastebin alternative, but it is using CF Worker API to store the data.",
+    image: "/images/GitHub-Logo.png",
+    url: "https://github.com/BRAVO68WEB/cf-challenge",
+  },
+  {
+    name: "Rust Shuttle",
+    type: "project",
+    description:
+      "A Url Shortener microservice build with Rust",
+    image: "/images/GitHub-Logo.png",
+    url: "https://github.com/BRAVO68WEB/rust-shuttle-url-sh",
+  },
+  {
     name: "URL Minify",
     type: "project",
     description:
-      "Open Source | URL Minify is a simple URL shortener service that allows you to shorten any URL and redirect to the original URL.",
+      "Simple URL shortener service that allows you to shorten any URL and redirect to the original URL.",
     image:
       "https://user-images.githubusercontent.com/41448663/153746139-237f8e4d-be25-4f04-91ec-2bb3ff6f0e34.png",
     url: "https://github.com/BRAVO68WEB/url-minify",
@@ -173,7 +245,7 @@ export const projects = [
     type: "project",
     description:
       "Server Init Script is a script to initialize the server and its services esp. Oracle Server",
-    image: "https://logos-world.net/wp-content/uploads/2020/11/GitHub-Logo.png",
+    image: "/images/GitHub-Logo.png",
     url: "https://github.com/BRAVO68WEB/oracle-server-init",
   },
   {
@@ -197,14 +269,14 @@ export const projects = [
     type: "project",
     description:
       "Made a NodeJS Authentication and JWT Session with Redis support",
-    image: "https://logos-world.net/wp-content/uploads/2020/11/GitHub-Logo.png",
+    image: "/images/GitHub-Logo.png",
     url: "https://github.com/BRAVO68WEB/nodejs-auth-jwt-session",
   },
   {
     name: "simplify-cd",
     type: "project",
     description: "Made a CI/CD application to deploy any nodejs application",
-    image: "https://logos-world.net/wp-content/uploads/2020/11/GitHub-Logo.png",
+    image: "/images/GitHub-Logo.png",
     url: "https://github.com/BRAVO68WEB/simplify-cd",
   },
   {
@@ -220,7 +292,7 @@ export const projects = [
     type: "project",
     description:
       "Made a npm package to fetch all the badges of a user from Qwiklabs",
-    image: "https://logos-world.net/wp-content/uploads/2020/11/GitHub-Logo.png",
+    image: "/images/GitHub-Logo.png",
     url: "https://github.com/BRAVO68WEB/qbadges",
   },
   {
@@ -260,7 +332,7 @@ export const projects = [
     name: "yt-music-player",
     type: "project",
     description: "Made a YT Music Player",
-    image: "https://logos-world.net/wp-content/uploads/2020/11/GitHub-Logo.png",
+    image: "/images/GitHub-Logo.png",
     url: "https://github.com/BRAVO68WEB/yt-music-player",
   },
   {
@@ -275,14 +347,14 @@ export const projects = [
     name: "lpu-ca1-python-proj",
     type: "project",
     description: "My University Python Project on Voice AI Assistant",
-    image: "https://logos-world.net/wp-content/uploads/2020/11/GitHub-Logo.png",
+    image: "/images/GitHub-Logo.png",
     url: "https://github.com/BRAVO68WEB/lpu-ca1-python-proj",
   },
   {
     name: "img-proxy",
     type: "project",
     description: "An Image Proxy Server",
-    image: "https://logos-world.net/wp-content/uploads/2020/11/GitHub-Logo.png",
+    image: "/images/GitHub-Logo.png",
     url: "https://github.com/BRAVO68WEB/img-proxy",
   },
   {
@@ -296,14 +368,14 @@ export const projects = [
     name: "nodejs-image-upload-api",
     type: "project",
     description: "A NodeJS Image Upload API",
-    image: "https://logos-world.net/wp-content/uploads/2020/11/GitHub-Logo.png",
+    image: "/images/GitHub-Logo.png",
     url: "https://github.com/chirag3003/nodejs-image-upload-api",
   },
   {
     name: "OwO",
     type: "project",
     description: 'A Multi-Lingual approach to print "OwO"',
-    image: "https://logos-world.net/wp-content/uploads/2020/11/GitHub-Logo.png",
+    image: "/images/GitHub-Logo.png",
     url: "https://github.com/BRAVO68WEB/OwO",
   },
   {
@@ -333,14 +405,14 @@ export const projects = [
     name: "Bin Buster",
     type: "project",
     description: "A simple, fast and useful bruter for multiple paste sources.",
-    image: "https://logos-world.net/wp-content/uploads/2020/11/GitHub-Logo.png",
+    image: "/images/GitHub-Logo.png",
     url: "https://github.com/BRAVO68WEB/bin-buster",
   },
   {
     name: "LPU 2nd Sem Project",
     type: "project",
     description: "My University 2nd Sem Project on Web Development",
-    image: "https://logos-world.net/wp-content/uploads/2020/11/GitHub-Logo.png",
+    image: "/images/GitHub-Logo.png",
     url: "https://github.com/BRAVO68WEB/lpu-2nd-sem-project",
   },
   {
@@ -348,7 +420,7 @@ export const projects = [
     type: "project",
     description:
       "A Random string encryptor w.r.t. Timestamps to add Security to your Web Application",
-    image: "https://logos-world.net/wp-content/uploads/2020/11/GitHub-Logo.png",
+    image: "/images/GitHub-Logo.png",
     url: "https://github.com/BRAVO68WEB/Randomizer",
   },
   {
@@ -372,7 +444,7 @@ export const projects = [
     name: "MERN LPU HRD Project",
     type: "project",
     description: "An MERN Stack Project created for LPU HRD",
-    image: "https://logos-world.net/wp-content/uploads/2020/11/GitHub-Logo.png",
+    image: "/images/GitHub-Logo.png",
     url: "https://github.com/BRAVO68WEB/mern-lpu-hrd-project",
   },
   {
@@ -387,21 +459,21 @@ export const projects = [
     name: "Flutter Portfolio",
     type: "project",
     description: "My Portfolio made with Flutter Web framework",
-    image: "https://logos-world.net/wp-content/uploads/2020/11/GitHub-Logo.png",
+    image: "/images/GitHub-Logo.png",
     url: "https://github.com/BRAVO68WEB/Portfolio-About",
   },
   {
     name: "Hexo Webnary Theme",
     type: "project",
     description: "A Fully Customised Hexo Flat Modular Theme",
-    image: "https://logos-world.net/wp-content/uploads/2020/11/GitHub-Logo.png",
+    image: "/images/GitHub-Logo.png",
     url: "https://github.com/BRAVO68WEB/hexo-webnary-theme",
   },
   {
     name: "HOTEL_AND_TRANS_RES",
     type: "project",
     description: "Hotel and transportation reservation management",
-    image: "https://logos-world.net/wp-content/uploads/2020/11/GitHub-Logo.png",
+    image: "/images/GitHub-Logo.png",
     url: "https://github.com/BRAVO68WEB/HOTEL_AND_TRANS_RES",
   },
   {

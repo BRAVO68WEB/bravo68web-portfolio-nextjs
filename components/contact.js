@@ -1,15 +1,15 @@
-import React from "react";
+import  { useState } from "react";
 import { ContactStyle } from "./contact.style";
 import axios from "handlers/axios";
 
 function Contact() {
-  const [input, setInput] = React.useState({
+  const [input, setInput] = useState({
     senderName: "",
     email: "",
     message: "",
     topic: "",
   });
-  const [isSubmitted, setIsSubmitted] = React.useState("Sent");
+  const [isSubmitted, setIsSubmitted] = useState(false);
   function changeInput(evt) {
     const { name, value } = evt.target;
     setInput({
@@ -20,17 +20,16 @@ function Contact() {
   function submitForm(evt) {
     evt.preventDefault();
     axios.post("/contactme/postQuery", input);
-    setIsSubmitted("Done");
+    setIsSubmitted(true);
   }
-  return (
+  return (  
     <ContactStyle>
       <div className="form-group-main row">
         <div className="column">
           <div className="prewritten-info">
             <div className="prewritten-info-content">
-              <h2>Contact Me</h2>
-              <br />
-              <p>
+              <h1><u>Contact Me</u></h1>
+              <p> 
                 If you have any questions, feel free to contact me. I am always
                 open to discussing new projects and opportunities.
               </p>
@@ -39,7 +38,6 @@ function Contact() {
                 <h3>
                   <strong>Email:</strong>
                 </h3>
-                <br />
                 <a href="mailto:me@bravo68web.me">me@bravo68web.me</a>
               </p>
               <br />
@@ -47,7 +45,6 @@ function Contact() {
                 <h3>
                   <strong>Phone:</strong>
                 </h3>
-                <br />
                 <a href="tel:+916291559872">+91 6291559872</a>
               </p>
               <br />
@@ -55,9 +52,17 @@ function Contact() {
                 <h3>
                   <strong>Discord:</strong>
                 </h3>
-                <br />
                 <a href="https://discord.com/users/457039372009865226">
                   Bravo68-DF_Techs#6429
+                </a>  
+              </p>
+              <br />
+              <p>
+                <h3>
+                  <strong>Extra:</strong>
+                </h3>
+                <a href="https://calendly.com/bravo68web">
+                  Calendly
                 </a>
               </p>
             </div>
@@ -118,8 +123,8 @@ function Contact() {
                 placeholder="Your message"
               />
             </div>
-            <button type="submit" className="btn btn-primary">
-              {isSubmitted}
+            <button type="submit" className="btn btn-primary" disabled={isSubmitted}>
+              Submit
             </button>
           </form>
         </div>

@@ -1,9 +1,9 @@
-import React from "react";
+import {useState} from "react";
 import ArtCardStyle from "./artCard.style";
 import ArtModel from "./artModal";
 
 function SkillCard({ name, description, image, type, url, onClick }) {
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
   const handleClose = () => {
     setOpen(false);
   };

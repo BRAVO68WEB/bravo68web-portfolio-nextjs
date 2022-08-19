@@ -16,7 +16,7 @@ function WakatimeUserSkillCard({
     <SkillCard title={title} image={image} url={url}>
       <div className="description">Total Code time :- {total_time}</div>
       <div className="description">
-        Average Weekly Code time :- {average_weekly_time}
+        Average Daily Code time :- {average_weekly_time}
       </div>
       <div className="description">
         Total Weekly Code time :- {total_weekly_time}

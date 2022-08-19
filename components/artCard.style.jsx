@@ -9,8 +9,12 @@ export default styled.div`
   border-radius: 5px;
   box-shadow: 10px 9px 0px -3px #fffefe;
   margin: 5px;
+  * {
+  margin-top: inherit;
+  }
   .type {
-    color: var(--color1);
+    color: #92dcf3;
+    /* padding: 4px;   */
   }
   .card-logo {
     display: flex;

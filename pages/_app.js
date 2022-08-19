@@ -1,10 +1,10 @@
 import "../styles/globals.css";
-import CustomCursor from "components/providers/cursor";
+// import CustomCursor from "components/providers/cursor";
 
 function MyPortfolio({ Component, pageProps }) {
   return (
   <>
-    <CustomCursor />
+    {/* <CustomCursor /> */}
     <Component {...pageProps} />
   </>
   )

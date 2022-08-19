@@ -34,7 +34,7 @@ body {
   width: 100vw;
   /* color:var(--color3)   */
   color: var(--color7);
-  cursor: none;
+  /* cursor: none; */
 }
 a {
   color: inherit;
@@ -45,7 +45,7 @@ a {
   box-sizing: border-box;
 }
 
-.cursor {
+/* .cursor {
   width: 20px;
   height: 20px;
   border: 1px solid white;
@@ -81,4 +81,4 @@ a {
 
 .expand {
   animation: cursorAnim .5s forwards;
- }
+ } */

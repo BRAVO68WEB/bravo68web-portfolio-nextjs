@@ -23,7 +23,6 @@ import GitHubUserEvtSkillCard from "./skillComponents/github_events";
 function Skills() {
   const [skills, setSkills] = useState({});
   const [loading, setLoading] = useState(true);
-  console.log(skills);
 
   async function requestAPIS() {
     await APISDK.req();
