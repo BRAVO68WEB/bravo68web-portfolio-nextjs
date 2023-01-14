@@ -1,4 +1,4 @@
-import {requester } from "./requester";
+import { requester } from "./requester";
 
 export const APISDK = {
   data: {},
@@ -6,23 +6,23 @@ export const APISDK = {
     await requester(
       [
         {
-          endpoint: "/me/github/userdata",
+          endpoint: "/me/github/user",
           name: "gh_user",
         },
         {
-          endpoint: "/me/discord/activity",
+          endpoint: "/me/discord/profile",
           name: "discord_activity",
         },
         {
-          endpoint: "/me/osu/v2/user",
+          endpoint: "/me/gaming/osu/user",
           name: "osu_user",
         },
         {
-          endpoint: "/me/osu/v2/bestScores",
+          endpoint: "/me/gaming/osu/best",
           name: "osu_bestScores",
         },
         {
-          endpoint: "/me/spotify/myTopSongs",
+          endpoint: "/me/spotify/top",
           name: "spotify_top_songs",
         },
         {
@@ -38,15 +38,15 @@ export const APISDK = {
           name: "wakatime_lang",
         },
         {
-          endpoint: "/me/hashnode/me/all",
+          endpoint: "/me/hashnode/",
           name: "hn_user",
         },
         {
-          endpoint: "/me/twitter/me",
+          endpoint: "/me/twitter/profile",
           name: "twitter_user",
         },
         {
-          endpoint: "/me/twitter/recentTweets",
+          endpoint: "/me/twitter/tweets",
           name: "twitter_tweets",
         },
         {
@@ -54,11 +54,11 @@ export const APISDK = {
           name: "lastfm_current",
         },
         {
-          endpoint: "/me/github/userevent",
+          endpoint: "/me/github/events",
           name: "gh_events",
         },
         {
-          endpoint: "/me/vscode",
+          endpoint: "/me/vscode/",
           name: "vscode",
         },
       ],
@@ -67,3 +67,5 @@ export const APISDK = {
     // return tempEndpoint("https://api.github.com/users/bravo68web", this.data);
   },
 };
+
+console.log(APISDK.data);

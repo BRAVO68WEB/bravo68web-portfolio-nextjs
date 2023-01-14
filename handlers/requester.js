@@ -3,7 +3,7 @@ import axios from "./axios";
 export const tempEndpoint = async (endpoint, data) => {
   let response = [false, { error: "Error" }];
 
-  var reqPromise = axios
+  let reqPromise = axios
     .get(endpoint)
     .then((res) => {
       data.github = res.data;
@@ -19,14 +19,13 @@ export const tempEndpoint = async (endpoint, data) => {
 
 export const requester = async (configs, data) => {
   let requests = [];
-  for (let i = 0; i < configs.length; i++) {
-    const { endpoint, name } = configs[i];
-    // console.log(endpoint, name);
+  for (const element of configs) {
+    const { endpoint, name } = element;
     data[name] = {};
     let request = axios
       .get(endpoint)
       .then((res) => {
-        data[name].data = res.data;
+        data[name] = res.data;
       })
       .catch((err) => {
         console.error(err);
