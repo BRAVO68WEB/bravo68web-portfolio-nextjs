@@ -1,6 +1,6 @@
 import axios from "axios";
 
 export default axios.create({
-  baseURL: "https://api.b68dev.xyz",
-  // baseURL: "http://localhost:8080",
+  baseURL: "https://api.b68.dev",
+  // baseURL: "http://localhost:9000",
 });

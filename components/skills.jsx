@@ -56,10 +56,12 @@ function Skills() {
       </SkillsStyle>
     );
   } else {
-    var lastFMempty = true;
-    if (skills?.lastfm_current.data.recenttracks.track.length > 0) {
-      lastFMempty = false;
-    }
+    let lastFMempty = true;
+    // if (skills?.lastfm_current.data.recenttracks.track.length > 0) {
+    //   lastFMempty = false;
+    // }
+
+    console.log(skills);
 
     return (
       <div>
@@ -76,8 +78,6 @@ function Skills() {
                 following={skills?.gh_user?.data?.following}
                 public_gists={skills?.gh_user?.data?.public_gists}
                 created_at={skills?.gh_user?.data?.created_at}
-                // mouseOverEvent={mouseOverEvent}
-                // mouseOutEvent={mouseOutEvent}
               />
               <OsuUserSkillCard
                 title={"Osu! Player Stats"}
@@ -103,7 +103,7 @@ function Skills() {
                   skills?.osu_user?.data.statistics.total_score
                 }
               />
-              <TwitterUserSkillCard
+              {/* <TwitterUserSkillCard
                 title={"Twitter Stats"}
                 url={"https://twitter.com/Bravo68web"}
                 image={skills?.logo?.twitter}
@@ -112,12 +112,6 @@ function Skills() {
                 statuses_count={skills?.twitter_user?.data?.statuses_count}
                 favourites_count={skills?.twitter_user?.data?.favourites_count}
                 created_at={skills?.twitter_user?.data?.created_at}
-              />
-
-              {/* <GitHubThySkillCard
-                title={"GitHub Thropies"}
-                image={skills?.logo?.github}
-                bannerImage="https://github-profile-trophy.vercel.app/?username=bravo68web&theme=discord&column=3&row=2"
               /> */}
               <SpotifyTopSkillCard
                 title={"Spotify Top Songs"}
@@ -131,7 +125,7 @@ function Skills() {
                 topSongs4={skills?.spotify_top_songs?.data?.items[3]}
                 topSongs5={skills?.spotify_top_songs?.data?.items[4]}
               />
-              <WakatimeUserSkillCard
+              {/* <WakatimeUserSkillCard
                 title={"Wakatime Stats"}
                 url={"https://wakatime.com/@bravo68web"}
                 image={skills?.logo?.wakatime}
@@ -139,7 +133,7 @@ function Skills() {
                 average_weekly_time={skills?.wakatime_stats?.data?.avg}
                 total_weekly_time={skills?.wakatime_stats?.data?.main}
                 joinedOn={"2020-09-14"}
-              />
+              /> */}
               <HashNodeSkillCard
                 title={"HashNode Stats"}
                 url={"https://blog.bravo68web.me/"}
@@ -147,10 +141,9 @@ function Skills() {
                 joinOn={"2021-06-18"}
                 numPosts={skills?.hn_user?.data?.numPosts}
                 numFollowers={skills?.hn_user?.data?.numFollowers}
-                // publicationDomain={skills?.hn_user?.data?.publicationDomain}
                 numReactions={skills?.hn_user?.data?.numReactions}
               />
-              <OsuBestScoresSkillCard
+             {/*<OsuBestScoresSkillCard
                 title={"Osu! Best Scores"}
                 image={skills?.logo?.osu}
                 url={"https://osu.ppy.sh/users/bravo68web"}
@@ -209,7 +202,7 @@ function Skills() {
                 evt3={skills?.gh_events?.data[2]}
                 evt4={skills?.gh_events?.data[3]}
                 evt5={skills?.gh_events?.data[4]}
-              />
+              /> */}
             </div>
           </SkillsStyle>
         )}
