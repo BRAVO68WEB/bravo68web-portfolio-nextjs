@@ -57,11 +57,9 @@ function Skills() {
     );
   } else {
     let lastFMempty = true;
-    // if (skills?.lastfm_current.data.recenttracks.track.length > 0) {
-    //   lastFMempty = false;
-    // }
-
-    console.log(skills);
+    if (skills?.lastfm_current?.recenttracks?.track?.length > 0) {
+      lastFMempty = false;
+    }
 
     return (
       <div>
@@ -84,36 +82,35 @@ function Skills() {
                 url={"https://osu.ppy.sh/users/bravo68web"}
                 image={skills?.logo?.osu}
                 accuracy={
-                  skills?.osu_user?.data.statistics.hit_accuracy
+                  skills?.osu_user?.data?.statistics?.hit_accuracy
                 }
                 level={
-                  skills?.osu_user?.data.statistics.level.current
+                  skills?.osu_user?.data?.statistics?.level?.current
                 }
-                pp_raw={skills?.osu_user?.data.statistics.pp}
-                country={skills?.osu_user?.data.country.code}
+                pp_raw={skills?.osu_user?.data?.statistics?.pp}
+                country={skills?.osu_user?.data?.country?.code}
                 pp_rank={
-                  skills?.osu_user?.data.statistics.global_rank
+                  skills?.osu_user?.data?.statistics?.global_rank
                 }
-                countryRank={skills?.osu_user?.data.statistics.country_rank}
+                countryRank={skills?.osu_user?.data?.statistics?.country_rank}
                 maximum_combo={
-                  skills?.osu_user?.data.statistics.maximum_combo
+                  skills?.osu_user?.data?.statistics?.maximum_combo
                 }
                 join_date={"2019-09-21 19:33:44"}
                 total_score={
-                  skills?.osu_user?.data.statistics.total_score
+                  skills?.osu_user?.data?.statistics?.total_score
                 }
               />
-              {/* <TwitterUserSkillCard
+              <TwitterUserSkillCard
                 title={"Twitter Stats"}
                 url={"https://twitter.com/Bravo68web"}
                 image={skills?.logo?.twitter}
-                followers_count={skills?.twitter_user?.data?.followers_count}
-                friends_count={skills?.twitter_user?.data?.friends_count}
-                statuses_count={skills?.twitter_user?.data?.statuses_count}
-                favourites_count={skills?.twitter_user?.data?.favourites_count}
-                created_at={skills?.twitter_user?.data?.created_at}
-              /> */}
-              <SpotifyTopSkillCard
+                followers_count={skills?.twitter_user?.public_metrics?.followers_count}
+                friends_count={skills?.twitter_user?.public_metrics?.following_count}
+                statuses_count={skills?.twitter_user?.public_metrics?.tweet_count}
+                created_at={skills?.twitter_user?.created_at}
+              />
+              < SpotifyTopSkillCard
                 title={"Spotify Top Songs"}
                 url={
                   "https://open.spotify.com/user/31huoajpuynl4w4dzbhp4frktqw4?si=48195baf55a54d7d"
@@ -125,15 +122,15 @@ function Skills() {
                 topSongs4={skills?.spotify_top_songs?.data?.items[3]}
                 topSongs5={skills?.spotify_top_songs?.data?.items[4]}
               />
-              {/* <WakatimeUserSkillCard
+              <WakatimeUserSkillCard
                 title={"Wakatime Stats"}
                 url={"https://wakatime.com/@bravo68web"}
                 image={skills?.logo?.wakatime}
-                total_time={skills?.wakatime_user?.data?.data}
-                average_weekly_time={skills?.wakatime_stats?.data?.avg}
-                total_weekly_time={skills?.wakatime_stats?.data?.main}
+                total_time={skills?.wakatime_alltime?.data?.text}
+                average_weekly_time={skills?.wakatime_stats?.data?.human_readable_daily_average_including_other_language}
+                total_weekly_time={skills?.wakatime_stats?.data?.human_readable_total_including_other_language}
                 joinedOn={"2020-09-14"}
-              /> */}
+              />
               <HashNodeSkillCard
                 title={"HashNode Stats"}
                 url={"https://blog.bravo68web.me/"}
@@ -143,33 +140,31 @@ function Skills() {
                 numFollowers={skills?.hn_user?.data?.numFollowers}
                 numReactions={skills?.hn_user?.data?.numReactions}
               />
-             {/*<OsuBestScoresSkillCard
+             <OsuBestScoresSkillCard
                 title={"Osu! Best Scores"}
                 image={skills?.logo?.osu}
                 url={"https://osu.ppy.sh/users/bravo68web"}
-                bestScore1={skills?.osu_bestScores?.data[0]}
-                bestScore2={skills?.osu_bestScores?.data[1]}
-                bestScore3={skills?.osu_bestScores?.data[2]}
-                bestScore4={skills?.osu_bestScores?.data[3]}
-                bestScore5={skills?.osu_bestScores?.data[4]}
+                bestScore1={skills?.osu_bestScores?.data?.[0]}
+                bestScore2={skills?.osu_bestScores?.data?.[1]}
+                bestScore3={skills?.osu_bestScores?.data?.[2]}
               />
               <TwitterTweetsSkillCard
                 title={"Twitter Tweets"}
                 url={"https://twitter.com/Bravo68web"}
                 image={skills?.logo?.twitter}
-                tweets1={skills?.twitter_tweets?.data.data[0]}
-                tweets2={skills?.twitter_tweets?.data.data[1]}
-                tweets3={skills?.twitter_tweets?.data.data[2]}
+                tweets1={skills?.twitter_tweets?.[0]}
+                tweets2={skills?.twitter_tweets?.[1]}
+                tweets3={skills?.twitter_tweets?.[2]}
               />
               <WakatimeTopLangSkillCard
                 title={"Wakatime Top Languages"}
                 url={"https://wakatime.com/@bravo68web"}
                 image={skills?.logo?.wakatime}
-                topLang1={skills?.wakatime_lang?.data[0]}
-                topLang2={skills?.wakatime_lang?.data[1]}
-                topLang3={skills?.wakatime_lang?.data[2]}
-                topLang4={skills?.wakatime_lang?.data[3]}
-                topLang5={skills?.wakatime_lang?.data[4]}
+                topLang1={skills?.wakatime_lang?.data?.[0]}
+                topLang2={skills?.wakatime_lang?.data?.[1]}
+                topLang3={skills?.wakatime_lang?.data?.[2]}
+                topLang4={skills?.wakatime_lang?.data?.[3]}
+                topLang5={skills?.wakatime_lang?.data?.[4]}
               />
               <LastFMCurrentSkillCard
                 title={"LastFM Current Tracks"}
@@ -177,23 +172,23 @@ function Skills() {
                 image={skills?.logo?.lastfm}
                 empty={lastFMempty}
                 artist={
-                  skills?.lastfm_current?.data?.recenttracks.track[0]?.artist[
+                  skills?.lastfm_current?.recenttracks?.track?.[0]?.artist[
                     "#text"
                   ]
                 }
-                name={skills?.lastfm_current?.data?.recenttracks.track[0].name}
+                name={skills?.lastfm_current?.recenttracks?.track?.[0]?.name}
                 album={
-                  skills?.lastfm_current?.data?.recenttracks.track[0]?.album[
+                  skills?.lastfm_current?.recenttracks?.track?.[0]?.album[
                     "#text"
                   ]
                 }
                 albumImg={
-                  skills?.lastfm_current?.data?.recenttracks.track[0].image[1][
+                  skills?.lastfm_current?.recenttracks?.track?.[0].image[1][
                     "#text"
                   ]
                 }
               />
-              <GitHubUserEvtSkillCard
+              {/*<GitHubUserEvtSkillCard
                 title={"GitHub User Events"}
                 url={"https://github.com/bravo68web"}
                 image={skills?.logo?.github}
