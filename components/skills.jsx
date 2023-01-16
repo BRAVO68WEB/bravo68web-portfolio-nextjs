@@ -188,16 +188,16 @@ function Skills() {
                   ]
                 }
               />
-              {/*<GitHubUserEvtSkillCard
+              <GitHubUserEvtSkillCard
                 title={"GitHub User Events"}
                 url={"https://github.com/bravo68web"}
                 image={skills?.logo?.github}
-                evt1={skills?.gh_events?.data[0]}
-                evt2={skills?.gh_events?.data[1]}
-                evt3={skills?.gh_events?.data[2]}
-                evt4={skills?.gh_events?.data[3]}
-                evt5={skills?.gh_events?.data[4]}
-              /> */}
+                evt1={skills?.gh_events?.data?.[0]}
+                evt2={skills?.gh_events?.data?.[1]}
+                evt3={skills?.gh_events?.data?.[2]}
+                evt4={skills?.gh_events?.data?.[3]}
+                evt5={skills?.gh_events?.data?.[4]}
+              />
             </div>
           </SkillsStyle>
         )}
