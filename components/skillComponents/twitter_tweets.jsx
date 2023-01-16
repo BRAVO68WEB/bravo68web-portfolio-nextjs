@@ -1,6 +1,5 @@
 import React from "react";
 import SkillCard from "../skillCard";
-import SkillCardStyle from "../skillCard.styled";
 import { format } from "date-format-parse";
 
 function TwitterTweetsSkillCard({

@@ -27,7 +27,7 @@ export const APISDK = {
         },
         {
           endpoint: "/me/wakatime/codeTimeAllTime",
-          name: "wakatime_user",
+          name: "wakatime_alltime",
         },
         {
           endpoint: "/me/wakatime/codeStatsLast7Days",
