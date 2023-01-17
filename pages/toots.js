@@ -8,7 +8,7 @@ export default function Home() {
     <div>
       <Head>
         <title>
-          About | Jyotirmoy Bandyopadhayaya | Full Stack Web Developer and
+          Toots | Jyotirmoy Bandyopadhayaya | Full Stack Web Developer and
           DevOps Engineer
         </title>
       </Head>
