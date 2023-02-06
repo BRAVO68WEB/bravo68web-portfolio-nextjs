@@ -77,7 +77,7 @@ export const ExtraStyles = styled.div`
           }
         }
       }
-      .tags{
+      .tags {
         width: 100%;
         height: 100%;
         display: flex;
@@ -86,11 +86,11 @@ export const ExtraStyles = styled.div`
         align-items: center;
         color: var(--color5);
         h2 {
-            font-size: 1em;
-            font-weight: bold;
-            text-align: center;
-            margin: 0;
-            padding: 0;
+          font-size: 1em;
+          font-weight: bold;
+          text-align: center;
+          margin: 0;
+          padding: 0;
         }
       }
     }

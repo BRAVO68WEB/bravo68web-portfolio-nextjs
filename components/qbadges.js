@@ -1,15 +1,14 @@
 import { QBStyles } from "./qbadges.style";
-import { qwiklabs as qb } from "config"
+import { qwiklabs as qb } from "config";
 
 function qbadges() {
-    return (
+  return (
     <QBStyles>
       <div>
         <h1 className="title">Qwiklab Badges</h1>
         <div className="default">
-          
           {qb.map((badge, index) => {
-            return  (
+            return (
               <>
                 <div>
                   <div className="content">
@@ -29,8 +28,8 @@ function qbadges() {
                     </div>
                   </div>
                 </div>
-            </>
-            )
+              </>
+            );
           })}
         </div>
       </div>

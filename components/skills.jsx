@@ -81,36 +81,34 @@ function Skills() {
                 title={"Osu! Player Stats"}
                 url={"https://osu.ppy.sh/users/bravo68web"}
                 image={skills?.logo?.osu}
-                accuracy={
-                  skills?.osu_user?.data?.statistics?.hit_accuracy
-                }
-                level={
-                  skills?.osu_user?.data?.statistics?.level?.current
-                }
+                accuracy={skills?.osu_user?.data?.statistics?.hit_accuracy}
+                level={skills?.osu_user?.data?.statistics?.level?.current}
                 pp_raw={skills?.osu_user?.data?.statistics?.pp}
                 country={skills?.osu_user?.data?.country?.code}
-                pp_rank={
-                  skills?.osu_user?.data?.statistics?.global_rank
-                }
+                pp_rank={skills?.osu_user?.data?.statistics?.global_rank}
                 countryRank={skills?.osu_user?.data?.statistics?.country_rank}
                 maximum_combo={
                   skills?.osu_user?.data?.statistics?.maximum_combo
                 }
                 join_date={"2019-09-21 19:33:44"}
-                total_score={
-                  skills?.osu_user?.data?.statistics?.total_score
-                }
+                total_score={skills?.osu_user?.data?.statistics?.total_score}
               />
               <TwitterUserSkillCard
                 title={"Twitter Stats"}
                 url={"https://twitter.com/Bravo68web"}
                 image={skills?.logo?.twitter}
-                followers_count={skills?.twitter_user?.public_metrics?.followers_count}
-                friends_count={skills?.twitter_user?.public_metrics?.following_count}
-                statuses_count={skills?.twitter_user?.public_metrics?.tweet_count}
+                followers_count={
+                  skills?.twitter_user?.public_metrics?.followers_count
+                }
+                friends_count={
+                  skills?.twitter_user?.public_metrics?.following_count
+                }
+                statuses_count={
+                  skills?.twitter_user?.public_metrics?.tweet_count
+                }
                 created_at={skills?.twitter_user?.created_at}
               />
-              < SpotifyTopSkillCard
+              <SpotifyTopSkillCard
                 title={"Spotify Top Songs"}
                 url={
                   "https://open.spotify.com/user/31huoajpuynl4w4dzbhp4frktqw4?si=48195baf55a54d7d"
@@ -127,8 +125,14 @@ function Skills() {
                 url={"https://wakatime.com/@bravo68web"}
                 image={skills?.logo?.wakatime}
                 total_time={skills?.wakatime_alltime?.data?.text}
-                average_weekly_time={skills?.wakatime_stats?.data?.human_readable_daily_average_including_other_language}
-                total_weekly_time={skills?.wakatime_stats?.data?.human_readable_total_including_other_language}
+                average_weekly_time={
+                  skills?.wakatime_stats?.data
+                    ?.human_readable_daily_average_including_other_language
+                }
+                total_weekly_time={
+                  skills?.wakatime_stats?.data
+                    ?.human_readable_total_including_other_language
+                }
                 joinedOn={"2020-09-14"}
               />
               <HashNodeSkillCard
@@ -140,7 +144,7 @@ function Skills() {
                 numFollowers={skills?.hn_user?.data?.numFollowers}
                 numReactions={skills?.hn_user?.data?.numReactions}
               />
-             <OsuBestScoresSkillCard
+              <OsuBestScoresSkillCard
                 title={"Osu! Best Scores"}
                 image={skills?.logo?.osu}
                 url={"https://osu.ppy.sh/users/bravo68web"}

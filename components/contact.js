@@ -1,4 +1,4 @@
-import  { useState } from "react";
+import { useState } from "react";
 import { ContactStyle } from "./contact.style";
 import axios from "handlers/axios";
 
@@ -22,14 +22,16 @@ function Contact() {
     axios.post("/contactme/postQuery", input);
     setIsSubmitted(true);
   }
-  return (  
+  return (
     <ContactStyle>
       <div className="form-group-main row">
         <div className="column">
           <div className="prewritten-info">
             <div className="prewritten-info-content">
-              <h1><u>Contact Me</u></h1>
-              <p> 
+              <h1>
+                <u>Contact Me</u>
+              </h1>
+              <p>
                 If you have any questions, feel free to contact me. I am always
                 open to discussing new projects and opportunities.
               </p>
@@ -54,16 +56,14 @@ function Contact() {
                 </h3>
                 <a href="https://discord.com/users/457039372009865226">
                   Bravo68-DF_Techs#6429
-                </a>  
+                </a>
               </p>
               <br />
               <p>
                 <h3>
                   <strong>Extra:</strong>
                 </h3>
-                <a href="https://calendly.com/bravo68web">
-                  Calendly
-                </a>
+                <a href="https://calendly.com/bravo68web">Calendly</a>
               </p>
             </div>
           </div>
@@ -123,7 +123,11 @@ function Contact() {
                 placeholder="Your message"
               />
             </div>
-            <button type="submit" className="btn btn-primary" disabled={isSubmitted}>
+            <button
+              type="submit"
+              className="btn btn-primary"
+              disabled={isSubmitted}
+            >
               Submit
             </button>
           </form>

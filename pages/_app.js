@@ -3,11 +3,11 @@ import "../styles/globals.css";
 
 function MyPortfolio({ Component, pageProps }) {
   return (
-  <>
-    {/* <CustomCursor /> */}
-    <Component {...pageProps} />
-  </>
-  )
+    <>
+      {/* <CustomCursor /> */}
+      <Component {...pageProps} />
+    </>
+  );
 }
 
 export default MyPortfolio;

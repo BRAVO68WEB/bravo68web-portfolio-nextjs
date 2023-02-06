@@ -15,13 +15,11 @@ export default handler.get(async (req, res) => {
 
   // Writing static pages to sitemap
   sitemap.write({ url: "/", changefreq: "daily", priority: 1 });
-  sitemap.write({ url: "/art/", changefreq: "daily", priority: 0.8 });
   sitemap.write({ url: "/stats/", changefreq: "daily", priority: 0.8 });
   sitemap.write({ url: "/contact/", changefreq: "daily", priority: 0.8 });
   sitemap.write({ url: "/resume/", changefreq: "daily", priority: 0.8 });
   sitemap.write({ url: "/about/", changefreq: "daily", priority: 0.8 });
-  sitemap.write({ url: "/vscode/", changefreq: "daily", priority: 0.8 });
-  sitemap.write({ url: "/extras/", changefreq: "daily", priority: 0.8 });
+  sitemap.write({ url: "/projects/", changefreq: "daily", priority: 0.8 });
 
   sitemap.end();
 

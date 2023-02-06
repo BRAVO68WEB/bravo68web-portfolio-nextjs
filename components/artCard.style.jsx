@@ -10,7 +10,7 @@ export default styled.div`
   box-shadow: 10px 9px 0px -3px #fffefe;
   margin: 5px;
   * {
-  margin-top: inherit;
+    margin-top: inherit;
   }
   .type {
     color: #92dcf3;

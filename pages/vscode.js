@@ -8,8 +8,8 @@ export default function Home() {
     <div>
       <Head>
         <title>
-          VS Code Extensions | Jyotirmoy Bandyopadhayaya | Full Stack Web Developer and
-          DevOps Engineer
+          VS Code Extensions | Jyotirmoy Bandyopadhayaya | Full Stack Web
+          Developer and DevOps Engineer
         </title>
       </Head>
       <Nav />

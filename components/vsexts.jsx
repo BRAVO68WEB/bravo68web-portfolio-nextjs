@@ -13,11 +13,11 @@ function vsExtsShow() {
                 <div className="content">
                   <div className="content-description">
                     <a
-                        href={content.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                    <img src={content.image} />
+                      href={content.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src={content.image} />
                     </a>
                   </div>
                   <div className="content-title">

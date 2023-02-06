@@ -310,11 +310,7 @@ export default function DiscordActivity() {
       <DicordActivityStyle>
         <div className="discord-icons">
           <div className="discord-large-icon">
-            <img
-              src={
-                "/images/default_game.jpg"
-              }
-            />
+            <img src={"/images/default_game.jpg"} />
           </div>
           <div className="discord-small-icon">
             <img src={"/images/" + "offline" + ".png"} alt="" />

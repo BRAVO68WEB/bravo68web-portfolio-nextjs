@@ -1,4 +1,4 @@
-import {useState} from "react";
+import { useState } from "react";
 import ArtCardStyle from "./artCard.style";
 import ArtModel from "./artModal";
 
