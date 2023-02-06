@@ -2,7 +2,7 @@ import React from "react";
 import SkillCard from "../skillCard";
 
 function GitHubUserEvtSkillCard({ title, image, evt1, evt2, evt3, url }) {
-  var ghLogo = "/images/github_events/GitIcon.png";
+  let ghLogo = "/images/github_events/GitIcon.png";
   // Evt1
   if (evt1.type === "PushEvent") {
     evt1.entTypeLogo = "/images/github_events/github_push_event_logo.png";
@@ -121,7 +121,7 @@ function GitHubUserEvtSkillCard({ title, image, evt1, evt2, evt3, url }) {
           <br />
           {evt1.repo.name}
         </div>
-        <div className="description commit-msg">{evt1?.commitMsg.slice(0,50)}</div>
+        <div className="description commit-msg">{evt1?.commitMsg?.slice(0,50)}</div>
         {/* <div className="description">{evt1?.created_at}</div> */}
       </div>
       <br />
@@ -132,7 +132,7 @@ function GitHubUserEvtSkillCard({ title, image, evt1, evt2, evt3, url }) {
           <br />
           {evt2.repo.name}
         </div>
-        <div className="description commit-msg">{evt2?.commitMsg.slice(0,50)}</div>
+        <div className="description commit-msg">{evt2?.commitMsg?.slice(0,50)}</div>
         {/* <div className="description">{evt2?.created_at}</div> */}
       </div>
       <br />
@@ -143,7 +143,7 @@ function GitHubUserEvtSkillCard({ title, image, evt1, evt2, evt3, url }) {
           <br />
           {evt3.repo.name}
         </div>
-        <div className="description commit-msg">{evt3?.commitMsg.slice(0,50)}</div>
+        <div className="description commit-msg">{evt3?.commitMsg?.slice(0,50)}</div>
         {/* <div className="description">{evt3?.created_at}</div> */}
       </div>
     </SkillCard>

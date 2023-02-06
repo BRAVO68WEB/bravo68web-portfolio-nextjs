@@ -298,8 +298,7 @@ export default function DiscordActivity() {
       </DicordActivityStyle>
     );
   } else {
-    // console.log(status);
-    var restData = {
+    let restData = {
       username: "Bravo68-DF_Techs",
       public_flags: 64,
       id: "457039372009865226",

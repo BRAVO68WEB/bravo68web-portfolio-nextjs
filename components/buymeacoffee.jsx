@@ -24,7 +24,7 @@ export default function Buymeacoffee() {
       script.setAttribute("data-y_margin", "18");
   
       script.onload = function () {
-        var evt = document.createEvent("Event");
+        let evt = document.createEvent("Event");
         evt.initEvent("DOMContentLoaded", false, false);
         window.dispatchEvent(evt);
       };
