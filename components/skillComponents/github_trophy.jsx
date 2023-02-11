@@ -1,8 +1,7 @@
 import React from "react";
 import SkillCard from "../skillCard";
-import SkillCardStyle from "../skillCard.styled";
 
-function GitHubThySkillCard({ title, image, bannerImage, url }) {
+export default function ({ title, image, bannerImage, url }) {
   return (
     <SkillCard title={title} image={image} url={url}>
       <br />
@@ -12,5 +11,3 @@ function GitHubThySkillCard({ title, image, bannerImage, url }) {
     </SkillCard>
   );
 }
-
-export default GitHubThySkillCard;

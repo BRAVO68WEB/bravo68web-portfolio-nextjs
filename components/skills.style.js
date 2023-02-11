@@ -6,7 +6,8 @@ export default styled.div`
   height: 100vh;
   padding: 100px 20px;
   margin-top: 15px;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   overflow-y: auto !important;
   background-image: url("/images/background5.jpg");
   background-size: cover;

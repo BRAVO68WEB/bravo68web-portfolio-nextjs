@@ -26,6 +26,7 @@ export default styled.nav`
       /* padding: 20px; */
       margin-left: 10px;
       color: #fff;
+      border-radius: 5px;
       &:hover {
         color: #111111;
         background-color: #6ffc03;

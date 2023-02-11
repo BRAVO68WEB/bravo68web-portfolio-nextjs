@@ -61,11 +61,13 @@ export const APISDK = {
           endpoint: "/me/vscode/",
           name: "vscode",
         },
+        {
+          endpoint: "/me/mastodon/statuses",
+          name: "masto_status",
+        },
       ],
       this.data
     );
     // return tempEndpoint("https://api.github.com/users/bravo68web", this.data);
   },
 };
-
-console.log(APISDK.data);

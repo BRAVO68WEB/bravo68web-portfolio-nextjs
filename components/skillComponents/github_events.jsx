@@ -1,7 +1,7 @@
 import React from "react";
 import SkillCard from "../skillCard";
 
-function GitHubUserEvtSkillCard({ title, image, evt1, evt2, evt3, url }) {
+export default function ({ title, image, evt1, evt2, evt3, url }) {
   let ghLogo = "/images/github_events/GitIcon.png";
   // Evt1
   if (evt1.type === "PushEvent") {
@@ -155,5 +155,3 @@ function GitHubUserEvtSkillCard({ title, image, evt1, evt2, evt3, url }) {
     </SkillCard>
   );
 }
-
-export default GitHubUserEvtSkillCard;

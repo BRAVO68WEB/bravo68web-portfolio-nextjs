@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Nav from "components/nav";
-import About from "components/about";
+import Toots from "components/toots";
 import Footer from "components/footer";
 
 export default function Home() {
@@ -13,9 +13,9 @@ export default function Home() {
         </title>
       </Head>
       <Nav />
-      <About />
+      <Toots />
 
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
