@@ -61,10 +61,10 @@ export const APISDK = {
           endpoint: "/me/vscode/",
           name: "vscode",
         },
-        {
-          endpoint: "/me/mastodon/statuses",
-          name: "masto_status",
-        },
+        // {
+        //   endpoint: "/me/mastodon/statuses",
+        //   name: "masto_status",
+        // },
       ],
       this.data
     );

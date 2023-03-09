@@ -27,7 +27,7 @@ function OsuUserSkillCard({
       <div className="description">Global Rank :- #{pp_rank}</div>
       <div className="description">Max Combo :- {maximum_combo}</div>
       <div className="description">
-        Total Score :- {total_score.toLocaleString()}
+        Total Score :- {total_score?.toLocaleString()}
       </div>
       <div className="description">
         Joined on : {format(join_date, "DD MMM YYYY")}
