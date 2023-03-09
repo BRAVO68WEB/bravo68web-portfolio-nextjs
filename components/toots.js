@@ -10,7 +10,7 @@ export default function () {
   const [skills, setSkills] = useState({});
   const [loading, setLoading] = useState(true);
 
-  async function requestAPIS() {
+  async function requestAPIS() {  
     await APISDK.req();
     APISDK.data.logo = {
       masto: `https://cdn.fosstodon.org/accounts/avatars/000/028/400/original/324cba4cb379bd4e.png`,
