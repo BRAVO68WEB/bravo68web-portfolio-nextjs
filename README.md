@@ -22,7 +22,7 @@
 
 #### About this Repo :-
 
-This Repo cotains source code for my developer portfolio at https://bravo68web.me. I reworked my existed portfolio to nextjs for make it faster and integrate my existing API at https://api.bravo68web.me
+This Repo cotains source code for my developer portfolio at https://itsmebravo.dev. I reworked my existed portfolio to nextjs for make it faster and integrate my existing API at https://api.bravo68web.me
 
 #### Features :-
 
@@ -44,7 +44,7 @@ This Repo cotains source code for my developer portfolio at https://bravo68web.m
 
 **BRAVO68WEB**
 
-- Website: https://bravo68web.me
+- Website: https://itsmebravo.dev
 - Twitter: [@BRAVO68WEB](https://twitter.com/BRAVO68WEB)
 - GitHub: [@BRAVO68WEB](https://github.com/BRAVO68WEB)
 - LinkedIn: [@BRAVO68WEB](https://linkedin.com/in/BRAVO68WEB)
@@ -57,6 +57,6 @@ Star the repository if this project helped you! ⭐️
 
 ### 📝 License
 
-Copyright © 2022 [BRAVO68WEB](https://github.com/BRAVO68WEB).
+Copyright © 2023 [BRAVO68WEB](https://github.com/BRAVO68WEB).
 
 This project is [CC-BY-ND-4.0](LICENSE) licensed.
