@@ -24,14 +24,34 @@ import {
 import DiscordActivity from "./discord-activity";
 
 function Main() {
+  const animePic = document.getElementById('anime-pic');
+  const profPic = document.getElementById('prof-pic');
+
+  animePic.addEventListener('mouseover', function() {
+    animePic.style.display = 'none';
+    profPic.style.display = 'block';
+  });
+
+  profPic.addEventListener('mouseout', function() {
+    animePic.style.display = 'block';
+    profPic.style.display = 'none';
+  });
+
   return (
     <MainStyle>
       <div className="content">
         <div className="profile">
           <img
+            src="/images/anime-profile-pic.png"
+            alt=""
+            className="profile-img"
+            id="anime-pic"
+          />
+          <img
             src="/images/profile-new-transp.png"
             alt=""
             className="profile-img"
+            id="prof-pic"
           />
         </div>
         <div className="name">{name}</div>

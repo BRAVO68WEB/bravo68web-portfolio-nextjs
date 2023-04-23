@@ -3038,9 +3038,9 @@ uri-js@^4.2.2:
   dependencies:
     punycode "^2.1.0"
 
-"use-last-fm@https://github.com/BRAVO68WEB/use-last-fm":
-  version "0.6.1"
-  resolved "https://github.com/BRAVO68WEB/use-last-fm#3c8026610a4d7e07c808e162ad4e9bd8ae420fd4"
+use-last-fm@BRAVO68WEB/use-last-fm:
+  version "0.6.2"
+  resolved "https://codeload.github.com/BRAVO68WEB/use-last-fm/tar.gz/9d2ce5424e8259ae91d2a0e00d8efdb41971c7ce"
   dependencies:
     swr "^0.4.0"
 

@@ -10,6 +10,14 @@ export default styled.main`
   background-image: url("/images/background.jpg");
   background-size: cover;
   background-position: center;
+  #prof-pic {
+    display: none;
+  }
+
+  #anime-pic:hover + #prof-pic {
+    display: block;
+  }
+
   .profile-img {
     border-radius: 50%;
     background: rgb(251, 167, 63);

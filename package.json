@@ -18,7 +18,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "postinstall": "node tools/copy-webviewer-files.js",
+    "postinstall": "node tools/copy-webviewer-files.js && cd node_modules/use-last-fm && yarn && cd ../..",
     "prettier": "prettier --write ."
   },
   "dependencies": {
@@ -40,7 +40,7 @@
     "react-use-lanyard": "^0.1.1",
     "sitemap": "^7.1.1",
     "styled-components": "^5.3.7",
-    "use-last-fm": "https://github.com/BRAVO68WEB/use-last-fm"
+    "use-last-fm": "BRAVO68WEB/use-last-fm"
   },
   "devDependencies": {
     "eslint": "^7.32.0",
