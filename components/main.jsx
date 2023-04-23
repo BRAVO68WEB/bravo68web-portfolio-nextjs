@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import MainStyle from "./main.style";
 import IconButton from "@mui/material/IconButton";
 // import Button from "@mui/material/Button";
@@ -24,18 +24,20 @@ import {
 import DiscordActivity from "./discord-activity";
 
 function Main() {
-  const animePic = document.getElementById('anime-pic');
-  const profPic = document.getElementById('prof-pic');
+  useEffect(() => {
+    const animePic = document.getElementById('anime-pic');
+    const profPic = document.getElementById('prof-pic');
 
-  animePic.addEventListener('mouseover', function() {
-    animePic.style.display = 'none';
-    profPic.style.display = 'block';
-  });
-
-  profPic.addEventListener('mouseout', function() {
-    animePic.style.display = 'block';
-    profPic.style.display = 'none';
-  });
+    animePic.addEventListener('mouseover', function() {
+      animePic.style.display = 'none';
+      profPic.style.display = 'block';
+    });
+  
+    profPic.addEventListener('mouseout', function() {
+      animePic.style.display = 'block';
+      profPic.style.display = 'none';
+    });
+  },[])
 
   return (
     <MainStyle>

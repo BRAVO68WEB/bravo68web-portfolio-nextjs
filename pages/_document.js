@@ -53,7 +53,6 @@ export default class MyDocument extends Document {
             rel="stylesheet"
           />
         </Head>
-        <Nav />
         <body>
           <Main />
           <NextScript />

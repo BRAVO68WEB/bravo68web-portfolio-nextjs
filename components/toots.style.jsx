@@ -14,3 +14,12 @@ export const ArtStyle = styled.div`
   background-repeat: no-repeat;
   background-attachment: fixed;
 `;
+
+export const ArtTitleStyle = styled.div`
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 18px;
+  padding-top: 90px;
+`

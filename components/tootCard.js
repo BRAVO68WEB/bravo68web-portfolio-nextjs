@@ -29,7 +29,7 @@ function SkillCard({ content, created_at, url, image }) {
                     <img src={image} height="30" />
                   </div>
                 )}
-                <div className="content">"{texts.join("\n")}"</div>
+                <div className="content">&quot;{texts.join("\n")}&quot;</div>
                 <div className="type">
                   # {format(created_at, "DD MMM YYYY")}
                 </div>

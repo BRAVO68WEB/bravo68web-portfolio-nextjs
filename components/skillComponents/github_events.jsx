@@ -1,7 +1,7 @@
 import React from "react";
 import SkillCard from "../skillCard";
 
-export default function ({ title, image, evt1, evt2, evt3, url }) {
+function GitCommits({ title, image, evt1, evt2, evt3, url }) {
   let ghLogo = "/images/github_events/GitIcon.png";
 
   [evt1, evt2, evt3].map((evt) => {
@@ -85,3 +85,5 @@ export default function ({ title, image, evt1, evt2, evt3, url }) {
     </SkillCard>
   );
 }
+
+export default GitCommits

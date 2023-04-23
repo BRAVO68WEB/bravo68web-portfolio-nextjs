@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { ArtStyle } from "./toots.style";
+import { ArtStyle, ArtTitleStyle } from "./toots.style";
 import SkillCard from "./tootCard";
 import { APISDK } from "handlers/sdk";
 import SkillsStyle from "./skills.style";
 import Box from "@mui/material/Box";
 import LinearProgress from "@mui/material/LinearProgress";
 
-export default function () {
+function Toots () {
   const [skills, setSkills] = useState({});
   const [loading, setLoading] = useState(true);
 
@@ -15,7 +15,7 @@ export default function () {
     APISDK.data.logo = {
       masto: `https://cdn.fosstodon.org/accounts/avatars/000/028/400/original/324cba4cb379bd4e.png`,
     };
-    setSkills(APISDK.data);
+    setSkills(APISDK.data.masto_status);
     setLoading(false);
   }
 
@@ -34,13 +34,19 @@ export default function () {
       </SkillsStyle>
     );
   } else {
+
+    console.log(skills.data);
     return (
       <>
+          <ArtTitleStyle>
+          <div className="title-bar">
+            Fosstodon Status
+          </div>
+          </ArtTitleStyle>
         <div className="mainboard__container">
-          Fosstodon Status
           {skills && (
             <ArtStyle>
-              {skills?.masto_status?.data?.map((project, index) => {
+              {skills?.data?.map((project, index) => {
                 project.image = image;
                 return (
                   <>
@@ -55,3 +61,5 @@ export default function () {
     );
   }
 }
+
+export default Toots;
