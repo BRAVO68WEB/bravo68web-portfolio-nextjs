@@ -1,8 +1,6 @@
 import React from "react";
 import SkillCard from "../skillCard";
-import SkillCardStyle from "../skillCard.styled";
-import { format, parse } from "date-format-parse";
-import { useLastFM } from "use-last-fm";
+import useLastFM from "hooks/useLastFM";
 
 function LastFMCurrentSkillCard({
   title,
@@ -13,9 +11,9 @@ function LastFMCurrentSkillCard({
   name,
   url,
 }) {
-  const lastFM = useLastFM(3);
+  const {status,song} = useLastFM();
 
-  if (lastFM.status !== "playing") {
+  if (status !== "playing") {
     return (
       <SkillCard title={title} image={image} url={url}>
         Not listening to anything
@@ -25,10 +23,10 @@ function LastFMCurrentSkillCard({
   return (
     <SkillCard title={title} image={image} url={url}>
       <div className="description">
-        {empty ? "No recent tracks" : `${artist} - ${name}`}
+        {empty ? "No recent tracks" : `${song.artist} - ${song.name}`}
       </div>
       <div className="description">
-        {empty ? "" : <img src={albumImg} alt={`${artist} - ${name}`} />}
+        {empty ? "" : <img src={song.art} alt={`${song.artist} - ${song.name}`} className="albumart"/>}
       </div>
     </SkillCard>
   );

@@ -1,4 +1,5 @@
 import { Component } from "react"
+import Page500 from "./500Page"
 
 class ErrorBoundary extends Component {
     constructor(props) {
@@ -20,6 +21,7 @@ class ErrorBoundary extends Component {
         // You can render any custom fallback UI
         return (
           <div>
+            <Page500 />
             <h2>Oops, there is an error!</h2>
             <button
               type="button"

@@ -93,4 +93,8 @@ export default styled.div`
       background-color: var(--color7);
     }
   }
+  .albumart {
+    padding-top: 5px;
+    width: 97%;
+  }
 `;

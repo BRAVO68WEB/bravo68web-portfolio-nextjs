@@ -39,8 +39,7 @@
     "react-dom": "^18.2.0",
     "react-use-lanyard": "^0.1.1",
     "sitemap": "^7.1.1",
-    "styled-components": "^5.3.7",
-    "use-last-fm": "BRAVO68WEB/use-last-fm"
+    "styled-components": "^5.3.7"
   },
   "devDependencies": {
     "eslint": "^7.32.0",

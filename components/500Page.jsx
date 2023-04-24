@@ -1,6 +1,6 @@
 import { Page500Style } from "./500Page.style";
 
-function Page500() {
+function Page500(error = null) {
   return (
     <Page500Style>
       <div className="container">
@@ -10,6 +10,8 @@ function Page500() {
           <span>500</span> <br />
           Internal server error
         </h1>
+        <p className="info">{JSON.stringify(error)}</p>
+        <br/>
         <p>I might be currently trying to fix the problem.</p>
         <p className="info">Maybe try again in a few minutes ...</p>
       </div>

@@ -18,3 +18,13 @@ export default function Home() {
     </div>
   );
 }
+
+// export const getServerSideProps = async () => {
+
+//   throw new Error("Internal server error")
+
+//   return {
+//     props:[]
+//   }
+// }
+ 
