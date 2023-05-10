@@ -9,6 +9,17 @@ export default styled.div`
   background: var(--color1);
   display: flex;
   justify-content: center;
-  align-items: center;
-  font-size: 1.2rem;
+  .main-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    .api-status {
+      justify-content: right;
+      align-items: right;
+      font-size: 1.2rem;
+      padding-bottom: 20px;
+    }
+
+  }
 `;

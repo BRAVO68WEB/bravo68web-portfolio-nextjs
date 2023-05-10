@@ -2,7 +2,6 @@ import React from "react";
 import SkillCardStyle from "./skillCard.styled";
 
 function SkillCard({ title, children, image, bannerImage, url }) {
-  // console.log(image);
   return (
     <SkillCardStyle>
       <div className="card">

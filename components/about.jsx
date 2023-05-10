@@ -2,7 +2,6 @@ import { LanguagesKnownCategory, description1, description2 } from "config";
 import { AboutStyle } from "./about.style";
 
 function about() {
-  // console.log(LanguagesKnown);
   return (
     <AboutStyle>
       <div className="default">

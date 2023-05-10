@@ -21,7 +21,7 @@ function Toots () {
 
   useEffect(() => {
     requestAPIS();
-  }, [loading, APISDK]);
+  }, [loading]);
   let image = skills?.logo?.masto;
   if (loading) {
     return (
@@ -34,8 +34,6 @@ function Toots () {
       </SkillsStyle>
     );
   } else {
-
-    console.log(skills.data);
     return (
       <>
           <ArtTitleStyle>
