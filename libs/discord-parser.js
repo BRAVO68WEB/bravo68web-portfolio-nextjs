@@ -24,7 +24,6 @@ export default function parse(data) {
             track_id: data.spotify.track_id
         }
     }
-
     for(const activity of data.activities) {
         if(activity.name.includes("Visual Studio Code")){
             act.push({
@@ -38,6 +37,13 @@ export default function parse(data) {
                 ...activity
             });
         }
+        else if(activity.type === 0){
+            act.push({
+                prirority_id: PrirorityActivityType.indexOf('Playing'),
+                ...activity
+            });
+        }
+
         else if(activity.name.includes("Custom Status")){
             act.push({
                 prirority_id: PrirorityActivityType.indexOf('Custom Status'),
@@ -51,7 +57,6 @@ export default function parse(data) {
                     animated: activity.emoji?.animated,
                     emoji_url: "https://cdn.discordapp.com/emojis/" + activity.emoji?.id + ".webp?size=44&quality=lossless"
                 }
-
             };
         }
         else {
@@ -73,12 +78,14 @@ export default function parse(data) {
             small_image : "/images/brandlogos/SpotifyLogo.png"
         }
     }
+
     else if(output.activity.prirority_id == 3){
         output.activity.assets = {
             large_image : "/images/anime-profile-pic.png",
             small_image : output.custom_status.emoji.emoji_url,
         }
     }
+
     else {
         output.activity.assets = {
             large_image : "https://cdn.discordapp.com/app-assets/"+output.activity.application_id+"/"+output.activity.assets.large_image+".png",

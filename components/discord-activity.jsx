@@ -54,7 +54,7 @@ export default function DiscordActivity() {
       if (!loading) {
         setCurrentTs(Date.now());
         let timeElapsed = convertMsToHM(
-          currentTs - new Date(status?.activities[1]?.timestamps.start)
+          currentTs - new Date(parsedStatus?.activity?.timestamps.start)
         );
         setTime(timeElapsed);
       }
@@ -62,7 +62,7 @@ export default function DiscordActivity() {
     return () => {
       clearInterval(interval);
     };
-  }, [currentTs, loading]);
+  }, [currentTs, loading, convertMsToHM, parsedStatus]);
 
   if (
     !loading && parsedStatus
@@ -88,7 +88,7 @@ export default function DiscordActivity() {
           <div className="discord-message-files">
             <b>{parsedStatus.activity.state}</b>
           </div>
-          {/* <div className="time-elapsed">00:00:00 elapsed</div> */}
+          <div className="time-elapsed">{time}</div>
         </div>
       </DicordActivityStyle>
     );
