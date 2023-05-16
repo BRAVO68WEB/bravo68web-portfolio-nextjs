@@ -14,6 +14,12 @@ export default function parse(data) {
 
     output.kv = data.kv;
 
+    if(data.discord_status == "offline"){
+        return {
+            discord_status: "offline",
+        }
+    }
+
     if (data.listening_to_spotify) {
         output.spotify = {
             album: data.spotify.album,
@@ -72,14 +78,14 @@ export default function parse(data) {
 
     output.activity = act[0];
 
-    if(output.activity.prirority_id == 1){
+    if(output.activity?.prirority_id == 1){
         output.activity.assets = {
             large_image : output.spotify.album_art_url,
             small_image : "/images/brandlogos/SpotifyLogo.png"
         }
     }
 
-    else if(output.activity.prirority_id == 3){
+    else if(output.activity?.prirority_id == 3){
         output.activity.assets = {
             large_image : "/images/anime-profile-pic.png",
             small_image : output.custom_status.emoji.emoji_url,

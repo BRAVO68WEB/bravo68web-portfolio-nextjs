@@ -65,7 +65,7 @@ export default function DiscordActivity() {
   }, [currentTs, loading, convertMsToHM, parsedStatus]);
 
   if (
-    !loading && parsedStatus
+    !loading && parsedStatus && status.discord_status !== "offline"
   ) {
     return (
       <DicordActivityStyle>

@@ -11,7 +11,7 @@ function Resume() {
           path: "webviewer/lib",
           mobileRedirect: true,
           initialDoc:
-            "https://raw.githubusercontent.com/BRAVO68WEB/certificates/master/Jyotirmoy's%20Resume.pdf",
+            "https://s.b68.dev/resume",
         },
         viewer.current
       ).then((instance) => {
