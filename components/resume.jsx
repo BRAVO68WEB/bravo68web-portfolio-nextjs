@@ -11,7 +11,7 @@ function Resume() {
           path: "webviewer/lib",
           mobileRedirect: true,
           initialDoc:
-            "https://s.b68.dev/resume",
+            "/resume.pdf",
         },
         viewer.current
       ).then((instance) => {
