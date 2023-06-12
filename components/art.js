@@ -5,26 +5,26 @@ import SkillCard from "./artCard";
 import ArtModel from "./artModal";
 
 function Art() {
-  return (
-    <>
-      <ArtStyle>
-        {projects.map((project, index) => {
-          return (
-            <>
-              <SkillCard key={index} {...project} />
-            </>
-          );
-        })}
-        {arts.map((project, index) => {
-          return (
-            <>
-              <SkillCard key={index} {...project} />
-            </>
-          );
-        })}
-      </ArtStyle>
-    </>
-  );
+	return (
+		<>
+			<ArtStyle>
+				{projects.map((project, index) => {
+					return (
+						<>
+							<SkillCard key={index} {...project} />
+						</>
+					);
+				})}
+				{arts.map((project, index) => {
+					return (
+						<>
+							<SkillCard key={index} {...project} />
+						</>
+					);
+				})}
+			</ArtStyle>
+		</>
+	);
 }
 
 export default Art;

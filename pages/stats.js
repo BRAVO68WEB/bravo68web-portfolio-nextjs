@@ -4,19 +4,19 @@ import Skills from "components/skills";
 import Footer from "components/footer";
 
 export default function Home() {
-  return (
-    <div>
-      <Head>
-        <title>
-          Stats | Jyotirmoy Bandyopadhayaya | Full Stack Web Developer and
-          DevOps Engineer
-        </title>
-      </Head>
-      <Nav />
-      <Skills />
-      <Footer />
-    </div>
-  );
+	return (
+		<div>
+			<Head>
+				<title>
+					Stats | Jyotirmoy Bandyopadhayaya | Full Stack Web Developer
+					and DevOps Engineer
+				</title>
+			</Head>
+			<Nav />
+			<Skills />
+			<Footer />
+		</div>
+	);
 }
 
 // export const getServerSideProps = async () => {
@@ -27,4 +27,3 @@ export default function Home() {
 //     props:[]
 //   }
 // }
- 

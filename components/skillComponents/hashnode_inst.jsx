@@ -4,28 +4,28 @@ import SkillCardStyle from "../skillCard.styled";
 import { format, parse } from "date-format-parse";
 
 function HashNodeSkillCard({
-  title,
-  image,
-  joinOn,
-  numPosts,
-  numFollowers,
-  publicationDomain,
-  numReactions,
-  url,
+	title,
+	image,
+	joinOn,
+	numPosts,
+	numFollowers,
+	publicationDomain,
+	numReactions,
+	url,
 }) {
-  return (
-    <SkillCard title={title} image={image} url={url}>
-      <div className="description">
-        Joined on: {format(joinOn, "DD MMM YYYY")}
-      </div>
-      <div className="description"> Total Posts : {numPosts}</div>
-      <div className="description"> Total Followers : {numFollowers}</div>
-      {/* <div className="description">
+	return (
+		<SkillCard title={title} image={image} url={url}>
+			<div className="description">
+				Joined on: {format(joinOn, "DD MMM YYYY")}
+			</div>
+			<div className="description"> Total Posts : {numPosts}</div>
+			<div className="description"> Total Followers : {numFollowers}</div>
+			{/* <div className="description">
         Publication Domain : {publicationDomain}
       </div> */}
-      <div className="description"> Total Reactions : {numReactions}</div>
-    </SkillCard>
-  );
+			<div className="description"> Total Reactions : {numReactions}</div>
+		</SkillCard>
+	);
 }
 
 export default HashNodeSkillCard;

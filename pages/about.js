@@ -4,18 +4,18 @@ import About from "components/about";
 import Footer from "components/footer";
 
 export default function Home() {
-  return (
-    <div>
-      <Head>
-        <title>
-          About | Jyotirmoy Bandyopadhayaya | Full Stack Web Developer and
-          DevOps Engineer
-        </title>
-      </Head>
-      <Nav />
-      <About />
+	return (
+		<div>
+			<Head>
+				<title>
+					About | Jyotirmoy Bandyopadhayaya | Full Stack Web Developer
+					and DevOps Engineer
+				</title>
+			</Head>
+			<Nav />
+			<About />
 
-      {/* <Footer /> */}
-    </div>
-  );
+			{/* <Footer /> */}
+		</div>
+	);
 }
