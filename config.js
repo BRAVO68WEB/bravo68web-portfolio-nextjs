@@ -21,7 +21,7 @@ export const job_exp_1 = {
 		"I was the Wordpress Manager and Hosting Manager of the DF Tech Community. I was responsible for managing the Wordpress website and the hosting of the website. I was also responsible for managing the hosting of the community's Discord bot.",
 	start_date: "2018-04-05",
 	end_date: "2019-12-24",
-	logo: "",
+	logo: "/images/companies/DFTechsLogo.png",
 	website: "",
 	techstack: [
 		"Wordpress",
