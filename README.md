@@ -26,13 +26,13 @@ This Repo cotains source code for my developer portfolio at https://itsmebravo.d
 
 #### Features :-
 
-- Discord Integration
-- Online Status Checker
-- Resume Embed
-- Custom User Stats representations
-- Art and Project Showcase
-- Custom Error page (including 404 and 500 response error)
-- More to be added soon ...
+-   Discord Integration
+-   Online Status Checker
+-   Resume Embed
+-   Custom User Stats representations
+-   Art and Project Showcase
+-   Custom Error page (including 404 and 500 response error)
+-   More to be added soon ...
 
 #### Technologies Used:-
 
@@ -44,10 +44,10 @@ This Repo cotains source code for my developer portfolio at https://itsmebravo.d
 
 **BRAVO68WEB**
 
-- Website: https://itsmebravo.dev
-- Twitter: [@BRAVO68WEB](https://twitter.com/BRAVO68WEB)
-- GitHub: [@BRAVO68WEB](https://github.com/BRAVO68WEB)
-- LinkedIn: [@BRAVO68WEB](https://linkedin.com/in/BRAVO68WEB)
+-   Website: https://itsmebravo.dev
+-   Twitter: [@BRAVO68WEB](https://twitter.com/BRAVO68WEB)
+-   GitHub: [@BRAVO68WEB](https://github.com/BRAVO68WEB)
+-   LinkedIn: [@BRAVO68WEB](https://linkedin.com/in/BRAVO68WEB)
 
 <br>
 

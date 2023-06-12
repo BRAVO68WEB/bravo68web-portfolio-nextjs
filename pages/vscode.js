@@ -4,18 +4,18 @@ import VSExts from "components/vsexts";
 import Footer from "components/footer";
 
 export default function Home() {
-  return (
-    <div>
-      <Head>
-        <title>
-          VS Code Extensions | Jyotirmoy Bandyopadhayaya | Full Stack Web
-          Developer and DevOps Engineer
-        </title>
-      </Head>
-      <Nav />
-      <VSExts />
+	return (
+		<div>
+			<Head>
+				<title>
+					VS Code Extensions | Jyotirmoy Bandyopadhayaya | Full Stack
+					Web Developer and DevOps Engineer
+				</title>
+			</Head>
+			<Nav />
+			<VSExts />
 
-      <Footer />
-    </div>
-  );
+			<Footer />
+		</div>
+	);
 }
