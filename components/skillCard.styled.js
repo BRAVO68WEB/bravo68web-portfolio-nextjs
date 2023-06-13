@@ -5,7 +5,7 @@ export default styled.div`
 	display: inline-flex;
 	/* box-shadow: 10px 9px 0px -3px #fffefe; */
 	.card {
-		background-color: var(--color1);
+		background-color: var(--color13);
 		padding: 15px;
 		width: 100%;
 		/* min-width: 225px; */

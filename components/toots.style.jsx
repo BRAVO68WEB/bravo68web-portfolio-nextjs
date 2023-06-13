@@ -8,7 +8,7 @@ export const ArtStyle = styled.div`
 	justify-content: center;
 	flex-wrap: wrap;
 	overflow-y: auto;
-	background-image: url("/images/background7.png");
+	background-image: url("/images/pxfuel-2.jpg");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;

@@ -6,7 +6,7 @@ export const ContactStyle = styled.div`
 	align-items: center;
 	display: flex;
 	justify-content: center;
-	background-image: url("images/background2.jpg");
+	background-image: url("images/pxfuel-3.jpg");
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -130,9 +130,9 @@ export const ContactStyle = styled.div`
 		background: rgb(131, 58, 180);
 		background: linear-gradient(
 			90deg,
-			rgba(131, 58, 180, 1) 0%,
-			rgba(253, 29, 29, 1) 50%,
-			rgba(252, 176, 69, 1) 100%
+			#eeb415 0%,
+			#ff9f21 50%,
+			#eeb415 100%
 		);
 		padding: 10.5px 21px;
 		-webkit-border-radius: 6px;

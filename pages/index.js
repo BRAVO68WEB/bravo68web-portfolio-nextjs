@@ -1,7 +1,12 @@
 import Head from "next/head";
 import Nav from "components/nav";
-import Main from "components/main";
+// import Main from "components/main";
 import BMC from "components/buymeacoffee";
+import dynamic from 'next/dynamic';
+
+const Main = dynamic(() => import('components/main'), {
+	ssr: false, // Disable server-side rendering
+});
 
 export default function Home() {
 	return (
@@ -15,7 +20,6 @@ export default function Home() {
 			<Nav />
 			<Main />
 			<BMC />
-			{/* <Footer /> */}
 		</div>
 	);
 }

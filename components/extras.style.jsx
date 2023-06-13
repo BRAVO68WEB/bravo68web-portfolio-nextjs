@@ -6,7 +6,7 @@ export const ExtraStyles = styled.div`
 	justify-content: center;
 	align-items: center;
 	padding-top: 15vh;
-	background-image: url("images/background6.webp");
+	background-image: url("images/pxfuel-5.jpg");
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -27,6 +27,8 @@ export const ExtraStyles = styled.div`
 		/* height: 100vh; */
 		padding-bottom: 3em;
 		padding-top: 2em;
+		gap: 2.5em;
+		
 		.content {
 			display: flex;
 			flex-wrap: wrap;
@@ -34,6 +36,8 @@ export const ExtraStyles = styled.div`
 			align-items: center;
 			padding-top: 2em;
 			padding-bottom: 2em;
+			background-color: var(--color12);
+
 			&:hover {
 				filter: contrast(200%);
 				-webkit-transform: translateX(-5px) translateY(-5px);

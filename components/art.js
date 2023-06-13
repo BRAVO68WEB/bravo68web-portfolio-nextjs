@@ -11,14 +11,14 @@ function Art() {
 				{projects.map((project, index) => {
 					return (
 						<>
-							<SkillCard key={index} {...project} />
+							<SkillCard key={project.name} {...project} />
 						</>
 					);
 				})}
 				{arts.map((project, index) => {
 					return (
 						<>
-							<SkillCard key={index} {...project} />
+							<SkillCard key={project.name} {...project} />
 						</>
 					);
 				})}

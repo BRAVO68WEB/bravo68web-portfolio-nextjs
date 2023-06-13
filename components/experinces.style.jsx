@@ -35,11 +35,11 @@ export const ExpStyle = styled.div`
 		gap: 0.2px;
 		.company-img {
 			width: 100%;
-            height: auto;
+			height: auto;
 			margin-bottom: 0.5rem;
 			img {
 				width: 100%;
-                height: auto;
+				height: auto;
 				margin: auto;
 				max-height: 12rem;
 				object-fit: contain;
@@ -47,7 +47,7 @@ export const ExpStyle = styled.div`
 			}
 		}
 	}
-	
+
 	.company-right {
 		width: 75%;
 		.company-exp-short {
@@ -71,8 +71,8 @@ export const ExpStyle = styled.div`
 		.company-role-desp {
 			.company-role-desp-para {
 				font-size: 1.1rem;
-                font-weight: 400;
-                margin-bottom: 0.8rem;
+				font-weight: 400;
+				margin-bottom: 0.8rem;
 			}
 		}
 	}
@@ -80,7 +80,7 @@ export const ExpStyle = styled.div`
 	.company-info {
 		align-items: center;
 		justify-content: center;
-	
+
 		.company-name {
 			color: var(--color3);
 			font-size: 1.7rem;
