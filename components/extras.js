@@ -9,7 +9,7 @@ function extras() {
 				<div className="default">
 					{extraPages.map((content, index) => {
 						return (
-							<div key={index}>
+							<div key={content.name}>
 								<div className="content">
 									<div className="content-description">
 										<img src={content.image} />
@@ -36,7 +36,7 @@ function extras() {
 				<div className="default">
 					{extra.map((content, index) => {
 						return (
-							<div key={index}>
+							<div key={content.name}>
 								<div className="content">
 									<div className="content-description">
 										<img src={content.image} />

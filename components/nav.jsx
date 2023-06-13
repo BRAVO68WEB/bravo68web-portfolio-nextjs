@@ -102,7 +102,7 @@ function Nav() {
 					}}
 				>
 					{LINKS.map(({ title, href }, index) => (
-						<MenuItem key={index} onClick={handleClose}>
+						<MenuItem key={title} onClick={handleClose}>
 							<Link href={href}>{title}</Link>
 						</MenuItem>
 					))}
