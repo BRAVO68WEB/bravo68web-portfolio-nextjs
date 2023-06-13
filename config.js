@@ -354,8 +354,8 @@ export const projects = [
 		type: "project",
 		description:
 			"Bravo68web API solely devloped by me to provide a data on and needed by me on daily basis.",
-		image: "https://api.b68dev.xyz/logo",
-		url: "https://api.b68dev.xyz/",
+		image: "/images/uptime-logo.png",
+		url: "https://api.b68.dev/",
 	},
 	{
 		name: "LPU Wifi Login",

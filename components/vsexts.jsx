@@ -9,7 +9,7 @@ function vsExtsShow() {
 				<div className="default">
 					{vsExts.map((content, index) => {
 						return (
-							<div key={index}>
+							<div key={content.name}>
 								<div className="content">
 									<div className="content-description">
 										<a
