@@ -4,8 +4,6 @@ import { useLanyard } from "react-use-lanyard";
 import { discord_id } from "config";
 import DiscordParser from "../libs/discord-parser";
 
-/* <pre>{!loading && JSON.stringify(status, null, 4)}</pre>; */
-
 const customStatus = [
 	"Searching for Cat Girls",
 	"Watching Anime",
@@ -21,26 +19,8 @@ export default function DiscordActivity() {
 		userId: discord_id,
 		socket: true,
 	});
-	const [time, setTime] = useState("00:00:00 elapsed");
 	const [pickedStatus] = useState(statusPicker());
-	const padTo2Digits = (num) => {
-		return num.toString().padStart(2, "0");
-	};
 
-	const convertMsToHM = (milliseconds) => {
-		let seconds = Math.floor(milliseconds / 1000);
-		let minutes = Math.floor(seconds / 60);
-		let hours = Math.floor(minutes / 60);
-		seconds = seconds % 60;
-		minutes = seconds >= 30 ? minutes + 1 : minutes;
-		minutes = minutes % 60;
-		hours = hours % 24;
-		return `${padTo2Digits(hours)}:${padTo2Digits(minutes)}:${padTo2Digits(
-			seconds
-		)} elapsed`;
-	};
-
-	const [currentTs, setCurrentTs] = useState(Date.now());
 	const [parsedStatus, setParsedStatus] = useState(null);
 
 	useEffect(() => {
@@ -49,33 +29,18 @@ export default function DiscordActivity() {
 		}
 	}, [status, loading]);
 
-	useEffect(() => {
-		let interval = setInterval(() => {
-			if (!loading) {
-				setCurrentTs(Date.now());
-				let timeElapsed = convertMsToHM(
-					currentTs -
-						new Date(parsedStatus?.activity?.timestamps.start)
-				);
-				setTime(timeElapsed);
-			}
-		}, 1000);
-		return () => {
-			clearInterval(interval);
-		};
-	}, [currentTs, loading, convertMsToHM, parsedStatus]);
-
 	if (!loading && parsedStatus && status.discord_status !== "offline") {
 		return (
 			<DicordActivityStyle>
 				<div className="discord-icons">
 					<div className="discord-large-icon">
-						<img src={parsedStatus.activity.assets.large_image} />
+						<img 
+							src={parsedStatus.activity.assets.large_image} alt="discord large image"
+						/>
 					</div>
 					<div className="discord-small-icon">
 						<img
-							src={parsedStatus.activity.assets.small_image}
-							alt=""
+							src={parsedStatus.activity.assets.small_image} alt="discord small image"
 						/>
 					</div>
 				</div>
@@ -94,7 +59,6 @@ export default function DiscordActivity() {
 					<div className="discord-message-files">
 						<b>{parsedStatus.activity.state}</b>
 					</div>
-					<div className="time-elapsed">{time}</div>
 				</div>
 			</DicordActivityStyle>
 		);
@@ -130,7 +94,6 @@ export default function DiscordActivity() {
 					<div className="discord-message-files">
 						<b>{pickedStatus}</b>
 					</div>
-					{/* <div className="time-elapsed">00:00:00 elapsed</div> */}
 				</div>
 			</DicordActivityStyle>
 		);

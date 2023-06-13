@@ -9,7 +9,7 @@ export default styled.div`
 	align-items: center;
 	flex-direction: column;
 	overflow-y: auto !important;
-	background-image: url("/images/background5.jpg");
+	background-image: url("/images/pxfuel-2.jpg");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;

@@ -8,7 +8,6 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import SvgIcon from "@mui/material/SvgIcon";
-import MastodonSVG from "./assets/mastodon_icon_137420.svg";
 
 import {
 	name,
@@ -44,13 +43,13 @@ function Main() {
 			<div className="content">
 				<div className="profile">
 					<img
-						src="/images/anime-profile-pic.png"
+						src="/images/profile-new-transp.png"
 						alt=""
 						className="profile-img"
 						id="anime-pic"
 					/>
 					<img
-						src="/images/profile-new-transp.png"
+						src="/images/anime-profile-pic.png"
 						alt=""
 						className="profile-img"
 						id="prof-pic"

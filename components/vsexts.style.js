@@ -6,13 +6,14 @@ export const ExtraStyles = styled.div`
 	justify-content: center;
 	align-items: center;
 	padding-top: 15vh;
-	background-image: url("images/background3.jpg");
+	background-image: url("images/pxfuel-4.jpg");
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	overflow-y: scroll !important;
 	height: 100vh;
+	gap: 1rem;
 	.title {
 		font-size: 2rem;
 		font-weight: bold;

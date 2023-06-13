@@ -13,10 +13,7 @@ function Resume() {
 					initialDoc: "/resume.pdf",
 				},
 				viewer.current
-			).then((instance) => {
-				const { docViewer } = instance;
-				// you can now call WebViewer APIs here...
-			});
+			)
 		});
 	}, []);
 	return (

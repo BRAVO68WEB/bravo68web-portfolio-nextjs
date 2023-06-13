@@ -1,5 +1,6 @@
 import { LanguagesKnownCategory, description1, description2 } from "config";
 import { AboutStyle } from "./about.style";
+import Image from "next/image";
 
 function about() {
 	return (
@@ -23,9 +24,11 @@ function about() {
 						);
 					})}
 				</div>
+				<div className="content">
+                    <p>{description2}</p>
+                </div>
 				<div className="content-2">
-					<p>{description2}</p>
-					<img src="https://bravo68web.me/images/header_.png" />
+					<Image src="/images/header-banner.png" alt="cool lang and framework banner" width="1200" height="270" quality="100" className="banner-image-img"/>
 				</div>
 			</div>
 		</AboutStyle>

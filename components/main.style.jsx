@@ -7,7 +7,7 @@ export default styled.main`
 	width: 100%;
 	justify-content: center;
 	align-items: center;
-	background-image: url("/images/background.jpg");
+	background-image: url("/images/pxfuel.jpg");
 	background-size: cover;
 	background-position: center;
 	#prof-pic {

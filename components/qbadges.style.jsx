@@ -6,7 +6,7 @@ export const QBStyles = styled.div`
 	justify-content: center;
 	align-items: center;
 	padding-top: 15vh;
-	background-image: url("images/background6.webp");
+	background-image: url("images/pxfuel-5.jpg");
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;

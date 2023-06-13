@@ -40,7 +40,7 @@ const LINKS = [
 ];
 
 function Nav() {
-	const { loading, status /*, websocket */ } = useLanyard({
+	const { loading, status } = useLanyard({
 		userId: discord_id,
 		socket: true,
 	});
@@ -76,7 +76,7 @@ function Nav() {
 
 			<div className="links">
 				{LINKS.map(({ title, href }, index) => (
-					<div key={index} className="link">
+					<div key={title} className="link">
 						<Link href={href}>{title}</Link>
 					</div>
 				))}
