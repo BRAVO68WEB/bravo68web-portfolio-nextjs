@@ -7,7 +7,7 @@ function extras() {
 			<div>
 				<h1 className="title">Pages</h1>
 				<div className="default">
-					{extraPages.map((content, index) => {
+					{extraPages.map((content) => {
 						return (
 							<div key={content.name}>
 								<div className="content">

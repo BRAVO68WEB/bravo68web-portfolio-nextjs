@@ -5,7 +5,6 @@ export default styled.div`
 	max-width: 100%;
 	height: 100vh;
 	padding: 100px 20px;
-	margin-top: 15px;
 	align-items: center;
 	flex-direction: column;
 	overflow-y: auto !important;

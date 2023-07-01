@@ -5,7 +5,7 @@ export const ExtraStyles = styled.div`
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	padding-top: 15vh;
+	padding: 15vh 10vw;
 	background-image: url("images/pxfuel-5.jpg");
 	background-size: cover;
 	background-position: center;
@@ -14,10 +14,13 @@ export const ExtraStyles = styled.div`
 	overflow-y: scroll !important;
 	height: 100vh;
 	.title {
+		width: 100%;
 		font-size: 2rem;
 		font-weight: bold;
 		background-color: var(--color4);
 		color: var(--color3);
+		padding: 0.5rem 1rem;
+		border-radius:0.1rem;
 	}
 	.default {
 		display: flex;
