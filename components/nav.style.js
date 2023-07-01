@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export default styled.nav`
-	background: rgb(0, 0, 0, 0.2);
+	background: rgb(0, 0, 0, 0.3);
 	padding: 20px;
 	position: fixed;
 	top: 0;
