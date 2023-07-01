@@ -1,13 +1,12 @@
 import styled from "styled-components";
 
 export default styled.div`
-	padding: 2%;
+	padding: 0.8rem;
 	width: 230px;
 	height: 320px;
 	box-sizing: border-box;
 	background-color: var(--color12);
-	border-radius: 5px;
-	box-shadow: 10px 9px 0px -3px #fffefe;
+	border-radius: 1rem;
 	margin: 5px;
 	* {
 		margin-top: inherit;
@@ -15,6 +14,10 @@ export default styled.div`
 	.type {
 		color: #92dcf3;
 		/* padding: 4px;   */
+	}
+	.date{
+		font-weight: bold;
+		font-size: 1.2rem;
 	}
 	.card-logo {
 		display: flex;
