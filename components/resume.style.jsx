@@ -1,5 +1,5 @@
 import styled from "styled-components";
 
 export const ResumeStyle = styled.div`
-  padding: 10%;
+	padding: 10%;
 `;
