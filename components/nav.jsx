@@ -18,24 +18,12 @@ const LINKS = [
 		href: "/stats",
 	},
 	{
-		title: "Resume",
-		href: "/resume",
+		title: "Experience",
+		href: "/exps",
 	},
 	{
 		title: "Contact",
 		href: "/contact",
-	},
-	{
-		title: "Art/Projects",
-		href: "/projects",
-	},
-	{
-		title: "Blog",
-		href: "https://blog.bravo68web.me",
-	},
-	{
-		title: "Extras",
-		href: "/extras",
 	},
 ];
 
