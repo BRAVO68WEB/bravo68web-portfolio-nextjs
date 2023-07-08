@@ -105,7 +105,7 @@ export const job_exp_4 = {
 	info: "Sales Playbook Automation Platform helps large sales teams to scale",
 };
 export const description1 =
-	"I am Jyotirmoy Bandyopadhayaya, AKA Bravo68web, 19, a student developer from India with passion in API and microservices development. I have expertice in DevOps and Full Stack development. I am a self taught developer and I am always looking for new challenges to learn and grow.";
+	"I am Jyotirmoy Bandyopadhayaya, AKA Bravo68web, 21, a student developer from India with passion in API and microservices development. I have expertice in DevOps and Full Stack development. I am a self taught developer and I am always looking for new challenges to learn and grow.";
 export const description2 =
 	"I love Cats 😻 and I love to code and I love to play FPS shooting games.";
 export const LanguagesKnown = [
