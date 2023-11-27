@@ -1,11 +1,15 @@
 import styled from "styled-components";
 
 export const DicordActivityStyle = styled.div`
+	border-color: #ffffff;
+	border-style: solid;
+	border-width: 2px;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: start;
-	width: 400px;
+	width: 450px;
+	height: 120px;
 	min-height: 75px;
 	background: rgb(131, 58, 180);
 	background: linear-gradient(
@@ -59,9 +63,12 @@ export const DicordActivityStyle = styled.div`
 		font-size: 0.9em;
 	}
 	.discord-message-application {
-		font-size: 1.3em;
+		font-size: 1.4em;
 	}
 	.discord-message-activity {
 		font-size: 1.1em;
+	}
+	.discord-message-files {
+		font-size: 1.0rem;
 	}
 `;

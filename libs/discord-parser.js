@@ -1,5 +1,7 @@
 export default function parse(data) {
-	const output = {};
+	const output = {
+		doing_nothing: false,
+	};
 	const act = [];
 
 	const PrirorityActivityType = [
@@ -27,6 +29,7 @@ export default function parse(data) {
 			"https://cdn.discordapp.com/avatar-decoration-presets/" +
 			data.discord_user.avatar_decoration +
 			".png",
+		discord_status: data.discord_status,
 	};
 
 	output.kv = data.kv;
@@ -93,6 +96,13 @@ export default function parse(data) {
 
 	act.sort((a, b) => a.prirority_id - b.prirority_id);
 
+	if(act.length == 0) {
+		return {
+			...output,
+			doing_nothing: true,
+		}
+	}
+
 	output.activity = act[0];
 
 	if (output.activity?.prirority_id == 1) {
@@ -109,15 +119,15 @@ export default function parse(data) {
 		output.activity.assets = {
 			large_image:
 				"https://cdn.discordapp.com/app-assets/" +
-				output.activity.application_id +
+				output.activity?.application_id +
 				"/" +
-				output.activity.assets.large_image +
+				output.activity?.assets.large_image +
 				".png",
 			small_image:
 				"https://cdn.discordapp.com/app-assets/" +
-				output.activity.application_id +
+				output.activity?.application_id +
 				"/" +
-				output.activity.assets.small_image +
+				output.activity?.assets?.small_image +
 				".png",
 		};
 	}

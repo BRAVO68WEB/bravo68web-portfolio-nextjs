@@ -14,15 +14,29 @@ function WakatimeUserSkillCard({
 }) {
 	return (
 		<SkillCard title={title} image={image} url={url}>
-			<div className="description">Total Code time :- {total_time}</div>
 			<div className="description">
-				Average Daily Code time :- {average_weekly_time}
+				Total Code time :- 
+				<div className="value">
+					{total_time}
+				</div>
 			</div>
 			<div className="description">
-				Total Weekly Code time :- {total_weekly_time}
+				Average Daily Code time :- 
+				<div className="value">
+					{average_weekly_time}
+				</div>
 			</div>
 			<div className="description">
-				Joined on :- {format(joinedOn, "DD MMM YYYY")}
+				Total Weekly Code time :- 
+				<div className="value">
+					{total_weekly_time}
+				</div>
+			</div>
+			<div className="description">
+				Joined on :- 
+				<div className="value">
+					{format(joinedOn, "DD MMM YYYY")}
+				</div>
 			</div>
 		</SkillCard>
 	);

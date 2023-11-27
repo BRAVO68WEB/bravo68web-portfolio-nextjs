@@ -7,7 +7,7 @@ const moduleExports = {
 		remotePatterns: [
 		  {
 			protocol: 'https',
-			hostname: 'bravo68web.me',
+			hostname: 'itsmebravo.dev',
 			port: '',
 			pathname: '/images/**/*.{jpg,jpeg,png,svg,gif,webp}',
 		  },

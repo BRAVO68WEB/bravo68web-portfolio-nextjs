@@ -1,24 +1,21 @@
 import React, { useEffect, useState } from "react";
 import SkillsStyle from "./skills.style";
-// import axios from "handlers/axios";
 import { APISDK } from "handlers/sdk";
 import Box from "@mui/material/Box";
 import LinearProgress from "@mui/material/LinearProgress";
-// import "mainboard.css";
-// import Cursor, { mouseOverEvent, mouseOutEvent } from "./providers/cursor";
 
 // Skill Card templates
 import GitHubSkillCard from "./skillComponents/github_user";
 import OsuUserSkillCard from "./skillComponents/osu_user";
-import TwitterUserSkillCard from "./skillComponents/twitter_user";
 import SpotifyTopSkillCard from "./skillComponents/spotify_top_songs";
 import WakatimeUserSkillCard from "./skillComponents/wakatime_user";
 import HashNodeSkillCard from "./skillComponents/hashnode_inst";
 import OsuBestScoresSkillCard from "./skillComponents/osu_bestScores";
-import TwitterTweetsSkillCard from "./skillComponents/twitter_tweets";
 import WakatimeTopLangSkillCard from "./skillComponents/wakatime_lang";
 import LastFMCurrentSkillCard from "./skillComponents/lastfm_current";
 import GitHubUserEvtSkillCard from "./skillComponents/github_events";
+import HTBUserCard from "./skillComponents/htb_user";
+import HTBActivityCard from "./skillComponents/htb_activity";
 
 function Skills() {
 	const [skills, setSkills] = useState({});
@@ -36,6 +33,7 @@ function Skills() {
 			lastfm: "/images/brandlogos/Lastfm-icon-vector-03.svg",
 			twitter:
 				"https://www.freepnglogos.com/uploads/twitter-logo-png/twitter-logo-vector-png-clipart-1.png",
+			htb: "https://app.hackthebox.com/images/HTB-favicon/apple-touch-icon.png",
 		};
 		setSkills(APISDK.data);
 		setLoading(false);
@@ -68,7 +66,7 @@ function Skills() {
 					<SkillsStyle>
 						<div className="mainboard__container">
 							<GitHubSkillCard
-								title={"GitHub Stats"}
+								title={"GitHub User Stats"}
 								url={"https://github.com/Bravo68web"}
 								image={skills?.logo?.github}
 								public_repos={
@@ -80,6 +78,12 @@ function Skills() {
 									skills?.gh_user?.data?.public_gists
 								}
 								created_at={skills?.gh_user?.data?.created_at}
+							/>
+							<HTBActivityCard 
+								title={"HTB Activity"}
+								url={"https://app.hackthebox.com/profile/1367733"}
+								image={skills?.logo?.htb}
+								data={skills?.htb_activity?.data}
 							/>
 							<OsuUserSkillCard
 								title={"Osu! Player Stats"}
@@ -113,23 +117,19 @@ function Skills() {
 										?.total_score
 								}
 							/>
-							<TwitterUserSkillCard
-								title={"Twitter Stats"}
-								url={"https://twitter.com/Bravo68web"}
-								image={skills?.logo?.twitter}
-								followers_count={
-									skills?.twitter_user?.public_metrics
-										?.followers_count
-								}
-								friends_count={
-									skills?.twitter_user?.public_metrics
-										?.following_count
-								}
-								statuses_count={
-									skills?.twitter_user?.public_metrics
-										?.tweet_count
-								}
-								created_at={skills?.twitter_user?.created_at}
+							<HTBUserCard
+								title={"HTB User Stats"}
+								url={"https://app.hackthebox.com/profile/1367733"}
+								image={skills?.logo?.htb}
+								rank={skills?.htb_profile?.data?.rank}
+								points={skills?.htb_profile?.data?.points}
+								rank_ownership={skills?.htb_profile?.data?.rank_ownership}
+								ranking={skills?.htb_profile?.data?.ranking}
+								respects={skills?.htb_profile?.data?.respects}
+								system_owns={skills?.htb_profile?.data?.system_owns}
+								team={skills?.htb_profile?.data?.team}
+								user_owns={skills?.htb_profile?.data?.user_owns}
+								joinedOn={"2023-10-12T08:49:15.000000Z"}
 							/>
 							<SpotifyTopSkillCard
 								title={"Spotify Top Songs"}
@@ -191,14 +191,14 @@ function Skills() {
 								bestScore2={skills?.osu_bestScores?.data?.[1]}
 								bestScore3={skills?.osu_bestScores?.data?.[2]}
 							/>
-							<TwitterTweetsSkillCard
+							{/* <TwitterTweetsSkillCard
 								title={"Twitter Tweets"}
 								url={"https://twitter.com/Bravo68web"}
 								image={skills?.logo?.twitter}
 								tweets1={skills?.twitter_tweets?.[0]}
 								tweets2={skills?.twitter_tweets?.[1]}
 								tweets3={skills?.twitter_tweets?.[2]}
-							/>
+							/> */}
 							<WakatimeTopLangSkillCard
 								title={"Wakatime Top Languages"}
 								url={"https://wakatime.com/@bravo68web"}

@@ -16,13 +16,13 @@ function HashNodeSkillCard({
 	return (
 		<SkillCard title={title} image={image} url={url}>
 			<div className="description">
-				Joined on: {format(joinOn, "DD MMM YYYY")}
+				Joined on: 
+				<div className="value">
+					{format(joinOn, "DD MMM YYYY")}
+				</div>
 			</div>
 			<div className="description"> Total Posts : {numPosts}</div>
 			<div className="description"> Total Followers : {numFollowers}</div>
-			{/* <div className="description">
-        Publication Domain : {publicationDomain}
-      </div> */}
 			<div className="description"> Total Reactions : {numReactions}</div>
 		</SkillCard>
 	);

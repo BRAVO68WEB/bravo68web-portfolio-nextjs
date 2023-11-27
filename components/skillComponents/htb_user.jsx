@@ -2,73 +2,78 @@ import React from "react";
 import SkillCard from "../skillCard";
 import { format, parse } from "date-format-parse";
 
-function OsuUserSkillCard({
+function HTBUserCard({
 	title,
 	image,
-	accuracy,
-	level,
-	pp_raw,
-	country,
-	pp_rank,
-	join_date,
-	maximum_combo,
-	total_score,
 	url,
+	system_owns,
+	user_owns,
+	rank,
+	points,
+	rank_ownership,
+	ranking,
+	respects,
+	team,
+	joinedOn,
 }) {
 	return (
 		<SkillCard title={title} image={image} url={url}>
 			<div className="description">
-				Accuracy :- 
+				Points :- 
 				<div className="value">
-					{Math.floor(accuracy)} %
+					{points}
 				</div>
 			</div>
 			<div className="description">
-				Level :- 
+				Rank :- 
 				<div className="value">
-					{Math.floor(level)}
+					{rank}
 				</div>
 			</div>
 			<div className="description">
-				PP :- 
+				System Owns :- 
 				<div className="value">
-					{Math.floor(pp_raw)}
+					{system_owns}
 				</div>
 			</div>
 			<div className="description">
-				Country :- 
+				User Owns :- 
 				<div className="value">
-					{country}
+					{user_owns}
 				</div>
 			</div>
 			<div className="description">
-				Global Rank :- 
+				Global Ranking :- 
 				<div className="value">
-					#{pp_rank}
+					{ranking}
 				</div>
 			</div>
 			<div className="description">
-				Max Combo :- 
+				Respect :- 
 				<div className="value">
-					{maximum_combo}
+					{respects}
 				</div>
 			</div>
-
 			<div className="description">
-				Total Score :- 
+				Ownership :- 
 				<div className="value">
-					{total_score?.toLocaleString()}
+					{rank_ownership}%
 				</div>
 			</div>
-
 			<div className="description">
-				Joined on : 
+				Team :- 
 				<div className="value">
-					{format(join_date, "DD MMM YYYY")}
+					{team?.name} | #{team?.ranking}
+				</div>
+			</div>
+			<div className="description">
+				Joined On :- 
+				<div className="value">
+					{format(joinedOn, "DD MMM YYYY")}
 				</div>
 			</div>
 		</SkillCard>
 	);
 }
 
-export default OsuUserSkillCard;
+export default HTBUserCard;
