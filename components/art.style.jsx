@@ -4,7 +4,7 @@ export const ArtStyle = styled.div`
 	padding: 100px 20px;
 	height: 100vh;
 	display: flex;
-	gap:10px;
+	gap: 10px;
 	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;

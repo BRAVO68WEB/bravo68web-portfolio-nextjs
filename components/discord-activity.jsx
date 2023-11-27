@@ -29,26 +29,31 @@ export default function DiscordActivity() {
 		}
 	}, [status, loading]);
 
-	if (!loading && parsedStatus && status.discord_status !== "offline" && parsedStatus.activity) {
+	if (
+		!loading &&
+		parsedStatus &&
+		status.discord_status !== "offline" &&
+		parsedStatus.activity
+	) {
 		return (
 			<DicordActivityStyle>
 				<div className="discord-icons">
 					<div className="discord-large-icon">
-						<img 
-							src={parsedStatus.activity.assets.large_image} alt="discord large image"
+						<img
+							src={parsedStatus.activity.assets.large_image}
+							alt="discord large image"
 						/>
 					</div>
 					<div className="discord-small-icon">
 						<img
-							src={parsedStatus.activity.assets.small_image} alt="discord small image"
+							src={parsedStatus.activity.assets.small_image}
+							alt="discord small image"
 						/>
 					</div>
 				</div>
 				<div className="discord-messageBox">
 					<div className="discord-message-application">
-						<b>
-							{parsedStatus.discord.username}
-						</b>
+						<b>{parsedStatus.discord.username}</b>
 					</div>
 					<div className="discord-message-activity">
 						<b>{parsedStatus.activity.details}</b>
@@ -60,26 +65,34 @@ export default function DiscordActivity() {
 				</div>
 			</DicordActivityStyle>
 		);
-	} else if (!loading && parsedStatus && status.discord_status !== "offline") {
+	} else if (
+		!loading &&
+		parsedStatus &&
+		status.discord_status !== "offline"
+	) {
 		return (
 			<DicordActivityStyle>
 				<div className="discord-icons">
 					<div className="discord-large-icon">
 						<img
-							src={parsedStatus.discord.avatar_url} alt="discord large image"
+							src={parsedStatus.discord.avatar_url}
+							alt="discord large image"
 						/>
 					</div>
 					<div className="discord-small-icon">
 						<img
-							src={"/images/" + parsedStatus.discord.discord_status + ".png"} alt="discord small image"
+							src={
+								"/images/" +
+								parsedStatus.discord.discord_status +
+								".png"
+							}
+							alt="discord small image"
 						/>
 					</div>
 				</div>
 				<div className="discord-messageBox">
 					<div className="discord-message-application">
-						<b>
-							{parsedStatus.discord.username}
-						</b>
+						<b>{parsedStatus.discord.username}</b>
 					</div>
 					<div className="discord-message-activity">
 						<b>{parsedStatus.discord.discord_status}</b>
@@ -91,8 +104,7 @@ export default function DiscordActivity() {
 				</div>
 			</DicordActivityStyle>
 		);
-	}
-	else {
+	} else {
 		let restData = {
 			username: "bravo68web",
 			public_flags: 64,
@@ -112,9 +124,7 @@ export default function DiscordActivity() {
 				</div>
 				<div className="discord-messageBox">
 					<div className="discord-message-application">
-						<b>
-							{restData.username}
-						</b>
+						<b>{restData.username}</b>
 					</div>
 					<div className="discord-message-activity">
 						<b>is Offline</b>

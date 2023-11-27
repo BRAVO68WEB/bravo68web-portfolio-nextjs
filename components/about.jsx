@@ -25,10 +25,17 @@ function about() {
 					})}
 				</div>
 				<div className="content">
-                    <p>{description2}</p>
-                </div>
+					<p>{description2}</p>
+				</div>
 				<div className="content-2">
-					<Image src="/images/header-banner.png" alt="cool lang and framework banner" width="1200" height="270" quality="100" className="banner-image-img"/>
+					<Image
+						src="/images/header-banner.png"
+						alt="cool lang and framework banner"
+						width="1200"
+						height="270"
+						quality="100"
+						className="banner-image-img"
+					/>
 				</div>
 			</div>
 		</AboutStyle>

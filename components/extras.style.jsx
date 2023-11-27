@@ -20,7 +20,7 @@ export const ExtraStyles = styled.div`
 		background-color: var(--color4);
 		color: var(--color3);
 		padding: 0.5rem 1rem;
-		border-radius:0.1rem;
+		border-radius: 0.1rem;
 	}
 	.default {
 		display: flex;
@@ -31,7 +31,7 @@ export const ExtraStyles = styled.div`
 		padding-bottom: 3em;
 		padding-top: 2em;
 		gap: 2.5em;
-		
+
 		.content {
 			display: flex;
 			flex-wrap: wrap;

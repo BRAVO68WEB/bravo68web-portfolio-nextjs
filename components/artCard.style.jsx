@@ -15,7 +15,7 @@ export default styled.div`
 		color: #92dcf3;
 		/* padding: 4px;   */
 	}
-	.date{
+	.date {
 		font-weight: bold;
 		font-size: 1.2rem;
 	}

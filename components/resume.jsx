@@ -13,7 +13,7 @@ function Resume() {
 					initialDoc: "/resume.pdf",
 				},
 				viewer.current
-			)
+			);
 		});
 	}, []);
 	return (

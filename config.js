@@ -217,14 +217,16 @@ export const projects = [
 	{
 		name: "vs-presence-server",
 		type: "project",
-		description: "This is a server that allows you to project your vscode presence to a custom rich presence server.",
+		description:
+			"This is a server that allows you to project your vscode presence to a custom rich presence server.",
 		image: "/images/GitHub-Logo.png",
 		url: "https://github.com/BRAVO68WEB/vsc-presence-server",
 	},
 	{
 		name: "Stockpile",
 		type: "project",
-		description: "Redis from Scratch using Nodejs [No External Dependencies] ",
+		description:
+			"Redis from Scratch using Nodejs [No External Dependencies] ",
 		image: "/images/GitHub-Logo.png",
 		url: "https://github.com/BRAVO68WEB/stockpile",
 	},
@@ -247,7 +249,7 @@ export const projects = [
 		type: "project",
 		description: "NodeJS SDK for Stockpile",
 		image: "/images/GitHub-Logo.png",
-		url: "https://github.com/BRAVO68WEB/stockpile-node-sdk"
+		url: "https://github.com/BRAVO68WEB/stockpile-node-sdk",
 	},
 	{
 		name: "emailengine-foss",
@@ -259,23 +261,25 @@ export const projects = [
 	{
 		name: "typescript-express-hasura-pgsql-template",
 		type: "project",
-		description: "A Template for a Typescript Express Server with Hasura and Postgres",
+		description:
+			"A Template for a Typescript Express Server with Hasura and Postgres",
 		image: "/images/GitHub-Logo.png",
-		url: "https://github.com/BRAVO68WEB/typescript-express-hasura-pgsql-template"
+		url: "https://github.com/BRAVO68WEB/typescript-express-hasura-pgsql-template",
 	},
 	{
 		name: "cat-as-a-service",
 		type: "project",
 		description: "Cat as a Service API",
 		image: "/images/GitHub-Logo.png",
-		url: "https://github.com/gdsclpu/cat-as-a-service"
+		url: "https://github.com/gdsclpu/cat-as-a-service",
 	},
 	{
 		name: "SHX",
 		type: "project",
-		description: "Shx is a platform ment to store and share files, images, text and URLs with ease.",
+		description:
+			"Shx is a platform ment to store and share files, images, text and URLs with ease.",
 		image: "/images/GitHub-Logo.png",
-		url: "https://github.com/BRAVO68WEB/shx"
+		url: "https://github.com/BRAVO68WEB/shx",
 	},
 	{
 		name: "Enterprise Workspace Images [arm64]",

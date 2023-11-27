@@ -5,12 +5,12 @@ const moduleExports = {
 	},
 	images: {
 		remotePatterns: [
-		  {
-			protocol: 'https',
-			hostname: 'itsmebravo.dev',
-			port: '',
-			pathname: '/images/**/*.{jpg,jpeg,png,svg,gif,webp}',
-		  },
+			{
+				protocol: "https",
+				hostname: "itsmebravo.dev",
+				port: "",
+				pathname: "/images/**/*.{jpg,jpeg,png,svg,gif,webp}",
+			},
 		],
 	},
 };

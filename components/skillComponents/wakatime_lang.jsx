@@ -16,34 +16,24 @@ function WakatimeTopLangSkillCard({
 	return (
 		<SkillCard title={title} image={image} url={url}>
 			<div className="description">
-				{topLang1?.name} :- 
-				<div className="value">
-					{topLang1?.percent}%
-				</div>
+				{topLang1?.name} :-
+				<div className="value">{topLang1?.percent}%</div>
 			</div>
 			<div className="description">
-				{topLang2?.name} :- 
-				<div className="value">
-					{topLang2?.percent}%
-				</div>
+				{topLang2?.name} :-
+				<div className="value">{topLang2?.percent}%</div>
 			</div>
 			<div className="description">
-				{topLang3?.name} :- 
-				<div className="value">
-					{topLang3?.percent}%
-				</div>
+				{topLang3?.name} :-
+				<div className="value">{topLang3?.percent}%</div>
 			</div>
 			<div className="description">
-				{topLang4?.name} :- 
-				<div className="value">
-					{topLang4?.percent}%
-				</div>
+				{topLang4?.name} :-
+				<div className="value">{topLang4?.percent}%</div>
 			</div>
 			<div className="description">
-				{topLang5?.name} :- 
-				<div className="value">
-					{topLang5?.percent}%
-				</div>
+				{topLang5?.name} :-
+				<div className="value">{topLang5?.percent}%</div>
 			</div>
 		</SkillCard>
 	);

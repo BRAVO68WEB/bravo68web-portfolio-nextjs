@@ -72,7 +72,7 @@ export const APISDK = {
 				{
 					endpoint: "/me/hackthebox/activity",
 					name: "htb_activity",
-				}
+				},
 			],
 			this.data
 		);

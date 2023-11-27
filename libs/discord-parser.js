@@ -96,11 +96,11 @@ export default function parse(data) {
 
 	act.sort((a, b) => a.prirority_id - b.prirority_id);
 
-	if(act.length == 0) {
+	if (act.length == 0) {
 		return {
 			...output,
 			doing_nothing: true,
-		}
+		};
 	}
 
 	output.activity = act[0];

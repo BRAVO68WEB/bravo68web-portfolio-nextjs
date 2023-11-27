@@ -69,6 +69,6 @@ export const DicordActivityStyle = styled.div`
 		font-size: 1.1em;
 	}
 	.discord-message-files {
-		font-size: 1.0rem;
+		font-size: 1rem;
 	}
 `;

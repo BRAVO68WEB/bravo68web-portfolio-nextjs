@@ -24,7 +24,7 @@ export default styled.nav`
 			color: #fff;
 			border-radius: 5px;
 			&:hover {
-				background-color: rgba(0,0,0, 0.5);
+				background-color: rgba(0, 0, 0, 0.5);
 			}
 		}
 		@media (max-width: 900px) {

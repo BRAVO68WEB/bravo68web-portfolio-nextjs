@@ -14,31 +14,25 @@ function GitHubSkillCard({
 }) {
 	return (
 		<SkillCard title={title} image={image} url={url}>
-			<div className="description">Repos :- 
-				<div className="value">
-					{public_repos}
-				</div>
-			</div>
-			<div className="description">Followers :- 
-				<div className="value">
-					{followers}
-				</div>
-			</div>
-			<div className="description">Following :- 
-				<div className="value">
-					{following}
-				</div>
-			</div>
-			<div className="description">Gists :- 
-				<div className="value">
-					{public_gists}
-				</div>
+			<div className="description">
+				Repos :-
+				<div className="value">{public_repos}</div>
 			</div>
 			<div className="description">
-				Joined On :- 
-				<div className="value">
-					{format(created_at, "DD MMM YYYY")}
-				</div>
+				Followers :-
+				<div className="value">{followers}</div>
+			</div>
+			<div className="description">
+				Following :-
+				<div className="value">{following}</div>
+			</div>
+			<div className="description">
+				Gists :-
+				<div className="value">{public_gists}</div>
+			</div>
+			<div className="description">
+				Joined On :-
+				<div className="value">{format(created_at, "DD MMM YYYY")}</div>
 			</div>
 		</SkillCard>
 	);

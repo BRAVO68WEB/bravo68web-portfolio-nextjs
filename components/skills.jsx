@@ -79,9 +79,11 @@ function Skills() {
 								}
 								created_at={skills?.gh_user?.data?.created_at}
 							/>
-							<HTBActivityCard 
+							<HTBActivityCard
 								title={"HTB Activity"}
-								url={"https://app.hackthebox.com/profile/1367733"}
+								url={
+									"https://app.hackthebox.com/profile/1367733"
+								}
 								image={skills?.logo?.htb}
 								data={skills?.htb_activity?.data}
 							/>
@@ -119,14 +121,20 @@ function Skills() {
 							/>
 							<HTBUserCard
 								title={"HTB User Stats"}
-								url={"https://app.hackthebox.com/profile/1367733"}
+								url={
+									"https://app.hackthebox.com/profile/1367733"
+								}
 								image={skills?.logo?.htb}
 								rank={skills?.htb_profile?.data?.rank}
 								points={skills?.htb_profile?.data?.points}
-								rank_ownership={skills?.htb_profile?.data?.rank_ownership}
+								rank_ownership={
+									skills?.htb_profile?.data?.rank_ownership
+								}
 								ranking={skills?.htb_profile?.data?.ranking}
 								respects={skills?.htb_profile?.data?.respects}
-								system_owns={skills?.htb_profile?.data?.system_owns}
+								system_owns={
+									skills?.htb_profile?.data?.system_owns
+								}
 								team={skills?.htb_profile?.data?.team}
 								user_owns={skills?.htb_profile?.data?.user_owns}
 								joinedOn={"2023-10-12T08:49:15.000000Z"}
@@ -175,12 +183,12 @@ function Skills() {
 								url={"https://blog.bravo68web.me/"}
 								image={skills?.logo?.hashnode}
 								joinOn={"2021-06-18"}
-								numPosts={skills?.hn_user?.data?.numPosts}
-								numFollowers={
-									skills?.hn_user?.data?.numFollowers
+								numPosts={
+									skills?.hn_user?.data?.publications
+										?.edges[0]?.node.posts.totalDocuments
 								}
-								numReactions={
-									skills?.hn_user?.data?.numReactions
+								numFollowers={
+									skills?.hn_user?.data?.followersCount
 								}
 							/>
 							<OsuBestScoresSkillCard
