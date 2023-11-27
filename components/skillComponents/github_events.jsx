@@ -57,7 +57,7 @@ function GitCommits({ title, image, evt1, evt2, evt3, url }) {
 					<br />
 					{evt1?.repo?.name}
 				</div>
-				<div className="description commit-msg">
+				<div className="value commit-msg">
 					{evt1?.commitMsg?.slice(0, 50)}
 				</div>
 				{/* <div className="description">{evt1?.created_at}</div> */}
@@ -70,7 +70,7 @@ function GitCommits({ title, image, evt1, evt2, evt3, url }) {
 					<br />
 					{evt2?.repo?.name}
 				</div>
-				<div className="description commit-msg">
+				<div className="value commit-msg">
 					{evt2?.commitMsg?.slice(0, 50)}
 				</div>
 				{/* <div className="description">{evt2?.created_at}</div> */}
@@ -83,7 +83,7 @@ function GitCommits({ title, image, evt1, evt2, evt3, url }) {
 					<br />
 					{evt3?.repo?.name}
 				</div>
-				<div className="description commit-msg">
+				<div className="value commit-msg">
 					{evt3?.commitMsg?.slice(0, 50)}
 				</div>
 				{/* <div className="description">{evt3?.created_at}</div> */}

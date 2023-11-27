@@ -38,7 +38,14 @@ export default styled.div`
 	.description {
 		font-size: 1rem;
 		color: var(--color4);
+		display: flex;
+		align-items: start;
+		justify-content: space-between;
+		/* gap: 6px; */
 		/* width: 225px; */
+	}
+	.value {
+		color: #ffff;
 	}
 	.topSongs {
 		display: flex;

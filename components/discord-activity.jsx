@@ -29,7 +29,7 @@ export default function DiscordActivity() {
 		}
 	}, [status, loading]);
 
-	if (!loading && parsedStatus && status.discord_status !== "offline") {
+	if (!loading && parsedStatus && status.discord_status !== "offline" && parsedStatus.activity) {
 		return (
 			<DicordActivityStyle>
 				<div className="discord-icons">
@@ -47,9 +47,7 @@ export default function DiscordActivity() {
 				<div className="discord-messageBox">
 					<div className="discord-message-application">
 						<b>
-							{parsedStatus.discord.username +
-								"#" +
-								parsedStatus.discord.discriminator}
+							{parsedStatus.discord.username}
 						</b>
 					</div>
 					<div className="discord-message-activity">
@@ -62,13 +60,44 @@ export default function DiscordActivity() {
 				</div>
 			</DicordActivityStyle>
 		);
-	} else {
+	} else if (!loading && parsedStatus && status.discord_status !== "offline") {
+		return (
+			<DicordActivityStyle>
+				<div className="discord-icons">
+					<div className="discord-large-icon">
+						<img
+							src={parsedStatus.discord.avatar_url} alt="discord large image"
+						/>
+					</div>
+					<div className="discord-small-icon">
+						<img
+							src={"/images/" + parsedStatus.discord.discord_status + ".png"} alt="discord small image"
+						/>
+					</div>
+				</div>
+				<div className="discord-messageBox">
+					<div className="discord-message-application">
+						<b>
+							{parsedStatus.discord.username}
+						</b>
+					</div>
+					<div className="discord-message-activity">
+						<b>{parsedStatus.discord.discord_status}</b>
+					</div>
+					<br />
+					<div className="discord-message-files">
+						<b>is Available</b>
+					</div>
+				</div>
+			</DicordActivityStyle>
+		);
+	}
+	else {
 		let restData = {
-			username: "Bravo68-DF_Techs",
+			username: "bravo68web",
 			public_flags: 64,
 			id: "457039372009865226",
-			discriminator: "6429",
-			avatar: "08a8937664b3b165805965244d6f095f",
+			avatar: "b9e91dcc8e658eb1ebf24299b7bec733",
 		};
 
 		return (
@@ -84,7 +113,7 @@ export default function DiscordActivity() {
 				<div className="discord-messageBox">
 					<div className="discord-message-application">
 						<b>
-							{restData.username + "#" + restData.discriminator}
+							{restData.username}
 						</b>
 					</div>
 					<div className="discord-message-activity">

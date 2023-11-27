@@ -22,6 +22,10 @@ const LINKS = [
 		href: "/exps",
 	},
 	{
+		title: "Projects",
+		href: "/projects",
+	},
+	{
 		title: "Contact",
 		href: "/contact",
 	},

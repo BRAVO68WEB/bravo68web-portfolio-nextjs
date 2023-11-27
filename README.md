@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to my portfolio 👋</h1>
+<h1 align="center">Welcome to my portfolio repo 👋</h1>
 
 <a href="LICENSE" target="_blank">
   <img alt="License: CC-BY-ND-4.0" src="https://forthebadge.com/images/badges/cc-by-nd.svg" />
@@ -12,7 +12,7 @@
 
 <br><br>
 
-<img src="./screenshots/1.png" />
+<img src="./screenshots/2.png" />
 
 <br>
 
@@ -22,13 +22,11 @@
 
 #### About this Repo :-
 
-This Repo cotains source code for my developer portfolio at https://itsmebravo.dev. I reworked my existed portfolio to nextjs for make it faster and integrate my existing API at https://api.bravo68web.me
+This Repo cotains source code for my developer portfolio at https://itsmebravo.dev. I reworked my existed portfolio to nextjs for make it faster and integrate my existing API at https://api.b68.dev
 
 #### Features :-
 
 -   Discord Integration
--   Online Status Checker
--   Resume Embed
 -   Custom User Stats representations
 -   Art and Project Showcase
 -   Custom Error page (including 404 and 500 response error)

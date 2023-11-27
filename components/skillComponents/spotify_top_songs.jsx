@@ -1,7 +1,5 @@
 import React from "react";
 import SkillCard from "../skillCard";
-import SkillCardStyle from "../skillCard.styled";
-// import { format, parse } from "date-format-parse";
 
 function SpotifyTopSkillCard({
 	title,

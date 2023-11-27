@@ -73,9 +73,13 @@ export default styled.main`
 			max-width: 100%;
 		}
 		margin-bottom: 20px;
+		border-color: #ffffff;
+		border-style: solid;
+		border-width: 5px;
+		border-radius: 100%;
 	}
 	.name {
-		font-size: 1.5rem;
+		font-size: 1.6rem;
 		font-weight: 600;
 		margin-bottom: 1rem;
 	}

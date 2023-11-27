@@ -41,8 +41,8 @@ function Contact() {
 								<h3>
 									<strong>Email:</strong>
 								</h3>
-								<a href="mailto:me@bravo68web.me">
-									me@bravo68web.me
+								<a href="mailto:portfolio@b68.dev">
+									hi@b68.dev
 								</a>
 							</p>
 							<br />
@@ -58,7 +58,7 @@ function Contact() {
 									<strong>Discord:</strong>
 								</h3>
 								<a href="https://discord.com/users/457039372009865226">
-									Bravo68-DF_Techs#6429
+									bravo68web
 								</a>
 							</p>
 							<br />

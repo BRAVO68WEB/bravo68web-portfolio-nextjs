@@ -38,17 +38,17 @@ export const APISDK = {
 					name: "wakatime_lang",
 				},
 				{
-					endpoint: "/me/hashnode/",
+					endpoint: "/me/hashnode",
 					name: "hn_user",
 				},
-				{
-					endpoint: "/me/twitter/profile",
-					name: "twitter_user",
-				},
-				{
-					endpoint: "/me/twitter/tweets",
-					name: "twitter_tweets",
-				},
+				// {
+				// 	endpoint: "/me/twitter/profile",
+				// 	name: "twitter_user",
+				// },
+				// {
+				// 	endpoint: "/me/twitter/tweets",
+				// 	name: "twitter_tweets",
+				// },
 				{
 					endpoint: "/me/lastfm/current",
 					name: "lastfm_current",
@@ -58,16 +58,23 @@ export const APISDK = {
 					name: "gh_events",
 				},
 				{
-					endpoint: "/me/vscode/",
+					endpoint: "/me/vscode",
 					name: "vscode",
 				},
 				{
 					endpoint: "/me/mastodon/statuses",
 					name: "masto_status",
 				},
+				{
+					endpoint: "/me/hackthebox/profile",
+					name: "htb_profile",
+				},
+				{
+					endpoint: "/me/hackthebox/activity",
+					name: "htb_activity",
+				}
 			],
 			this.data
 		);
-		// return tempEndpoint("https://api.github.com/users/bravo68web", this.data);
 	},
 };

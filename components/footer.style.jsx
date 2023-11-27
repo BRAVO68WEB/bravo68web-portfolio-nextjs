@@ -9,6 +9,7 @@ export default styled.div`
 	background: var(--color1);
 	display: flex;
 	justify-content: center;
+	/* filter: blur("5px"); */
 	.main-footer {
 		display: flex;
 		justify-content: center;

@@ -49,7 +49,7 @@ const useLastFM = () => {
 	useEffect(() => {
 		const interval = setInterval(() => {
 			getStatus();
-		}, 3000);
+		}, 15000);
 
 		return () => clearInterval(interval);
 	}, []);

@@ -5,13 +5,14 @@ export const linkedin_url = "https://linkedin.com/in/bravo68web";
 export const mastodon_url = "https://fosstodon.org/@bravo68web/";
 export const email = "mailto:hi@b68.dev";
 export const instagram_url = "https://instagram.com/bravo68web";
+export const hackthebox_url = "https://app.hackthebox.com/profile/1367733";
 export const phone = "";
 export const address = "";
 export const website = "https://b68.dev";
-export const resume_url = "";
+export const resume_url = "https://s.b68.dev/resume";
 export const facebook_url = "https://www.facebook.com/Bravo68Web/";
 export const discord_id = "457039372009865226";
-export const avatar_id = "08a8937664b3b165805965244d6f095f";
+export const avatar_id = "b9e91dcc8e658eb1ebf24299b7bec733";
 export const discord_profile = "";
 export const job_exp_1 = {
 	name: "DF Tech Community",
