@@ -7,7 +7,7 @@ function Contact() {
 		senderName: "",
 		email: "",
 		message: "",
-		topic: "",
+		subject: "",
 	});
 	const [isSubmitted, setIsSubmitted] = useState(false);
 	function changeInput(evt) {
@@ -19,7 +19,7 @@ function Contact() {
 	}
 	function submitForm(evt) {
 		evt.preventDefault();
-		axios.post("/contactme/postQuery", input);
+		axios.post("/api/contact", input);
 		setIsSubmitted(true);
 	}
 	return (
@@ -41,7 +41,7 @@ function Contact() {
 								<h3>
 									<strong>Email:</strong>
 								</h3>
-								<a href="mailto:portfolio@b68.dev">
+								<a href="mailto:hi@b68.dev">
 									hi@b68.dev
 								</a>
 							</p>
@@ -94,7 +94,7 @@ function Contact() {
 							<br />
 							<input
 								name="senderName"
-								value={input.senderName}
+								value={input.name}
 								onChange={changeInput}
 								type="text"
 								className="form-control"
@@ -103,15 +103,15 @@ function Contact() {
 							/>
 						</div>
 						<div className="form-group">
-							<label htmlFor="topic">Subject </label>
+							<label htmlFor="subject">Subject </label>
 							<br />
 							<input
-								name="topic"
-								value={input.topic}
+								name="subject"
+								value={input.subject}
 								onChange={changeInput}
 								type="text"
 								className="form-control"
-								id="topic"
+								id="subject"
 								placeholder="I want to talk about..."
 							/>
 						</div>
