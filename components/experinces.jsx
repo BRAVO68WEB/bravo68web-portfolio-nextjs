@@ -1,4 +1,4 @@
-import { job_exp_1, job_exp_2, job_exp_3, job_exp_4 } from "config";
+import { job_exp_1, job_exp_2, job_exp_3, job_exp_4, job_exp_5 } from "config";
 import { ExpStyle } from "./experinces.style";
 
 function experinces() {
@@ -129,6 +129,39 @@ function experinces() {
 							</p>
 							<div className="tech-list">
 								{job_exp_4.techstack.map((tech) => (
+									<div key={tech} className="tech-name">
+										#{tech}
+									</div>
+								))}
+							</div>
+						</div>
+					</div>
+				</div>
+				<div className="company">
+					<div className="company-left">
+						<div className="company-img">
+							<img src={job_exp_5.logo} alt="company logo" />
+						</div>
+						<div className="company-info">
+							<div className="company-name">{job_exp_5.name}</div>
+							<div className="company-desp">{job_exp_5.info}</div>
+						</div>
+					</div>
+					<div className="company-right">
+						<div className="company-exp-short">
+							<div className="company-role-name">
+								{job_exp_5.role}
+							</div>
+							<div className="company-role-dur">
+								{job_exp_5.start_date} - {job_exp_5.end_date}
+							</div>
+						</div>
+						<div className="company-role-desp">
+							<p className="company-role-desp-para">
+								{job_exp_5.description}
+							</p>
+							<div className="tech-list">
+								{job_exp_5.techstack.map((tech) => (
 									<div key={tech} className="tech-name">
 										#{tech}
 									</div>

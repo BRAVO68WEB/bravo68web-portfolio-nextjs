@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Nav from "components/nav";
-import About from "components/experinces";
+import Exps from "components/experinces";
 import Footer from "components/footer";
 
 export default function Home() {
@@ -13,7 +13,7 @@ export default function Home() {
 				</title>
 			</Head>
 			<Nav />
-			<About />
+			<Exps />
 
 			{/* <Footer /> */}
 		</div>
