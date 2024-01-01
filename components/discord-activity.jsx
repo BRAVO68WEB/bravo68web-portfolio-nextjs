@@ -66,23 +66,23 @@ export default function DiscordActivity() {
 				<div className="discord-icons">
 					<div className="discord-large-icon">
 						<img
-							src={parsedStatus.discord.avatar_url} alt="discord large image"
+							src={parsedStatus?.discord?.avatar_url} alt="discord large image"
 						/>
 					</div>
 					<div className="discord-small-icon">
 						<img
-							src={"/images/" + parsedStatus.discord.discord_status + ".png"} alt="discord small image"
+							src={"/images/" + parsedStatus?.discord?.discord_status + ".png"} alt="discord small image"
 						/>
 					</div>
 				</div>
 				<div className="discord-messageBox">
 					<div className="discord-message-application">
 						<b>
-							{parsedStatus.discord.username}
+							{parsedStatus?.discord?.username}
 						</b>
 					</div>
 					<div className="discord-message-activity">
-						<b>{parsedStatus.discord.discord_status}</b>
+						<b>{parsedStatus?.discord?.discord_status}</b>
 					</div>
 					<br />
 					<div className="discord-message-files">
