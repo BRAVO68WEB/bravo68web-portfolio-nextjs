@@ -27,7 +27,7 @@
 		"@mui/icons-material": "^5.15.2",
 		"@mui/material": "^5.15.2",
 		"@pdftron/webviewer": "^8.12.1",
-		"axios": "^0.26.1",
+		"axios": "^1.6.4",
 		"ciao-status-fetch": "^1.0.1",
 		"core-js": "^3.35.0",
 		"date-format-parse": "^0.2.7",
