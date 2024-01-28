@@ -98,4 +98,25 @@ export const ExpStyle = styled.div`
 		flex-direction: column;
 		gap: 3rem;
 	}
+    @media screen and (max-width: 1024px){
+        .company{
+            flex-direction: column;
+            }
+            
+            .company-left{
+                width: 100%;
+            }
+            
+            .company-right{
+            width: 100%;
+            }
+            
+            .company-right .company-exp-short{
+            flex-wrap: wrap;
+            }
+            
+            .tech-list{
+            flex-wrap: wrap;
+            }
+    }
 `;

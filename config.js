@@ -14,7 +14,8 @@ export const facebook_url = "https://www.facebook.com/Bravo68Web/";
 export const discord_id = "457039372009865226";
 export const avatar_id = "b9e91dcc8e658eb1ebf24299b7bec733";
 export const discord_profile = "";
-export const job_exp_1 = {
+
+export const job_exp_5 = {
 	name: "DF Tech Community",
 	info: "Freelance community for developers and designers",
 	role: "Wordpress Manager + Hosting Manager",
@@ -35,10 +36,10 @@ export const job_exp_1 = {
 		"Alibaba Cloud",
 	],
 };
-export const job_exp_2 = {
+export const job_exp_4 = {
 	name: "Engineer's Cradle",
 	info: "EdTech Company catering Engineering Students",
-	role: "CTO DevOps + Full Stack Developer",
+	role: "Full Stack Cloud Developer",
 	description:
 		"I was a CTO DevOps and Full Stack Developer at Engineer's Cradle. Being one of the founding members of the company, I was responsible for managing the comapany's website and creating initial MVP for onboarding students for the platform. I lead the backend development team and was responsible for managing the backend infrastructure of the company.",
 	start_date: "2021-04-01",
@@ -59,7 +60,7 @@ export const job_exp_2 = {
 };
 export const job_exp_3 = {
 	name: "Hybr1d.io",
-	role: "SDE Backend Developer",
+	role: "SDE Backend Developer Intern",
 	info: "An IT Solutions company provider",
 	description:
 		"I was a SDE Backend Developer at Hybr1d.io. I was responsible for migrating company's backend architecture from Ruby on Rails to Typescript alongside creating microservices. I was also responsible for managing the company's backend infrastructure and creating CI/CD pipelines for the company's backend services on AWS Cloud.",
@@ -81,9 +82,9 @@ export const job_exp_3 = {
 	],
 	website: "https://hybr1d.io",
 };
-export const job_exp_4 = {
+export const job_exp_2 = {
 	name: "Sharpsell.ai",
-	role: "Site Reliability Engineer",
+	role: "Site Reliability Engineer Intern",
 	description:
 		"I was a Site Reliability Engineer at Sharpsell. I was responsible for managing the company's infrastructure and creating CI/CD pipelines for the company's services on AWS Cloud. I was also responsible for creating the company's backend architecture, creating microservices and deploy scable solutions.",
 	start_date: "2023-01-15",
@@ -105,8 +106,33 @@ export const job_exp_4 = {
 	website: "https://sharpsell.ai",
 	info: "Sales Playbook Automation Platform helps large sales teams to scale",
 };
+export const job_exp_1 = {
+	name: "SaaSDen",
+	role: "SDE Intern",
+	description:
+		"I works as an founding engineer as a backend developer. I was responsible for creating the backend architecture of the company and creating microservices. I was also responsible for managing the company's backend infrastructure and creating CI/CD pipelines for the company's backend services on AWS and Azure Cloud.",
+	start_date: "2023-07-01",
+	end_date: "2023-11-31",
+	logo: "https://safe.b68dev.xyz/m2hBnksN.jpeg",
+	techstack: [
+		"AWS",
+		"NodeJS",
+		"Typescript",
+		"Rust",
+		"MongoDB",
+		"PostgreSQL",
+		"Redis",
+		"Docker",
+		"EC2",
+		"S3",
+		"Lambda",
+		"Infra Design",
+	],
+	website: "https://saasden.club/",
+	info: "One dashboard for all your SaaS subscriptions | Reimagining SaaS Management",
+};
 export const description1 =
-	"I am Jyotirmoy Bandyopadhayaya, AKA Bravo68web, 19, a student developer from India with passion in API and microservices development. I have expertice in DevOps and Full Stack development. I am a self taught developer and I am always looking for new challenges to learn and grow.";
+	"I am Jyotirmoy Bandyopadhayaya, AKA Bravo68web, 20, a student developer from India with passion in API and microservices development. I have expertice in DevOps and Full Stack development. I am a self taught developer and I am always looking for new challenges to learn and grow.";
 export const description2 =
 	"I love Cats 😻 and I love to code and I love to play FPS shooting games.";
 export const LanguagesKnown = [
