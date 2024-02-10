@@ -104,18 +104,7 @@ export default function parse(data) {
 	}
 
 	output.activity = act[0];
-
-	if (output.activity?.prirority_id == 1) {
-		output.activity.assets = {
-			large_image: output.spotify.album_art_url,
-			small_image: "/images/brandlogos/SpotifyLogo.png",
-		};
-	} else if (output.activity?.prirority_id == 3) {
-		output.activity.assets = {
-			large_image: "/images/anime-profile-pic.png",
-			small_image: output.custom_status.emoji.emoji_url,
-		};
-	} else {
+	if (output.activity?.prirority_id == 0) {
 		output.activity.assets = {
 			large_image:
 				"https://cdn.discordapp.com/app-assets/" +
@@ -131,6 +120,42 @@ export default function parse(data) {
 				".png",
 		};
 	}
+	else if (output.activity?.prirority_id == 1) {
+		output.activity.assets = {
+			large_image: output.spotify.album_art_url,
+			small_image: "/images/brandlogos/SpotifyLogo.png",
+		};
+	} else if (output.activity?.prirority_id == 3) {
+		output.activity.assets = {
+			large_image: "/images/anime-profile-pic.png",
+			small_image: output.custom_status.emoji.emoji_url,
+		};
+	} else {
+		if (output.activity.assets){
+			output.activity.assets = {
+				large_image:
+					"https://cdn.discordapp.com/app-assets/" +
+					output.activity?.application_id +
+					"/" +
+					output.activity?.assets.large_image +
+					".png",
+				small_image:
+					"https://cdn.discordapp.com/app-assets/" +
+					output.activity?.application_id +
+					"/" +
+					output.activity?.assets?.small_image +
+					".png",
+			};
+		}
+		else {
+			output.activity.assets = {
+				large_image: "/images/default_game.jpg",
+				small_image: "/images/special.png",
+			};
+		}
+	}
+
+	console.log(output);
 
 	return output;
 }

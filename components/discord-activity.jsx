@@ -51,11 +51,11 @@ export default function DiscordActivity() {
 						</b>
 					</div>
 					<div className="discord-message-activity">
-						<b>{parsedStatus.activity.details}</b>
+						<b>{parsedStatus.activity.details ?? "-------"}</b>
 					</div>
 					<br />
 					<div className="discord-message-files">
-						<b>{parsedStatus.activity.state}</b>
+						<b>{parsedStatus.activity.state ?? parsedStatus.activity.name}</b>
 					</div>
 				</div>
 			</DicordActivityStyle>
