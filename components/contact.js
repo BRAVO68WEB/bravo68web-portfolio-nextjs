@@ -19,7 +19,12 @@ function Contact() {
 	}
 	function submitForm(evt) {
 		evt.preventDefault();
-		axios.post("/api/contact", input);
+		axios.post("/api/contact", {
+			name: input.senderName,
+			email: input.email,
+			subject: input.topic,
+			message: input.message
+		});
 		setIsSubmitted(true);
 	}
 	return (
