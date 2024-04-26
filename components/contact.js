@@ -19,7 +19,7 @@ function Contact() {
 	}
 	function submitForm(evt) {
 		evt.preventDefault();
-		axios.post("/contactme/postQuery", input);
+		axios.post("/api/contact", input);
 		setIsSubmitted(true);
 	}
 	return (
