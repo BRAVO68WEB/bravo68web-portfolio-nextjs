@@ -241,6 +241,62 @@ export const extra = [
 
 export const projects = [
 	{
+		name: "eeCTF",
+		type: "project",
+		description: "eeCTF - CTF Framework (in-development) ",
+		image: "/images/GitHub-Logo.png",
+		url: "https://github.com/encryptedge/eeCTF",
+	},
+	{
+		name: "payment-page",
+		type: "project",
+		description: "Payment Page for EncryptEdge",
+		image: "/images/GitHub-Logo.png",
+		url: "https://github.com/encryptedge/payment-page",
+	},
+	{
+		name: "pay-n-ticketing",
+		type: "project",
+		description: "RCS-CTF Ticketing System",
+		image: "/images/GitHub-Logo.png",
+		url: "https://github.com/encryptedge/pay-n-ticketing",
+	},
+	{
+		name: "rcs-landing",
+		type: "project",
+		description: "RCS Landing page",
+		image: "/images/GitHub-Logo.png",
+		url: "https://github.com/encryptedge/rcs-landing",
+	},
+	{
+		name: "zer0bin",
+		type: "project",
+		description: "Just a place to paste code ..",
+		image: "/images/GitHub-Logo.png",
+		url: "https://github.com/BRAVO68WEB/zer0bin",
+	},
+	{
+		name: "coder",
+		type: "project",
+		description: "Provision remote development environments via Terraform",
+		image: "/images/GitHub-Logo.png",
+		url: "https://github.com/coder/coder",
+	},
+	{
+		name: "npm-ez-dependency-adder",
+		type: "project",
+		description: "Easily install node dependencies on a single go",
+		image: "/images/GitHub-Logo.png",
+		url: "https://github.com/chirag3003/npm-ez-dependency-adder",
+	},
+	{
+		name: "dashy",
+		type: "project",
+		description: "A self-hostable personal dashboard built for you.",
+		image: "/images/GitHub-Logo.png",
+		url: "https://github.com/Lissy93/dashy",
+	},
+	{
 		name: "vs-presence-server",
 		type: "project",
 		description: "This is a server that allows you to project your vscode presence to a custom rich presence server.",
@@ -683,6 +739,9 @@ export const projects = [
 		image: "https://raw.githubusercontent.com/BRAVO68WEB/ampr-music/master/assets/logo.png",
 		url: "https://github.com/BRAVO68WEB/ampr-music/",
 	},
+	{
+
+	}
 ];
 
 export const extraPages = [
