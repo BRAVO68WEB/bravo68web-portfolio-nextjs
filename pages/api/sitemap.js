@@ -17,7 +17,7 @@ export default handler.get(async (req, res) => {
 	sitemap.write({ url: "/", changefreq: "daily", priority: 1 });
 	sitemap.write({ url: "/stats/", changefreq: "daily", priority: 0.8 });
 	sitemap.write({ url: "/contact/", changefreq: "daily", priority: 0.8 });
-	sitemap.write({ url: "/resume/", changefreq: "daily", priority: 0.8 });
+	sitemap.write({ url: "/exp/", changefreq: "daily", priority: 0.8 });
 	sitemap.write({ url: "/about/", changefreq: "daily", priority: 0.8 });
 	sitemap.write({ url: "/projects/", changefreq: "daily", priority: 0.8 });
 

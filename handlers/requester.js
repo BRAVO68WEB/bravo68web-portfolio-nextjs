@@ -18,21 +18,25 @@ export const tempEndpoint = async (endpoint, data) => {
 };
 
 export const requester = async (configs, data) => {
-	let requests = [];
-	for (const element of configs) {
-		const { endpoint, name } = element;
-		data[name] = {};
-		let request = axios
-			.get(endpoint)
-			.then((res) => {
-				data[name] = res.data;
-			})
-			.catch((err) => {
-				console.error(err);
-				data[name].error = err;
-			});
+	try {
+		let requests = [];
+		for (const element of configs) {
+			const { endpoint, name } = element;
+			data[name] = {};
+			let request = axios
+				.get(endpoint)
+				.then((res) => {
+					data[name] = res.data;
+				})
+				.catch((err) => {
+					data[name].error = err;
+				});
 
-		requests.push(request);
+			requests.push(request);
+		}
+		return await Promise.all(requests);
 	}
-	return await Promise.all(requests);
+	catch (err) {
+		throw new Error(err.message);
+	}
 };

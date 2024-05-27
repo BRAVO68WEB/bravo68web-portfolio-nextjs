@@ -22,28 +22,27 @@
 		"prettier": "prettier --write ."
 	},
 	"dependencies": {
-		"@emotion/react": "^11.11.3",
-		"@emotion/styled": "^11.11.0",
-		"@mui/icons-material": "^5.15.2",
-		"@mui/material": "^5.15.2",
-		"@pdftron/webviewer": "^8.12.1",
-		"axios": "^1.6.4",
-		"ciao-status-fetch": "^1.0.1",
-		"core-js": "^3.35.0",
+		"@emotion/react": "^11.11.4",
+		"@emotion/styled": "^11.11.5",
+		"@mui/icons-material": "^5.15.18",
+		"@mui/material": "^5.15.18",
+		"@pdftron/webviewer": "^8.12.3",
+		"@sentry/nextjs": "^8.4.0",
+		"axios": "^1.7.2",
 		"date-format-parse": "^0.2.7",
 		"fs-extra": "^10.1.0",
 		"html-to-text": "^9.0.5",
-		"next": "^14.0.4",
+		"next": "^14.2.3",
 		"next-connect": "^0.12.2",
-		"react": "^18.2.0",
-		"react-dom": "^18.2.0",
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1",
 		"react-use-lanyard": "^0.3.1",
-		"sitemap": "^7.1.1",
+		"sitemap": "^7.1.2",
 		"styled-components": "^5.3.11"
 	},
 	"devDependencies": {
 		"eslint": "^7.32.0",
-		"eslint-config-next": "^14.0.4",
+		"eslint-config-next": "^14.2.3",
 		"prettier": "^2.8.8"
 	}
 }

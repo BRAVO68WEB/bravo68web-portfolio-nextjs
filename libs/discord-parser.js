@@ -155,7 +155,5 @@ export default function parse(data) {
 		}
 	}
 
-	console.log(output);
-
 	return output;
 }
