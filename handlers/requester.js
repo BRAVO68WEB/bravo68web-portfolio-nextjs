@@ -26,7 +26,7 @@ export const requester = async (configs, data) => {
 			let request = axios
 				.get(endpoint)
 				.then((res) => {
-					data[name] = res.data;
+					data[name] = res;
 				})
 				.catch((err) => {
 					data[name].error = err;

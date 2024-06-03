@@ -42,39 +42,39 @@ function Contact() {
 								and opportunities.
 							</p>
 							<br />
-							<p>
+							<div>
 								<h3>
 									<strong>Email:</strong>
 								</h3>
 								<a href="mailto:portfolio@b68.dev">
 									hi@b68.dev
 								</a>
-							</p>
+							</div>
 							<br />
-							<p>
+							<div>
 								<h3>
 									<strong>Phone:</strong>
 								</h3>
 								<a href="tel:+916291559872">+91 6291559872</a>
-							</p>
+							</div>
 							<br />
-							<p>
+							<div>
 								<h3>
 									<strong>Discord:</strong>
 								</h3>
 								<a href="https://discord.com/users/457039372009865226">
 									bravo68web
 								</a>
-							</p>
+							</div>
 							<br />
-							<p>
+							<div>
 								<h3>
 									<strong>Extra:</strong>
 								</h3>
 								<a href="https://calendly.com/bravo68web">
 									Calendly
 								</a>
-							</p>
+							</div>
 						</div>
 					</div>
 				</div>

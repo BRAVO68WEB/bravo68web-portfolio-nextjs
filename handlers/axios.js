@@ -13,3 +13,12 @@ export default  {
 		return fetch("https://api.b68.dev" + url).then((res) => res.json());
 	}
 }
+
+// import axios from "axios";
+
+// export default axios.create({
+// 	baseURL: "https://api.b68.dev",
+// 	headers: {
+// 		"Content-Type": "application/json",
+// 	},
+// })

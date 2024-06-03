@@ -11,16 +11,14 @@ function HTBActivityCard({
 }) {
 	return (
 		<SkillCard title={title} image={image} url={url}>
-			{data.slice(0, 6).map((item) => {
+			{data?.slice(0, 6).map((item, i) => {
 				return (
-					<>
-						<div className="description">
-							{item?.name} | {item?.object_type} 
-							<div className="value">
-								{item?.date_diff}
-							</div>
+					<div className="description" key={i}>
+						{item?.name} | {item?.object_type} 
+						<div className="value" >
+							{item?.date_diff}
 						</div>
-					</>
+					</div>
 				);
 			})}
 		</SkillCard>
