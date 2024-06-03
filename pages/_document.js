@@ -1,5 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
-import { ServerStyleSheet } from "styled-components";
+import { ServerStyleSheet } from "styled-components"
 
 export default class MyDocument extends Document {
 	static async getInitialProps(ctx) {
@@ -25,7 +25,7 @@ export default class MyDocument extends Document {
 
 	render() {
 		return (
-			<Html>
+			<Html lang="en">
 				<Head>
 					<meta
 						name="description"
@@ -45,7 +45,7 @@ export default class MyDocument extends Document {
 						content="Jyotirmoy Bandyopadhayaya | Bravo68web"
 					/>
 					<link rel="icon" href="/favicon.ico" />
-					<link
+					{/* <link
 						rel="preconnect"
 						href="https://fonts.googleapis.com"
 					/>
@@ -53,7 +53,7 @@ export default class MyDocument extends Document {
 					<link
 						href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
 						rel="stylesheet"
-					/>
+					/> */}
 					<meta property="twitter:card" content="summary_large_image" />
 					<meta property="twitter:url" content="https://www.itsmebravo.dev/" />
 					<meta property="twitter:title" content="Jyotirmoy Bandyopadhayaya | Full Stack Web Developer and DevOps Engineer" />

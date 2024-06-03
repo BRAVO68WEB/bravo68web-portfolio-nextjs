@@ -76,6 +76,7 @@ function Nav() {
 			{/* Mobile Menu */}
 			<div className={"menu"}>
 				<IconButton
+					about="Mobile Menu Button"
 					id="nav-menu-button"
 					aria-controls={open ? "nav-menu" : undefined}
 					aria-haspopup="true"
@@ -85,6 +86,7 @@ function Nav() {
 					<MenuIcon />
 				</IconButton>
 				<Menu
+					about="Mobile Menu"
 					id="nav-menu"
 					anchorEl={anchorEl}
 					open={open}

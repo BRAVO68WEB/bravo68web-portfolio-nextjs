@@ -6,55 +6,64 @@ const moduleExports = {
 	images: {
 		remotePatterns: [
 		  {
-			protocol: 'https',
-			hostname: 'itsmebravo.dev',
-			port: '',
-			pathname: '/images/**/*.{jpg,jpeg,png,svg,gif,webp}',
-		  },
+        protocol: 'https',
+        hostname: 'itsmebravo.dev',
+        port: '',
+        pathname: '/images/**/*.{jpg,jpeg,png,svg,gif,webp}',
+		  },{
+        protocol: 'https',
+        hostname: 'cdn.discordapp.com',
+        port: '',
+        pathname: '/**/*.{jpg,jpeg,png,svg,gif,webp}',
+      }
 		],
-	},
+  },
 };
-module.exports = moduleExports;
 
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+  enabled: process.env.ANALYZE === 'true',
+})
 
-// Injected content via Sentry wizard below
+module.exports = withBundleAnalyzer(moduleExports);
 
-const { withSentryConfig } = require("@sentry/nextjs");
+// // Injected content via Sentry wizard below
 
-module.exports = withSentryConfig(
-  module.exports,
-  {
-    // For all available options, see:
-    // https://github.com/getsentry/sentry-webpack-plugin#options
+// const { withSentryConfig } = require("@sentry/nextjs");
 
-    org: "bravo68web",
-    project: "bravo68web-portfolio-nextjs",
+// module.exports = withSentryConfig(
+//   module.exports,
+//   {
+//     // For all available options, see:
+//     // https://github.com/getsentry/sentry-webpack-plugin#options
 
-    // Only print logs for uploading source maps in CI
-    silent: !process.env.CI,
+//     org: "bravo68web",
+//     project: "bravo68web-portfolio-nextjs",
 
-    // For all available options, see:
-    // https://docs.sentry.io/platforms/javascript/guides/nextjs/manual-setup/
+//     // Only print logs for uploading source maps in CI
+//     silent: !process.env.CI,
 
-    // Upload a larger set of source maps for prettier stack traces (increases build time)
-    widenClientFileUpload: true,
+//     // For all available options, see:
+//     // https://docs.sentry.io/platforms/javascript/guides/nextjs/manual-setup/
 
-    // Route browser requests to Sentry through a Next.js rewrite to circumvent ad-blockers.
-    // This can increase your server load as well as your hosting bill.
-    // Note: Check that the configured route will not match with your Next.js middleware, otherwise reporting of client-
-    // side errors will fail.
-    tunnelRoute: "/monitoring",
+//     // Upload a larger set of source maps for prettier stack traces (increases build time)
+//     widenClientFileUpload: true,
 
-    // Hides source maps from generated client bundles
-    hideSourceMaps: true,
+//     // Route browser requests to Sentry through a Next.js rewrite to circumvent ad-blockers.
+//     // This can increase your server load as well as your hosting bill.
+//     // Note: Check that the configured route will not match with your Next.js middleware, otherwise reporting of client-
+//     // side errors will fail.
+//     tunnelRoute: "/monitoring",
 
-    // Automatically tree-shake Sentry logger statements to reduce bundle size
-    disableLogger: true,
+//     // Hides source maps from generated client bundles
+//     hideSourceMaps: true,
 
-    // Enables automatic instrumentation of Vercel Cron Monitors. (Does not yet work with App Router route handlers.)
-    // See the following for more information:
-    // https://docs.sentry.io/product/crons/
-    // https://vercel.com/docs/cron-jobs
-    automaticVercelMonitors: true,
-  }
-);
+//     // Automatically tree-shake Sentry logger statements to reduce bundle size
+//     disableLogger: true,
+
+//     // Enables automatic instrumentation of Vercel Cron Monitors. (Does not yet work with App Router route handlers.)
+//     // See the following for more information:
+//     // https://docs.sentry.io/product/crons/
+//     // https://vercel.com/docs/cron-jobs
+//     automaticVercelMonitors: true,
+//   }
+// );

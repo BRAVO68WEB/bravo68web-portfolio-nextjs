@@ -3,6 +3,7 @@ import { DicordActivityStyle } from "./discord-activity.style";
 import { useLanyard } from "react-use-lanyard";
 import { discord_id } from "config";
 import DiscordParser from "../libs/discord-parser";
+import Image from "next/image";
 
 const customStatus = [
 	"Searching for Cat Girls",
@@ -34,12 +35,18 @@ export default function DiscordActivity() {
 			<DicordActivityStyle>
 				<div className="discord-icons">
 					<div className="discord-large-icon">
-						<img 
+						<Image
+							height={100} width={
+								100
+							} 
 							src={parsedStatus.activity.assets.large_image} alt="discord large image"
 						/>
 					</div>
 					<div className="discord-small-icon">
-						<img
+						<Image
+							height={25} width={
+								25
+							}
 							src={parsedStatus.activity.assets.small_image} alt="discord small image"
 						/>
 					</div>
@@ -65,12 +72,18 @@ export default function DiscordActivity() {
 			<DicordActivityStyle>
 				<div className="discord-icons">
 					<div className="discord-large-icon">
-						<img
+						<Image
+							height={100} width={
+								100
+							}
 							src={parsedStatus?.discord?.avatar_url} alt="discord large image"
 						/>
 					</div>
 					<div className="discord-small-icon">
-						<img
+						<Image
+							height={25} width={
+								25
+							}
 							src={"/images/" + parsedStatus?.discord?.discord_status + ".png"} alt="discord small image"
 						/>
 					</div>
@@ -104,10 +117,17 @@ export default function DiscordActivity() {
 			<DicordActivityStyle>
 				<div className="discord-icons">
 					<div className="discord-large-icon">
-						<img src={"/images/default_game.jpg"} />
+						<Image
+							alt="discord-asset"
+							height={100} width={
+								100
+							} src={"/images/default_game.webp"} />
 					</div>
 					<div className="discord-small-icon">
-						<img src={"/images/" + "offline" + ".png"} alt="" />
+						<Image
+							height={25} width={
+								25
+							} src={"/images/" + "offline" + ".png"} alt="discord asset" />
 					</div>
 				</div>
 				<div className="discord-messageBox">

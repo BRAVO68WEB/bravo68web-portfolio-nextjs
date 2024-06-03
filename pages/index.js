@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Nav from "components/nav";
 // import Main from "components/main";
-import BMC from "components/buymeacoffee";
+// import BMC from "components/buymeacoffee";
 import dynamic from 'next/dynamic';
 
 const Main = dynamic(() => import('components/main'), {
@@ -19,7 +19,7 @@ export default function Home() {
 			</Head>
 			<Nav />
 			<Main />
-			<BMC />
+			{/* <BMC /> */}
 		</div>
 	);
 }

@@ -2,7 +2,7 @@ import { LanguagesKnownCategory, description1, description2 } from "config";
 import { AboutStyle } from "./about.style";
 import Image from "next/image";
 
-function about() {
+function About() {
 	return (
 		<AboutStyle>
 			<div className="default">
@@ -35,4 +35,4 @@ function about() {
 	);
 }
 
-export default about;
+export default About;
