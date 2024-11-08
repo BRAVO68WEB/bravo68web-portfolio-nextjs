@@ -1,4 +1,4 @@
-const moduleExports = {
+module.exports = {
 	reactStrictMode: true,
 	compiler: {
 		styledComponents: true,
@@ -15,16 +15,26 @@ const moduleExports = {
         hostname: 'cdn.discordapp.com',
         port: '',
         pathname: '/**/*.{jpg,jpeg,png,svg,gif,webp}',
+      },{
+        protocol: 'https',
+        hostname: 'i.scdn.co',
+        port: '',
+        pathname: '/image/*',
+      },{
+        protocol: 'https',
+        hostname: 'media.discordapp.net',
+        port: '',
+        pathname: '/external/**/*.{jpg,jpeg,png,svg,gif,webp}',
       }
 		],
   },
 };
 
-const withBundleAnalyzer = require('@next/bundle-analyzer')({
-  enabled: process.env.ANALYZE === 'true',
-})
+// const withBundleAnalyzer = require('@next/bundle-analyzer')({
+//   enabled: process.env.ANALYZE === 'true',
+// })
 
-module.exports = withBundleAnalyzer(moduleExports);
+// module.exports = withBundleAnalyzer(moduleExports);
 
 // // Injected content via Sentry wizard below
 

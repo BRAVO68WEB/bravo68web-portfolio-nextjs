@@ -43,12 +43,19 @@ export default function DiscordActivity() {
 						/>
 					</div>
 					<div className="discord-small-icon">
-						<Image
-							height={25} width={
-								25
-							}
-							src={parsedStatus.activity.assets.small_image} alt="discord small image"
-						/>
+						{
+							// If status is custom status, then show the emoji
+							parsedStatus.activity.prirority_id === 3 ? (
+								parsedStatus.custom_status.emoji.name
+							) : (
+								<Image
+									height={25} width={
+										25
+									}
+									src={parsedStatus.activity.assets.small_image} alt="discord small image"
+								/>
+							)
+						}
 					</div>
 				</div>
 				<div className="discord-messageBox">
